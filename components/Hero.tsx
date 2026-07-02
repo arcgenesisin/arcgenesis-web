@@ -1,12 +1,23 @@
 import Link from "next/link";
 import LiveBackground from "./LiveBackground";
 
-const sources = [
-  "Development & Master Plans",
-  "Cadastral records · 7/12 · CTS · RoR",
-  "Building bye-laws & regulation",
-  "Circle rate / Ready-Reckoner",
-  "State land-record portals",
+const moat = [
+  {
+    title: "Every DP plan in India, georeferenced",
+    sub: "We gathered the nation's Development Plans and built the AI that locates and warps each onto the map — pin a point, we know the plan that governs it.",
+  },
+  {
+    title: "The building code, turned into an engine",
+    sub: "Our architects coded the regulation itself into a deterministic solver — it computes the exact FSI, envelope, parking and charges, and cites the binding rule.",
+  },
+  {
+    title: "A geometry generator for the floor plate",
+    sub: "It draws the actual layout and floor plate inside the legal envelope, with the cautions and deductions that bind it.",
+  },
+  {
+    title: "ML that finds the ready-reckoner rate",
+    sub: "Machine learning resolves the applicable ASR / ready-reckoner rate for any plot — the number valuation stands on.",
+  },
 ];
 
 export default function Hero() {
@@ -44,15 +55,21 @@ export default function Hero() {
         </Link>
       </div>
 
-      <div className="relative z-10 mt-16 mb-10 w-full max-w-4xl sm:mt-24">
-        <p className="mb-6 text-sm text-muted">
-          Reading the real record — anywhere in India
+      <div className="relative z-10 mt-16 mb-10 w-full max-w-5xl sm:mt-24">
+        <p className="mb-8 text-sm text-muted">
+          Anyone can list the data. We built the machine that reads it.
         </p>
-        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted/80">
-          {sources.map((s) => (
-            <span key={s} className="font-medium tracking-wide">
-              {s}
-            </span>
+        <div className="grid gap-3 text-left sm:grid-cols-2">
+          {moat.map((m) => (
+            <div
+              key={m.title}
+              className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 backdrop-blur-sm"
+            >
+              <div className="text-sm font-semibold">{m.title}</div>
+              <p className="mt-1.5 text-sm leading-relaxed text-muted">
+                {m.sub}
+              </p>
+            </div>
           ))}
         </div>
       </div>
