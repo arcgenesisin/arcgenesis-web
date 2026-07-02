@@ -3,20 +3,16 @@ import LiveBackground from "./LiveBackground";
 
 const moat = [
   {
-    title: "Every DP plan in India, georeferenced",
-    sub: "We gathered the nation's Development Plans and built the AI that locates and warps each onto the map — pin a point, we know the plan that governs it.",
+    title: "The first AI to georeference India's plans",
+    sub: "The first model that places every Development Plan in the country onto the map — Regional Plans included. Pin a point; we know the plan that governs it.",
   },
   {
-    title: "The building code, turned into an engine",
-    sub: "Our architects coded the regulation itself into a deterministic solver — it computes the exact FSI, envelope, parking and charges, and cites the binding rule.",
+    title: "A location-aware site-potential engine",
+    sub: "Every regulatory rule built in. It returns exactly what your plot can build — FSI, envelope, parking, charges — and the compliance behind each number.",
   },
   {
-    title: "A geometry generator for the floor plate",
-    sub: "It draws the actual layout and floor plate inside the legal envelope, with the cautions and deductions that bind it.",
-  },
-  {
-    title: "ML that finds the ready-reckoner rate",
-    sub: "Machine learning resolves the applicable ASR / ready-reckoner rate for any plot — the number valuation stands on.",
+    title: "A generative engine for geometry & layout",
+    sub: "It generates the floor plate and layout for your plot, drawn inside the legal envelope — the buildable form itself, not a template.",
   },
 ];
 
@@ -57,9 +53,10 @@ export default function Hero() {
 
       <div className="relative z-10 mt-16 mb-10 w-full max-w-5xl sm:mt-24">
         <p className="mb-8 text-sm text-muted">
-          Anyone can list the data. We built the machine that reads it.
+          Ask in plain words — the way you would your architect, lawyer or
+          valuer. Behind the answer, three firsts.
         </p>
-        <div className="grid gap-3 text-left sm:grid-cols-2">
+        <div className="grid gap-3 text-left sm:grid-cols-3">
           {moat.map((m) => (
             <div
               key={m.title}
