@@ -1,10 +1,13 @@
 import SiteNav from "@/components/SiteNav";
 import RealityHero from "@/components/RealityHero";
-import Chapters from "@/components/Chapters";
-import HowItWorks from "@/components/HowItWorks";
+import {
+  MapFlightScene,
+  ReportScene,
+  ValuationScene,
+  TitleScene,
+} from "@/components/scenes";
 import Pricing from "@/components/Pricing";
 import SignupCta from "@/components/SignupCta";
-import Products from "@/components/Products";
 import SiteFooter from "@/components/SiteFooter";
 
 export default function Home() {
@@ -13,11 +16,12 @@ export default function Home() {
       <SiteNav />
       <main className="flex-1">
         <RealityHero />
-        <Chapters />
-        <HowItWorks />
+        <MapFlightScene />
+        <ReportScene />
+        <ValuationScene />
+        <TitleScene />
         <Pricing />
         <SignupCta />
-        <Products />
       </main>
       <SiteFooter />
     </>

@@ -9,12 +9,12 @@ export default function SignupCta() {
       <Reveal className="relative z-10">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-5xl">
-            Your first plot is on us
+            The first plot is on us
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg text-muted">
-            Sign in with Google and run one full plot assessment — with its
-            location, plan and potential — completely free. See what ARC GENESIS
-            knows about your land before you pay a rupee.
+            Sign in and run one full assessment — located on the plan, read
+            against the code, computed to a report. Free. See what the land
+            already knows about itself.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link

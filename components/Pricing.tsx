@@ -58,11 +58,11 @@ export default function Pricing() {
     <section id="pricing" className="relative mx-auto max-w-6xl px-5 py-28 sm:px-8">
       <Reveal>
         <h2 className="text-center text-3xl font-semibold tracking-tight sm:text-5xl">
-          Choose a plan to get started
+          Enter at any depth
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-center text-muted">
-          Every plan includes one free plot assessment with location for each
-          Google account you sign in with.
+          One product, priced by how much land you put through it. The first
+          plot assessment is free with a Google sign-in.
         </p>
       </Reveal>
 

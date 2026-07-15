@@ -23,7 +23,7 @@ export const MODES: Mode[] = [
   {
     id: "assistant",
     label: "Assistant",
-    tag: "Your memory, everywhere",
+    tag: "Everything you've ever sent it, remembered",
     color: [245, 166, 90],
     bgBase: "#0d0905",
     glow: "rgba(245,166,90,0.16)",
@@ -34,7 +34,7 @@ export const MODES: Mode[] = [
   {
     id: "site",
     label: "Site Potential",
-    tag: "What your land can become",
+    tag: "The buildable truth of any plot",
     color: [99, 102, 241],
     bgBase: "#05060c",
     glow: "rgba(99,102,241,0.18)",
@@ -45,7 +45,7 @@ export const MODES: Mode[] = [
   {
     id: "value",
     label: "Valuation",
-    tag: "A defensible number",
+    tag: "A number that can defend itself",
     color: [52, 211, 153],
     bgBase: "#04100a",
     glow: "rgba(52,211,153,0.14)",
@@ -56,7 +56,7 @@ export const MODES: Mode[] = [
   {
     id: "title",
     label: "Title Search",
-    tag: "Know before you commit",
+    tag: "Thirty years of paper, read",
     color: [192, 132, 252],
     bgBase: "#0b0612",
     glow: "rgba(192,132,252,0.15)",

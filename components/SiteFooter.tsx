@@ -3,11 +3,12 @@ import Logo from "./Logo";
 
 const cols = [
   {
-    heading: "Platform",
+    heading: "Product",
     links: [
-      { label: "Features", href: "/features" },
       { label: "Pricing", href: "/#pricing" },
-      { label: "Engines", href: "/#products" },
+      { label: "Site Potential", href: "/engines/site-potential" },
+      { label: "Valuation", href: "/engines/valuation" },
+      { label: "Title Search", href: "/engines/property-search" },
     ],
   },
   {
@@ -34,8 +35,8 @@ export default function SiteFooter() {
         <div>
           <Logo />
           <p className="mt-4 max-w-xs text-sm text-muted">
-            One AI platform for Indian land intelligence — locate, plan, and
-            unlock any parcel.
+            The ground truth of Indian land — plans, codes, rates and records,
+            in one conversation.
           </p>
         </div>
         {cols.map((c) => (

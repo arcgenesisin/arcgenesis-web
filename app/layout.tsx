@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ARC GENESIS — One conversation. Every reality of land.",
+  title: "ARC GENESIS — Ask the land itself.",
   description:
-    "One chat that carries your context across every reality of land in India: your assistant and memory, site development potential read from the georeferenced plan and the building code, valuation, and title search.",
+    "Every plan, code, rate and record of Indian land, folded into one conversation. Georeferenced Development Plans, a site-potential engine with the building code inside, valuation that defends its number, and one-click title search.",
 };
 
 export default function RootLayout({
