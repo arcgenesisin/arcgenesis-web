@@ -1,15 +1,30 @@
 "use client";
 
 import Scene from "./Scene";
+import { drawAssistant } from "./assistant";
 import { drawMapFlight } from "./mapFlight";
 import { drawReport } from "./report";
 import { drawValuation } from "./valuation";
 import { drawTitle } from "./title";
 
-export function MapFlightScene() {
+export function AssistantScene() {
   return (
     <Scene
       id="show"
+      eyebrow="ARC AI"
+      accent="#fbbf24"
+      title="A mind that carries your world."
+      sub="Feed it on WhatsApp, Instagram, Telegram, X — any chat you already use. It holds your documents, projects and links as living memory, then does the work: fetches the deed, schedules the meeting, answers from your own files."
+      base="#0d0905"
+      glow="rgba(245,166,90,0.14)"
+      draw={drawAssistant}
+    />
+  );
+}
+
+export function MapFlightScene() {
+  return (
+    <Scene
       eyebrow="The map"
       accent="#818cf8"
       title="India's plans, pinned to the earth they govern."

@@ -21,6 +21,11 @@ export type DrawFn = (
   mobile: boolean,
 ) => void;
 
+// Fraction of the scroll at which the film reaches its final frame.
+// The rest of the travel is a HOLD: the finished scene stays on screen so
+// the reader can take it in before the fold carries them to the next reality.
+const HOLD = 0.7;
+
 function SceneCanvas({
   progress,
   draw,
@@ -59,7 +64,8 @@ function SceneCanvas({
     const loop = (t: number) => {
       if (running && visible) {
         ctx.clearRect(0, 0, w, h);
-        const p = reduce ? 0.62 : progress.get();
+        // the film completes at HOLD, then rests finished while the user reads
+        const p = reduce ? 1 : Math.min(1, progress.get() / HOLD);
         draw(ctx, w, h, p, t / 1000, w < 640);
       }
       raf = requestAnimationFrame(loop);
@@ -114,14 +120,15 @@ export default function Scene({
     offset: ["start start", "end end"],
   });
 
-  const copyO = useTransform(scrollYProgress, [0.04, 0.14, 0.84, 0.96], [0, 1, 1, 0]);
+  // copy stays until deep into the hold; the veil folds only at the very end
+  const copyO = useTransform(scrollYProgress, [0.04, 0.14, 0.9, 0.99], [0, 1, 1, 0]);
   const copyY = useTransform(scrollYProgress, [0.04, 0.14], [26, 0]);
   // the fold: dark veil at both thresholds of the reality
-  const veil = useTransform(scrollYProgress, [0, 0.09, 0.9, 1], [1, 0, 0, 1]);
+  const veil = useTransform(scrollYProgress, [0, 0.09, 0.94, 1], [1, 0, 0, 1]);
   const settle = useTransform(scrollYProgress, [0, 0.12], [1.045, 1]);
 
   return (
-    <section id={id} ref={ref} className="relative" style={{ height: "230vh" }}>
+    <section id={id} ref={ref} className="relative" style={{ height: "260vh" }}>
       <div
         className="sticky top-0 h-screen overflow-hidden"
         style={{ backgroundColor: base }}

@@ -1,6 +1,7 @@
 import SiteNav from "@/components/SiteNav";
 import RealityHero from "@/components/RealityHero";
 import {
+  AssistantScene,
   MapFlightScene,
   ReportScene,
   ValuationScene,
@@ -16,6 +17,7 @@ export default function Home() {
       <SiteNav />
       <main className="flex-1">
         <RealityHero />
+        <AssistantScene />
         <MapFlightScene />
         <ReportScene />
         <ValuationScene />
