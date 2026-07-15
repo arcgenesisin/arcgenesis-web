@@ -8,15 +8,15 @@ export default function Products() {
     <section id="products" className="relative mx-auto max-w-7xl px-6 py-28 sm:px-10">
       <Reveal>
         <h2 className="text-center text-3xl font-semibold tracking-tight sm:text-5xl">
-          Point an engine at your land
+          One chat. Four modes.
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-center text-muted">
-          Three ways to interrogate a parcel, live today. Open any interface to
-          explore it — sign in to run it on your own land.
+          Switch the mode and the room changes around the same conversation.
+          Open one to see its reality — sign in to run it on your own land.
         </p>
       </Reveal>
 
-      <div className="mt-16 grid gap-6 md:grid-cols-3">
+      <div className="mt-16 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
         {products.map((p, i) => (
           <Reveal key={p.id} delay={i * 90}>
             <Link

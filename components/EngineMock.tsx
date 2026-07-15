@@ -121,7 +121,36 @@ function PropertySearchMock({ accent }: { accent: string }) {
   );
 }
 
+function AssistantMock({ accent }: { accent: string }) {
+  return (
+    <Frame accent={accent}>
+      <div className="relative flex h-full items-center justify-center">
+        {/* memory orbits */}
+        {[38, 62, 86].map((d, i) => (
+          <div
+            key={d}
+            className="absolute rounded-full border border-amber-300/25"
+            style={{ width: `${d}%`, height: `${d * 1.3}%`, opacity: 0.5 - i * 0.1 }}
+          />
+        ))}
+        <div className="absolute h-2.5 w-2.5 rounded-full bg-amber-300 shadow-[0_0_14px_rgba(245,166,90,0.8)]" />
+        <div className="absolute bottom-2 flex w-full flex-wrap justify-center gap-1 text-[8px]">
+          {["WhatsApp", "Drive", "Calendar", "Links"].map((c) => (
+            <span
+              key={c}
+              className="rounded bg-white/8 px-1.5 py-0.5 text-muted"
+            >
+              {c}
+            </span>
+          ))}
+        </div>
+      </div>
+    </Frame>
+  );
+}
+
 export function EngineMock({ id, accent }: { id: string; accent: string }) {
+  if (id === "assistant") return <AssistantMock accent={accent} />;
   if (id === "site-potential") return <SitePotentialMock accent={accent} />;
   if (id === "valuation") return <ValuationMock accent={accent} />;
   return <PropertySearchMock accent={accent} />;

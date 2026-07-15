@@ -1,5 +1,6 @@
 import SiteNav from "@/components/SiteNav";
-import Hero from "@/components/Hero";
+import RealityHero from "@/components/RealityHero";
+import Chapters from "@/components/Chapters";
 import HowItWorks from "@/components/HowItWorks";
 import Pricing from "@/components/Pricing";
 import SignupCta from "@/components/SignupCta";
@@ -11,7 +12,8 @@ export default function Home() {
     <>
       <SiteNav />
       <main className="flex-1">
-        <Hero />
+        <RealityHero />
+        <Chapters />
         <HowItWorks />
         <Pricing />
         <SignupCta />

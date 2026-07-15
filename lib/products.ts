@@ -9,8 +9,23 @@ export type Product = {
   href: string; // interface route
 };
 
-// The three engines we can offer right now (mirrors the products listed in our DB).
+// The four modes of the one conversation (engines mirror the products in our DB).
 export const products: Product[] = [
+  {
+    id: "assistant",
+    name: "Assistant",
+    tagline: "Your memory, across every platform.",
+    description:
+      "Docs, links, chats, calendar — one assistant that remembers everything you send it, on WhatsApp, the web, wherever you are. Ask for anything you've ever shared; it's already filed.",
+    points: [
+      "Every document you send, remembered and filed",
+      "Works across WhatsApp, web and more",
+      "Your calendar, links and notes in one place",
+    ],
+    accent: "from-amber-500 to-orange-500",
+    glyph: "◍",
+    href: "/login",
+  },
   {
     id: "site-potential",
     name: "Site Potential Engine",

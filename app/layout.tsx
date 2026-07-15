@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ARC GENESIS — Locate, plan, and unlock any land in India",
+  title: "ARC GENESIS — One conversation. Every reality of land.",
   description:
-    "ARC GENESIS is one AI platform for Indian land intelligence: locate any plot, read its DP / cadastral context, draw your site, and generate development potential, valuation, and title-search reports.",
+    "One chat that carries your context across every reality of land in India: your assistant and memory, site development potential read from the georeferenced plan and the building code, valuation, and title search.",
 };
 
 export default function RootLayout({
@@ -29,6 +30,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
+        <SmoothScroll />
         {children}
       </body>
     </html>
