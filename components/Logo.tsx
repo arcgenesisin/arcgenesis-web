@@ -57,17 +57,17 @@ export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
       </defs>
 
       {/* outer ring — clockwise */}
-      <motion.g {...spin(22, 1)}>
+      <motion.g {...spin(9, 1)}>
         <path d={arc(41, -150, 60)} stroke="url(#lg-o1)" strokeWidth="9" strokeLinecap="round" />
         <path d={arc(41, 82, 188)} stroke="url(#lg-o2)" strokeWidth="9" strokeLinecap="round" />
       </motion.g>
       {/* middle ring — counter-clockwise */}
-      <motion.g {...spin(16, -1)}>
+      <motion.g {...spin(6, -1)}>
         <path d={arc(28.5, -122, 30)} stroke="url(#lg-m1)" strokeWidth="9" strokeLinecap="round" />
         <path d={arc(28.5, 58, 208)} stroke="url(#lg-m2)" strokeWidth="9" strokeLinecap="round" />
       </motion.g>
       {/* inner ring — clockwise, fastest */}
-      <motion.g {...spin(11, 1)}>
+      <motion.g {...spin(4, 1)}>
         <path d={arc(17, -28, 118)} stroke="url(#lg-i1)" strokeWidth="8" strokeLinecap="round" />
         <path d={arc(17, 148, 292)} stroke="url(#lg-i2)" strokeWidth="8" strokeLinecap="round" />
       </motion.g>
