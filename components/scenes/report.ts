@@ -76,11 +76,14 @@ export const drawReport: DrawFn = (ctx, w, h, p, t, mobile) => {
 
   const u = Math.min(w, h) / (mobile ? 130 : 150); // local unit
   const cy = h * (mobile ? 0.34 : 0.42);
+  // on phones the acts replace each other (cinema cut), on desktop they coexist
+  const actFade = mobile ? 1 - ease(range(p, 0.56, 0.7)) : 1;
 
   // ---------- Act 1: the 2D plate ----------
   const planX = mobile ? w * 0.5 - 47 * u * 0.5 : w * 0.24 - 44 * u * 0.5;
   const planY = cy - 48 * u * 0.5;
   ctx.save();
+  ctx.globalAlpha = actFade;
   ctx.translate(planX, planY);
   ctx.scale(u, u);
   ctx.lineWidth = 1.4 / u;
@@ -138,6 +141,7 @@ export const drawReport: DrawFn = (ctx, w, h, p, t, mobile) => {
   const my = mobile ? h * 0.62 : cy + 30 * u * 0.42 + 40;
   if (a2 > 0.01 && (!mobile || a2 > 0.05)) {
     ctx.save();
+    ctx.globalAlpha = actFade;
     ctx.translate(mx, my);
     const mu = u * (mobile ? 0.62 : 0.78);
     ctx.scale(mu, mu);
@@ -151,7 +155,7 @@ export const drawReport: DrawFn = (ctx, w, h, p, t, mobile) => {
       const z = k * fh * rise + (1 - rise) * -4;
       const top = k * fh + fh;
       // slab outline at this level
-      ctx.globalAlpha = fA;
+      ctx.globalAlpha = fA * actFade;
       ctx.fillStyle = k === floors - 1 ? "rgba(147,197,253,0.2)" : "rgba(99,102,241,0.10)";
       ctx.strokeStyle = "rgba(165,180,252,0.65)";
       ctx.beginPath();
@@ -175,7 +179,7 @@ export const drawReport: DrawFn = (ctx, w, h, p, t, mobile) => {
           ctx.stroke();
         }
       }
-      ctx.globalAlpha = 1;
+      ctx.globalAlpha = actFade;
     }
     ctx.restore();
 
@@ -186,7 +190,7 @@ export const drawReport: DrawFn = (ctx, w, h, p, t, mobile) => {
       "3D · G+7 · 24.5 m",
       "#c7d2fe",
       "rgba(30,35,70,0.85)",
-      range(a2, 0.9, 1),
+      range(a2, 0.9, 1) * actFade,
       mobile ? 10 : 11,
     );
   }
@@ -196,7 +200,8 @@ export const drawReport: DrawFn = (ctx, w, h, p, t, mobile) => {
     const cw = mobile ? Math.min(w - 48, 320) : 300;
     const chh = mobile ? 190 : 210;
     const cxr = mobile ? w / 2 - cw / 2 : w * 0.62 + 120;
-    const cyr = mobile ? h * 0.62 + 60 : cy - chh / 2 - 20;
+    // phone: the card takes center stage as the earlier acts fade out
+    const cyr = mobile ? h * 0.36 - chh / 2 : cy - chh / 2 - 20;
     const slide = (1 - a3) * 30;
 
     ctx.save();
