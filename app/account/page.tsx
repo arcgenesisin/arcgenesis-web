@@ -5,6 +5,8 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import { auth, signOut } from "@/auth";
 import { MODES } from "@/lib/modes";
+import { mintLinkCode, getChannels, type Channel } from "@/lib/queries";
+import ChannelLink from "@/components/ChannelLink";
 
 export const metadata = { title: "Your account — ARC GENESIS" };
 
@@ -17,6 +19,20 @@ export default async function AccountPage() {
   }
   if (!session?.user) redirect("/login");
   const u = session.user;
+  const googleSub = (u as { googleSub?: string }).googleSub ?? "";
+
+  // Shared identity DB (optional pre-config): mint a link code + list channels.
+  let linkCode: string | null = null;
+  let channels: Channel[] = [];
+  try {
+    [linkCode, channels] = await Promise.all([
+      mintLinkCode(googleSub),
+      getChannels(googleSub),
+    ]);
+  } catch {
+    linkCode = null;
+    channels = [];
+  }
 
   return (
     <>
@@ -61,6 +77,16 @@ export default async function AccountPage() {
               </Link>
             </div>
           </div>
+
+          <h2 className="mt-10 text-sm font-semibold uppercase tracking-wide text-muted">
+            Your chat channels
+          </h2>
+          <ChannelLink
+            code={linkCode}
+            channels={channels}
+            telegramBot={process.env.NEXT_PUBLIC_TELEGRAM_BOT ?? "docbridge_genarc_bot"}
+            whatsappNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? ""}
+          />
 
           <h2 className="mt-10 text-sm font-semibold uppercase tracking-wide text-muted">
             Enter a reality

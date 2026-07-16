@@ -6,6 +6,11 @@ import Google from "next-auth/providers/google";
 
 const PROTECTED = ["/account"];
 
+// Least-privilege Drive scope: ARC only ever touches files it creates for the
+// user. The SAME Google grant that logs them in also authorizes filing into
+// their Drive — one consent, one identity, shared with the internal engine.
+const DRIVE_SCOPE = "https://www.googleapis.com/auth/drive.file";
+
 export default {
   trustHost: true,
   providers: [
@@ -14,8 +19,11 @@ export default {
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       authorization: {
         params: {
-          scope: "openid email profile",
-          prompt: "select_account",
+          // offline + consent so Google returns a refresh_token we can store
+          // (encrypted) and the engine can act on the user's Drive on demand.
+          scope: `openid email profile ${DRIVE_SCOPE}`,
+          access_type: "offline",
+          prompt: "consent",
         },
       },
     }),

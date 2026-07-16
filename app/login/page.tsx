@@ -71,8 +71,8 @@ export default async function LoginPage() {
               </button>
             </form>
             <p className="mt-4 text-center text-xs text-muted">
-              By continuing you agree to our terms. We only read your name,
-              email and profile photo.
+              By continuing you agree to our terms. We read your name, email and
+              photo, and — only for files ARC creates — your Google Drive.
             </p>
           </>
         ) : (
