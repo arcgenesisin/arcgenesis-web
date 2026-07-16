@@ -58,12 +58,13 @@ export default function RealityHero() {
           ARC GENESIS
         </span>
         <h1 className="text-4xl font-semibold leading-[1.06] tracking-tight sm:text-6xl">
-          Ask the land itself.
+          One conversation.
+          <br />
+          Every reality of development.
         </h1>
         <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
-          Every plan, code, rate and record in India — folded into one
-          conversation. Change the mode, and it answers from a different
-          reality.
+          Ask the way you&apos;d ask your architect, valuer or lawyer. Switch
+          the mode — the world changes around the same chat.
         </p>
 
         {/* the constant conversation */}
