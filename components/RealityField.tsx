@@ -223,9 +223,13 @@ export default function RealityField({
           p.y = u * u * p.sy + 2 * u * e * p.cyp + e * e * p.ty;
           settled = Math.min(settled, e);
         } else {
-          // settled: breathe faintly in place
-          p.x = p.tx + Math.sin(now / 2600 + p.tw) * 0.0022;
-          p.y = p.ty + Math.cos(now / 3100 + p.tw) * 0.0022;
+          // settled: alive — personal breath + a slow current that travels
+          // ACROSS the formation (phase keyed to position), so the whole
+          // shape undulates like it's suspended in fluid, never frozen.
+          const breath = now / 2400 + p.tw;
+          const wave = now / 5200 + p.tx * 6.3 + p.ty * 4.1;
+          p.x = p.tx + Math.sin(breath) * 0.0034 + Math.sin(wave) * 0.0042;
+          p.y = p.ty + Math.cos(breath * 0.9) * 0.0034 + Math.cos(wave * 1.15) * 0.0036;
         }
         // the fold: light dips mid-flight
         const dip = 1 - 0.62 * Math.sin(Math.PI * Math.min(e, 0.999));
