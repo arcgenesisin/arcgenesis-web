@@ -121,12 +121,13 @@ export default function Scene({
     offset: ["start start", "end end"],
   });
 
-  // copy stays through the whole hold; the veil folds only at the very end
-  const copyO = useTransform(scrollYProgress, [0.03, 0.11, 0.94, 0.995], [0, 1, 1, 0]);
-  const copyY = useTransform(scrollYProgress, [0.03, 0.11], [26, 0]);
-  // the fold: dark veil at both thresholds of the reality
-  const veil = useTransform(scrollYProgress, [0, 0.07, 0.965, 1], [1, 0, 0, 1]);
-  const settle = useTransform(scrollYProgress, [0, 0.1], [1.045, 1]);
+  // copy stays visible through almost the whole hold
+  const copyO = useTransform(scrollYProgress, [0.02, 0.08, 0.97, 0.998], [0, 1, 1, 0]);
+  const copyY = useTransform(scrollYProgress, [0.02, 0.08], [26, 0]);
+  // the fold: a QUICK dark blink at each seam — not a long dark patch. The
+  // finished scene owns the whole hold; the fold is just the ~3% at the edges.
+  const veil = useTransform(scrollYProgress, [0, 0.03, 0.98, 1], [1, 0, 0, 1]);
+  const settle = useTransform(scrollYProgress, [0, 0.08], [1.04, 1]);
 
   return (
     <section id={id} ref={ref} className="relative" style={{ height: "340vh" }}>
