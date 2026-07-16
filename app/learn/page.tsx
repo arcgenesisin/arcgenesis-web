@@ -13,29 +13,6 @@ type Tutorial = {
 
 const tutorials: Tutorial[] = [
   {
-    tag: "Basics",
-    accent: "#e2e8f0",
-    title: "Locate any plot in India",
-    time: "2 min",
-    steps: [
-      {
-        name: "Give it a point",
-        detail:
-          "Paste a Google Maps link, type coordinates, or just type the survey / gut / CTS number with the village. Any one of these is enough.",
-      },
-      {
-        name: "Watch the corroboration",
-        detail:
-          "The engine resolves your input against the georeferenced Development Plan, the cadastral parcel layer, or both — and shows you the plan raster warped over satellite so you can see the match with your own eyes.",
-      },
-      {
-        name: "Confirm the parcel",
-        detail:
-          "Nudge the pin or pick the right parcel polygon if several match. From here every mode — potential, valuation, title — knows exactly which land you mean.",
-      },
-    ],
-  },
-  {
     tag: "ARC AI",
     accent: "#fbbf24",
     title: "Set up your assistant on WhatsApp (and everywhere else)",
