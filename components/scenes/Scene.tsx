@@ -126,7 +126,7 @@ export default function Scene({
   const copyY = useTransform(scrollYProgress, [0.02, 0.08], [26, 0]);
   // the fold: a QUICK dark blink at each seam — not a long dark patch. The
   // finished scene owns the whole hold; the fold is just the ~3% at the edges.
-  const veil = useTransform(scrollYProgress, [0, 0.03, 0.98, 1], [1, 0, 0, 1]);
+  const veil = useTransform(scrollYProgress, [0, 0.015, 0.99, 1], [1, 0, 0, 1]);
   const settle = useTransform(scrollYProgress, [0, 0.08], [1.04, 1]);
 
   return (
