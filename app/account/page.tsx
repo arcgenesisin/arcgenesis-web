@@ -85,7 +85,7 @@ export default async function AccountPage() {
             code={linkCode}
             channels={channels}
             telegramBot={process.env.NEXT_PUBLIC_TELEGRAM_BOT ?? "docbridge_genarc_bot"}
-            whatsappNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? ""}
+            whatsappNumber={process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "918806840039"}
           />
 
           <h2 className="mt-10 text-sm font-semibold uppercase tracking-wide text-muted">
