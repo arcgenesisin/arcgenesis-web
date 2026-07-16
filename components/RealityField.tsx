@@ -135,7 +135,7 @@ export default function RealityField({
       h = 0,
       raf = 0,
       running = true;
-    const DUR = 900;
+    const DUR = 750;
 
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 1.5);

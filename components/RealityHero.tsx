@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { MODES, MODE_INDEX, type ModeId } from "@/lib/modes";
 import RealityField from "./RealityField";
 
-const CYCLE_MS = 5600;
+const CYCLE_MS = 4200;
 
 export default function RealityHero() {
   const [mode, setMode] = useState<ModeId>("site");
@@ -60,7 +60,7 @@ export default function RealityHero() {
         <h1 className="text-4xl font-semibold leading-[1.06] tracking-tight sm:text-6xl">
           One conversation.
           <br />
-          Every reality of development.
+          Every reality of Development.
         </h1>
         <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
           Ask the way you&apos;d ask your architect, valuer or lawyer. Switch
