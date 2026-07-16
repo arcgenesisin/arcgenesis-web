@@ -28,7 +28,7 @@ export function MapFlightScene() {
       eyebrow="The map"
       accent="#818cf8"
       title="India's plans, pinned to the earth they govern."
-      sub="The first AI to georeference every Development Plan in the country. This is our layer over the Mumbai–Pune region — DP overlays, Regional Plans, airport funnels — flying in real time. Drop a pin anywhere; the law of that land is already on the map."
+      sub="We have georeferenced every Development Plan in India — the first AI to do it, Regional Plans included. What's flying here is just one window of that layer, the Mumbai–Pune region: DP overlays, airport funnels, the working map. Drop a pin anywhere in the country; the law of that land is already placed."
       base="#05060c"
       glow="rgba(99,102,241,0.14)"
       draw={drawMapFlight}
