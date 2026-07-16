@@ -22,9 +22,10 @@ export type DrawFn = (
 ) => void;
 
 // Fraction of the scroll at which the film reaches its final frame.
-// The rest of the travel is a HOLD: the finished scene stays on screen so
-// the reader can take it in before the fold carries them to the next reality.
-const HOLD = 0.7;
+// The rest of the travel is a HOLD — a soft lock: the finished scene stays
+// fixed for ~a full viewport of scrolling, so a fast flick dies inside it
+// and leaving a reality always takes a deliberate second scroll.
+const HOLD = 0.62;
 
 function SceneCanvas({
   progress,
@@ -120,15 +121,15 @@ export default function Scene({
     offset: ["start start", "end end"],
   });
 
-  // copy stays until deep into the hold; the veil folds only at the very end
-  const copyO = useTransform(scrollYProgress, [0.04, 0.14, 0.9, 0.99], [0, 1, 1, 0]);
-  const copyY = useTransform(scrollYProgress, [0.04, 0.14], [26, 0]);
+  // copy stays through the whole hold; the veil folds only at the very end
+  const copyO = useTransform(scrollYProgress, [0.03, 0.11, 0.94, 0.995], [0, 1, 1, 0]);
+  const copyY = useTransform(scrollYProgress, [0.03, 0.11], [26, 0]);
   // the fold: dark veil at both thresholds of the reality
-  const veil = useTransform(scrollYProgress, [0, 0.09, 0.94, 1], [1, 0, 0, 1]);
-  const settle = useTransform(scrollYProgress, [0, 0.12], [1.045, 1]);
+  const veil = useTransform(scrollYProgress, [0, 0.07, 0.965, 1], [1, 0, 0, 1]);
+  const settle = useTransform(scrollYProgress, [0, 0.1], [1.045, 1]);
 
   return (
-    <section id={id} ref={ref} className="relative" style={{ height: "260vh" }}>
+    <section id={id} ref={ref} className="relative" style={{ height: "340vh" }}>
       <div
         className="sticky top-0 h-screen overflow-hidden"
         style={{ backgroundColor: base }}
