@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
+import AuthButton from "./AuthButton";
 
 const links = [
   { label: "Home", href: "/" },
@@ -63,12 +64,9 @@ export default function SiteNav() {
         </div>
 
         <div className="flex items-center gap-2">
-          <Link
-            href="/login"
-            className="hidden rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-transform hover:scale-[1.03] md:inline-flex"
-          >
-            Log in
-          </Link>
+          <div className="hidden md:block">
+            <AuthButton />
+          </div>
           <button
             onClick={() => setOpen((v) => !v)}
             aria-label="Menu"
@@ -92,13 +90,7 @@ export default function SiteNav() {
                 {l.label}
               </Link>
             ))}
-            <Link
-              href="/login"
-              onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-white px-5 py-3 text-center text-lg font-medium text-black"
-            >
-              Log in
-            </Link>
+            <AuthButton mobile onNavigate={() => setOpen(false)} />
           </div>
         </div>
       )}
