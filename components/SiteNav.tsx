@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 
@@ -12,9 +13,12 @@ const links = [
   { label: "Pricing", href: "/#pricing" },
 ];
 
+type Lenis = { scrollTo: (t: number, o?: object) => void };
+
 export default function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -22,6 +26,17 @@ export default function SiteNav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Home: if already on the landing, glide to the top instead of no-op
+  const onHome = (e: React.MouseEvent) => {
+    setOpen(false);
+    if (pathname === "/") {
+      e.preventDefault();
+      const lenis = (window as unknown as { __lenis?: Lenis }).__lenis;
+      if (lenis) lenis.scrollTo(0, { duration: 1.4 });
+      else window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  };
 
   return (
     <header
@@ -39,6 +54,7 @@ export default function SiteNav() {
             <Link
               key={l.label}
               href={l.href}
+              onClick={l.label === "Home" ? onHome : undefined}
               className="rounded-full px-4 py-2 text-[15px] font-medium text-muted transition-colors hover:text-foreground"
             >
               {l.label}
@@ -56,22 +72,22 @@ export default function SiteNav() {
           <button
             onClick={() => setOpen((v) => !v)}
             aria-label="Menu"
-            className="grid h-9 w-9 place-items-center rounded-full border border-white/15 md:hidden"
+            className="grid h-11 w-11 place-items-center rounded-full border border-white/15 md:hidden"
           >
-            <span className="text-lg leading-none">{open ? "×" : "≡"}</span>
+            <span className="text-2xl leading-none">{open ? "×" : "≡"}</span>
           </button>
         </div>
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-background/95 px-5 py-4 backdrop-blur-xl md:hidden">
-          <div className="flex flex-col gap-1">
+        <div className="border-t border-white/10 bg-background/95 px-5 py-5 backdrop-blur-xl md:hidden">
+          <div className="flex flex-col gap-1.5">
             {links.map((l) => (
               <Link
                 key={l.label}
                 href={l.href}
-                onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-2.5 text-sm text-muted hover:bg-white/5 hover:text-foreground"
+                onClick={l.label === "Home" ? onHome : () => setOpen(false)}
+                className="rounded-lg px-3 py-3 text-lg text-muted hover:bg-white/5 hover:text-foreground"
               >
                 {l.label}
               </Link>
@@ -79,7 +95,7 @@ export default function SiteNav() {
             <Link
               href="/login"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-white px-5 py-2.5 text-center text-sm font-medium text-black"
+              className="mt-2 rounded-full bg-white px-5 py-3 text-center text-lg font-medium text-black"
             >
               Log in
             </Link>

@@ -17,6 +17,8 @@ export default function SmoothScroll() {
       smoothWheel: true,
       easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
+    // expose so nav (e.g. Home) can drive a smooth scroll-to-top
+    (window as unknown as { __lenis?: Lenis }).__lenis = lenis;
     let raf = 0;
     const loop = (time: number) => {
       lenis.raf(time);
@@ -25,6 +27,7 @@ export default function SmoothScroll() {
     raf = requestAnimationFrame(loop);
     return () => {
       cancelAnimationFrame(raf);
+      delete (window as unknown as { __lenis?: Lenis }).__lenis;
       lenis.destroy();
     };
   }, []);
