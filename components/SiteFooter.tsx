@@ -14,7 +14,7 @@ const cols = [
   {
     heading: "Company",
     links: [
-      { label: "About", href: "/about" },
+      { label: "Home", href: "/" },
       { label: "Blogs", href: "/blogs" },
       { label: "Learn", href: "/learn" },
     ],
@@ -23,7 +23,7 @@ const cols = [
     heading: "Get started",
     links: [
       { label: "Log in", href: "/login" },
-      { label: "Contact", href: "/about" },
+      { label: "Contact", href: "mailto:arcgenesis.in@gmail.com" },
     ],
   },
 ];
