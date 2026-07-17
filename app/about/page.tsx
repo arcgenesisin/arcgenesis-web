@@ -17,7 +17,7 @@ export default function AboutPage() {
   return (
     <PageShell
       eyebrow="The lab"
-      title="An AI research lab for India’s land bureaucracy."
+      title="An AI research lab for India’s real estate bureaucracy."
       intro="This is for every Indian — not just those who know which office, professional or intermediary to approach."
     >
       <div className="max-w-3xl">
