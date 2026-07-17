@@ -64,6 +64,7 @@ export default function DemoPage() {
         >
           <video
             src="/demo/site-potential-demo.mp4"
+            poster="/demo/poster.jpg"
             controls
             playsInline
             preload="metadata"
