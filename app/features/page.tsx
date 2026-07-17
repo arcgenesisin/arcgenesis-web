@@ -18,13 +18,13 @@ const blocks: Block[] = [
     eyebrow: "ARC AI",
     title: "A mind that carries your world",
     intro:
-      "A general assistant that holds everything you give it — and lives inside the chats you already use. No app to install, no new habit to learn.",
+      "ARC AI holds everything you give it — and lives inside the chats you already use. No app to install, no new habit to learn.",
     groups: [
       {
         heading: "Every chat window is a door",
         items: [
           "WhatsApp, Instagram, Facebook Messenger, Telegram, X and email — feed it or ask it from any of them",
-          "One identity across all channels: link once, and the assistant knows it's you everywhere",
+          "One identity across all channels: link once, and ARC AI knows it's you everywhere",
           "Send a document from WhatsApp, retrieve it from the web — the memory is one",
         ],
       },

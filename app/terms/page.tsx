@@ -28,7 +28,7 @@ export default function TermsPage() {
 
         <S title="The service">
           <p>
-            ARC GENESIS provides an AI assistant for land and development
+            ARC GENESIS provides ARC AI, an AI assistant for land and development
             intelligence in India: document organisation into your own Google
             Drive, site-potential and feasibility outputs, valuation workings and
             title-search assistance — through the website and linked chat
@@ -70,7 +70,7 @@ export default function TermsPage() {
           <p>
             Don&rsquo;t misuse the service: no unlawful content, no attempting to
             access other users&rsquo; data, no reverse-engineering our systems,
-            no using the assistant to violate the terms of the chat platforms it
+            no using ARC AI to violate the terms of the chat platforms it
             runs on.
           </p>
         </S>

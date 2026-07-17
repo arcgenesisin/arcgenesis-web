@@ -22,7 +22,7 @@ export type Mode = {
 export const MODES: Mode[] = [
   {
     id: "assistant",
-    label: "Assistant",
+    label: "ARC AI",
     tag: "Everything you've ever sent it, remembered",
     color: [245, 166, 90],
     bgBase: "#0d0905",

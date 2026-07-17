@@ -146,13 +146,13 @@ const posts: Post[] = [
   {
     tag: "ARC AI",
     accent: "#fbbf24",
-    title: "An assistant that lives where you already talk",
+    title: "ARC AI lives where you already talk",
     excerpt:
       "The best interface is the chat you already have open. ARC AI is one memory behind every messaging window you use.",
     body: [
       "Send it a deed on WhatsApp today and ask for it from the web next month — one identity, one memory, every channel. Documents file themselves under the projects they belong to; links, notes and conversations stay retrievable in plain language.",
       "It acts, too: scheduling against your real calendar, fetching what you ask for, answering project questions from the files you've actually loaded — not from the internet's imagination.",
-      "There is no app to install. That is the point. The assistant comes to where your life already happens.",
+      "There is no app to install. That is the point. ARC AI comes to where your life already happens.",
     ],
   },
   {

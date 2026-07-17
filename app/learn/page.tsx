@@ -15,7 +15,7 @@ const tutorials: Tutorial[] = [
   {
     tag: "ARC AI",
     accent: "#fbbf24",
-    title: "Set up your assistant on WhatsApp (and everywhere else)",
+    title: "Set up ARC AI on WhatsApp (and everywhere else)",
     time: "3 min",
     steps: [
       {
@@ -25,7 +25,7 @@ const tutorials: Tutorial[] = [
       {
         name: "Link your channels",
         detail:
-          "From your account page, generate a link code and send it to the assistant on WhatsApp, Telegram, Instagram — whichever chats you live in. Each channel now knows it's you.",
+          "From your account page, generate a link code and send it to ARC AI on WhatsApp, Telegram, Instagram — whichever chats you live in. Each channel now knows it's you.",
       },
       {
         name: "Feed it",

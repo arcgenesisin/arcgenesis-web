@@ -13,10 +13,10 @@ export type Product = {
 export const products: Product[] = [
   {
     id: "assistant",
-    name: "Assistant",
+    name: "ARC AI",
     tagline: "Your memory, across every platform.",
     description:
-      "Docs, links, chats, calendar — one assistant that remembers everything you send it, on WhatsApp, the web, wherever you are. Ask for anything you've ever shared; it's already filed.",
+      "Docs, links, chats, calendar — ARC AI remembers everything you send it, on WhatsApp, the web, wherever you are. Ask for anything you've ever shared; it's already filed.",
     points: [
       "Every document you send, remembered and filed",
       "Works across WhatsApp, web and more",

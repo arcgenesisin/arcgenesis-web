@@ -36,7 +36,7 @@ export default function PrivacyPage() {
         <S title="What this covers">
           <p>
             This policy covers the ARC GENESIS platform: the website
-            (arcgenesis.ai), signing in with Google, and our assistant reachable
+            (arcgenesis.ai), signing in with Google, and our AI assistant ARC AI, reachable
             over chat channels such as WhatsApp and Telegram (and, as they come
             online, other messaging platforms).
           </p>
@@ -49,7 +49,7 @@ export default function PrivacyPage() {
           </p>
           <p>
             <strong>Documents and messages you send us.</strong> When you message
-            our assistant on a linked chat channel, we receive those messages and
+            ARC AI on a linked chat channel, we receive those messages and
             any documents, images or files you send — that is the product: we
             read them, classify them and organise them for you.
           </p>
