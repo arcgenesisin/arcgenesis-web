@@ -1,10 +1,10 @@
 import Logo from "@/components/Logo";
 import LiveBackground from "@/components/LiveBackground";
 
-// Unlisted demo page (noindex): the engine film + the live Pune demo.
-// The live demo streams from our lab through demo.arcgenesis.ai.
+// Unlisted demo page (noindex): two doors — the live product (Pune-fenced)
+// and the product video. This is the link we hand to reviewers (Sarvam etc.).
 export const metadata = {
-  title: "Live demo — ARC GENESIS",
+  title: "Demo — ARC GENESIS",
   robots: { index: false, follow: false },
 };
 
@@ -23,16 +23,45 @@ export default function DemoPage() {
         </div>
 
         <h1 className="mt-12 text-3xl font-semibold tracking-tight sm:text-5xl">
-          The Site Potential Engine, live.
+          The Site Potential Engine.
         </h1>
         <p className="mt-4 max-w-2xl text-muted">
           Drop a pin, and the engine reads the georeferenced Development Plan at
           that point — zone, roads, reservations — then solves the buildable
-          envelope under UDCPR and prices the whole project. Below: a two-minute
-          film of one run, and the live engine itself, open on Pune city.
+          envelope under UDCPR and prices the whole project.
         </p>
 
-        <div className="mt-10 overflow-hidden rounded-2xl border border-white/12 bg-black/40 backdrop-blur">
+        {/* the two doors */}
+        <div className="mt-8 flex flex-wrap gap-4">
+          <a
+            href={LIVE_DEMO_URL}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black transition-transform hover:scale-[1.02]"
+          >
+            ⚡ Product — live demo
+          </a>
+          <a
+            href="#video"
+            className="inline-flex items-center gap-2 rounded-full border border-white/25 px-7 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-white/10"
+          >
+            ▶ Product video
+          </a>
+        </div>
+        <p className="mt-4 max-w-2xl text-xs text-muted">
+          The live demo runs the real engine against our georeferenced{" "}
+          <b className="text-foreground">Pune city DP</b> — pin anywhere in
+          Pune, Vision assesses your plot, and the full report generates: 2D
+          plan, 3D massing, charges, financials. The demo is fenced to Pune; the
+          platform covers all of India. It streams live from our lab — give it a
+          breath if it queues.
+        </p>
+
+        {/* the film */}
+        <div
+          id="video"
+          className="mt-12 overflow-hidden rounded-2xl border border-white/12 bg-black/40 backdrop-blur"
+        >
           <video
             src="/demo/site-potential-demo.mp4"
             controls
@@ -40,34 +69,13 @@ export default function DemoPage() {
             preload="metadata"
             className="aspect-video w-full"
           />
-          <div className="flex flex-wrap items-center justify-between gap-3 border-t border-white/10 p-4">
+          <div className="border-t border-white/10 p-4">
             <p className="text-sm text-muted">
-              A 20 × 40 m plot in Chh. Sambhajinagar: located on the DP, read by
-              Vision, solved, priced — every tab of the report.
+              One complete run, 2½ minutes: a 20 × 40 m plot located on the DP,
+              read by Vision, road marked, solved in 2D and 3D, priced — every
+              tab of the report.
             </p>
           </div>
-        </div>
-
-        <div className="mt-10 rounded-2xl border border-indigo-400/25 bg-indigo-500/[0.07] p-6">
-          <div className="text-xs font-semibold uppercase tracking-[0.25em] text-indigo-300">
-            Live demo · Pune city DP
-          </div>
-          <p className="mt-3 max-w-2xl text-sm leading-relaxed text-muted">
-            The same engine, running live against our georeferenced Pune
-            Development Plan. Pin anywhere inside Pune — the DP loads over
-            satellite, Vision assesses your plot, and the full report generates:
-            2D plan, 3D massing, charges, financials. (Demo is fenced to Pune;
-            the platform itself covers all of India. It streams from our lab, so
-            give it a breath if it queues.)
-          </p>
-          <a
-            href={LIVE_DEMO_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.02]"
-          >
-            Launch the live demo →
-          </a>
         </div>
 
         <p className="mt-10 text-xs text-muted">
