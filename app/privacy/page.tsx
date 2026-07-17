@@ -28,8 +28,8 @@ export default function PrivacyPage() {
         <p className="text-sm text-muted">
           Effective date: 17 July 2026 · Operated by <strong>ARC GENESIS</strong>{" "}
           (sole proprietorship), Aurangabad, Maharashtra, India · Contact:{" "}
-          <a className="underline hover:text-foreground" href="mailto:arcgenesis.in@gmail.com">
-            arcgenesis.in@gmail.com
+          <a className="underline hover:text-foreground" href="mailto:ai.arcgenesis@gmail.com">
+            ai.arcgenesis@gmail.com
           </a>
         </p>
 
@@ -147,8 +147,8 @@ export default function PrivacyPage() {
           <p>
             If this policy changes materially we will update this page and its
             effective date. Questions or requests:{" "}
-            <a className="underline hover:text-foreground" href="mailto:arcgenesis.in@gmail.com">
-              arcgenesis.in@gmail.com
+            <a className="underline hover:text-foreground" href="mailto:ai.arcgenesis@gmail.com">
+              ai.arcgenesis@gmail.com
             </a>
             .
           </p>
