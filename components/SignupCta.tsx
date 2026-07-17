@@ -18,8 +18,10 @@ const PLATE: [number, number][] = [
 
 function drawLoop(ctx: CanvasRenderingContext2D, w: number, h: number, t: number) {
   const cx = w / 2;
-  const cy = h * 0.4;
-  const u = Math.min(w, h) / 130;
+  // base sits low in the (tall) canvas: floors rise ~70u above it, ground
+  // diamond falls ~38u below it -- cy at 0.66h keeps both inside the canvas.
+  const cy = h * 0.66;
+  const u = Math.min(w, h) / 150;
   const T = 9; // loop seconds
   const ph = (t % T) / T;
   const drawP = Math.min(1, ph / 0.3); // boundary draws
@@ -172,10 +174,10 @@ export default function SignupCta() {
     <section className="relative mx-4 mt-32 mb-10 sm:mx-auto sm:max-w-6xl">
       {/* the rising building floats ABOVE the card — no clipping, it climbs out
           of the bounding box while the card itself stays a clean frame */}
-      <div className="pointer-events-none absolute inset-x-0 -top-28 z-10 h-[300px] sm:-top-32 sm:h-[350px]">
+      <div className="pointer-events-none absolute inset-x-0 -top-[230px] z-10 h-[500px]">
         <LoopCanvas />
       </div>
-      <div className="relative rounded-[32px] border border-white/10 bg-[#04060f] pt-[190px] sm:pt-[220px]">
+      <div className="relative rounded-[32px] border border-white/10 bg-[#04060f] pt-[250px] sm:pt-[270px]">
       <div ref={ref} className="relative px-6 pb-16 text-center sm:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
