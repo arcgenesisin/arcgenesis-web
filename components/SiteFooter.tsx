@@ -23,7 +23,7 @@ const cols = [
     heading: "Get started",
     links: [
       { label: "Log in", href: "/login" },
-      { label: "Contact", href: "mailto:ai.arcgenesis@gmail.com" },
+      { label: "Contact", href: "mailto:contact@arcgenesis.ai" },
     ],
   },
   {

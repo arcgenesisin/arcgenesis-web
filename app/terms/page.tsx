@@ -107,8 +107,8 @@ export default function TermsPage() {
 
         <S title="Contact">
           <p>
-            <a className="underline hover:text-foreground" href="mailto:ai.arcgenesis@gmail.com">
-              ai.arcgenesis@gmail.com
+            <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
+              contact@arcgenesis.ai
             </a>
           </p>
         </S>

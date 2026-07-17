@@ -16,8 +16,8 @@ export default function DataDeletionPage() {
         <ol className="list-decimal space-y-4 pl-5">
           <li>
             Email{" "}
-            <a className="underline hover:text-foreground" href="mailto:ai.arcgenesis@gmail.com">
-              ai.arcgenesis@gmail.com
+            <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
+              contact@arcgenesis.ai
             </a>{" "}
             with the subject <strong>&ldquo;Delete my data&rdquo;</strong> — from
             the email address you signed in with, or include the phone number /
