@@ -8,10 +8,10 @@ import AuthButton from "./AuthButton";
 
 const links = [
   { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
   { label: "Features", href: "/features" },
   { label: "Blogs", href: "/blogs" },
   { label: "Learn", href: "/learn" },
-  { label: "About", href: "/about" },
 ];
 
 type Lenis = { scrollTo: (t: number, o?: object) => void };
