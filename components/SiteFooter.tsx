@@ -26,12 +26,20 @@ const cols = [
       { label: "Contact", href: "mailto:arcgenesis.in@gmail.com" },
     ],
   },
+  {
+    heading: "Legal",
+    links: [
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+      { label: "Data Deletion", href: "/data-deletion" },
+    ],
+  },
 ];
 
 export default function SiteFooter() {
   return (
     <footer className="border-t border-white/10 px-5 py-14 sm:px-8">
-      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.4fr_repeat(3,1fr)]">
+      <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.4fr_repeat(4,1fr)]">
         <div>
           <Logo />
           <p className="mt-4 max-w-xs text-sm text-muted">
