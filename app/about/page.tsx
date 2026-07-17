@@ -6,7 +6,7 @@ export const metadata = { title: "About — ARC GENESIS" };
 // is one line of the programme; the closing lines are the stance.
 
 const PROGRAMME = [
-  "We are researching machine-learning systems that extract, understand and georeference Development and Regional Plans across India.",
+  "We are researching machine learning systems that extract, understand and georeference Development and Regional Plans across India.",
   "We are encoding building regulations into deterministic engines linked directly to their clauses.",
   "We are connecting cadastral, ownership, registration, transaction and regulatory records across India’s diverse state systems.",
   "We are building verifiable intelligence for title, planning, development potential and land valuation.",
@@ -18,7 +18,7 @@ export default function AboutPage() {
     <PageShell
       eyebrow="The lab"
       title="An AI research lab for India’s real estate bureaucracy."
-      intro="This is for every Indian — not just those who know which office, professional or intermediary to approach."
+      intro="This is for every Indian, not just those who know which office, professional or intermediary to approach."
     >
       <div className="max-w-3xl">
         <ol className="mt-4 space-y-6 border-l border-white/10 pl-6">
@@ -32,7 +32,7 @@ export default function AboutPage() {
 
         <div className="mt-16 space-y-4 text-[15px] leading-relaxed text-muted">
           <p>
-            Our team includes machine-learning researchers, architects and town
+            Our team includes machine learning researchers, architects and town
             planners. Domain experts audit our work. Every answer states what
             was measured, assessed or assumed.
           </p>
