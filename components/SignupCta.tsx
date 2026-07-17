@@ -169,11 +169,13 @@ export default function SignupCta() {
   const inView = useInView(ref, { once: true, margin: "-15% 0px" });
 
   return (
-    <section className="relative mx-4 my-10 overflow-hidden rounded-[32px] border border-white/10 bg-[#04060f] sm:mx-auto sm:max-w-6xl">
-      <div className="relative h-[220px] sm:h-[260px]">
+    <section className="relative mx-4 mt-32 mb-10 sm:mx-auto sm:max-w-6xl">
+      {/* the rising building floats ABOVE the card — no clipping, it climbs out
+          of the bounding box while the card itself stays a clean frame */}
+      <div className="pointer-events-none absolute inset-x-0 -top-28 z-10 h-[300px] sm:-top-32 sm:h-[350px]">
         <LoopCanvas />
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-b from-transparent to-[#04060f]" />
       </div>
+      <div className="relative rounded-[32px] border border-white/10 bg-[#04060f] pt-[190px] sm:pt-[220px]">
       <div ref={ref} className="relative px-6 pb-16 text-center sm:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
@@ -205,15 +207,16 @@ export default function SignupCta() {
             Start your first project <span aria-hidden>→</span>
           </Link>
           <Link
-            href="/#pricing"
+            href="/about"
             className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-medium text-foreground hover:bg-white/5"
           >
-            See pricing
+            About the lab
           </Link>
         </motion.div>
         <p className="mt-5 text-xs text-muted">
           No card. One Google sign-in.
         </p>
+      </div>
       </div>
     </section>
   );

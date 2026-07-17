@@ -7,7 +7,6 @@ import {
   ValuationScene,
   TitleScene,
 } from "@/components/scenes";
-import Pricing from "@/components/Pricing";
 import SignupCta from "@/components/SignupCta";
 import SiteFooter from "@/components/SiteFooter";
 
@@ -22,7 +21,6 @@ export default function Home() {
         <ReportScene />
         <ValuationScene />
         <TitleScene />
-        <Pricing />
         <SignupCta />
       </main>
       <SiteFooter />

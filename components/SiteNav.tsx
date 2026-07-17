@@ -11,7 +11,7 @@ const links = [
   { label: "Features", href: "/features" },
   { label: "Blogs", href: "/blogs" },
   { label: "Learn", href: "/learn" },
-  { label: "Pricing", href: "/#pricing" },
+  { label: "About", href: "/about" },
 ];
 
 type Lenis = { scrollTo: (t: number, o?: object) => void };

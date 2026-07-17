@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import SiteNav from "@/components/SiteNav";
@@ -69,12 +68,6 @@ export default async function AccountPage() {
                   Free · one plot assessment included
                 </p>
               </div>
-              <Link
-                href="/#pricing"
-                className="rounded-full border border-white/15 px-4 py-2 text-sm hover:bg-white/5"
-              >
-                Upgrade
-              </Link>
             </div>
           </div>
 

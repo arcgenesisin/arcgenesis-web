@@ -5,7 +5,7 @@ const cols = [
   {
     heading: "Product",
     links: [
-      { label: "Pricing", href: "/#pricing" },
+      { label: "About the lab", href: "/about" },
       { label: "Site Potential", href: "/engines/site-potential" },
       { label: "Valuation", href: "/engines/valuation" },
       { label: "Title Search", href: "/engines/property-search" },
