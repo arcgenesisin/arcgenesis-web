@@ -58,9 +58,9 @@ export default function RealityHero() {
           ARC GENESIS
         </span>
         <h1 className="text-4xl font-semibold leading-[1.06] tracking-tight sm:text-6xl">
-          A Conversation &amp; Construct
+          One conversation.
           <br />
-          of Every Reality of Development.
+          Every Reality of Development, Constructed.
         </h1>
         <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
           Ask the way you&apos;d ask your architect, valuer or lawyer. Switch
