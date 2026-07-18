@@ -70,7 +70,7 @@ export function TitleScene() {
       eyebrow="Title search"
       accent="#d8b4fe"
       title="Thirty years of paper. One click."
-      sub="Every government record of a property: revenue, registration, courts, maps. Fetched, read, and reconciled into a single report that says its red flags out loud."
+      sub="Every government record of a property: revenue, registration, courts, maps. Fetched, read, and reconciled into one complete, objective report of where the title stands, with every finding traced to the evidence behind it."
       base="#0b0612"
       glow="rgba(192,132,252,0.13)"
       draw={drawTitle}

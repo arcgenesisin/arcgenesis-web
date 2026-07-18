@@ -160,7 +160,7 @@ const blocks: Block[] = [
     eyebrow: "Property Search",
     title: "Thirty years of paper. One click.",
     intro:
-      "A title and developability due-diligence engine: every government record of a property fetched, read and reconciled into one report that says its red flags out loud.",
+      "A title and developability due diligence engine: every government record of a property fetched, read and reconciled into one complete, objective report of where the title stands, with every finding traced to the evidence behind it.",
     groups: [
       {
         heading: "Both spines of Indian land records",
