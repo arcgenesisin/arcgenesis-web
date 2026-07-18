@@ -26,8 +26,8 @@ export default function PrivacyPage() {
     >
       <div className="max-w-3xl">
         <p className="text-sm text-muted">
-          Effective date: 17 July 2026 · Operated by <strong>ARC GENESIS</strong>{" "}
-          (sole proprietorship), Aurangabad, Maharashtra, India · Contact:{" "}
+          Effective date: 17 July 2026 · Operated by <strong>ARC GENESIS</strong>,{" "}
+          Pune, Maharashtra, India · Contact:{" "}
           <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
             contact@arcgenesis.ai
           </a>

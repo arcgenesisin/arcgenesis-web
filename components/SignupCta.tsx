@@ -185,7 +185,7 @@ export default function SignupCta() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="text-3xl font-semibold tracking-tight sm:text-5xl"
         >
-          Let&apos;s start your first project.
+          Request pilot access.
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 18 }}
@@ -193,8 +193,8 @@ export default function SignupCta() {
           transition={{ duration: 0.7, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mt-4 max-w-xl text-lg text-muted"
         >
-          Bring a plot. We&apos;ll find it on the plan, read it against the
-          code, and hand you the report. The first one is on us.
+          Our models are fully audited for Maharashtra. We are expanding across
+          India now.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 14 }}
@@ -202,12 +202,12 @@ export default function SignupCta() {
           transition={{ duration: 0.7, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
           className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
         >
-          <Link
-            href="/login"
+          <a
+            href="mailto:contact@arcgenesis.ai?subject=Pilot%20access%20request"
             className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-black transition-transform hover:scale-[1.04]"
           >
-            Start your first project <span aria-hidden>→</span>
-          </Link>
+            <span aria-hidden>↗</span> Request pilot access
+          </a>
           <Link
             href="/about"
             className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-medium text-foreground hover:bg-white/5"
@@ -215,9 +215,7 @@ export default function SignupCta() {
             About the lab
           </Link>
         </motion.div>
-        <p className="mt-5 text-xs text-muted">
-          No card. One Google sign-in.
-        </p>
+        <p className="mt-5 text-xs text-muted">contact@arcgenesis.ai</p>
       </div>
       </div>
     </section>
