@@ -22,8 +22,8 @@ export default function TermsPage() {
     >
       <div className="max-w-3xl">
         <p className="text-sm text-muted">
-          Effective date: 17 July 2026 · <strong>ARC GENESIS</strong>, Pune,
-          Maharashtra, India
+          Effective date: 17 July 2026 · <strong>ARC GENESIS</strong> (sole
+          proprietorship), Aurangabad, Maharashtra, India
         </p>
 
         <S title="The service">
@@ -100,8 +100,8 @@ export default function TermsPage() {
             </a>
             ). We may suspend accounts that break these terms. We&rsquo;ll post
             material changes to these terms on this page. These terms are
-            governed by the laws of India; courts at Pune, Maharashtra have
-            jurisdiction.
+            governed by the laws of India; courts at Chhatrapati Sambhajinagar
+            (Aurangabad), Maharashtra have jurisdiction.
           </p>
         </S>
 
