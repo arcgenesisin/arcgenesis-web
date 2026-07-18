@@ -194,7 +194,7 @@ export default function SignupCta() {
           className="mx-auto mt-4 max-w-xl text-lg text-muted"
         >
           Bring a plot. We&apos;ll find it on the plan, read it against the
-          code, and hand you the report — the first one is on us.
+          code, and hand you the report. The first one is on us.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 14 }}

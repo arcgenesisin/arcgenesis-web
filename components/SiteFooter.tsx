@@ -43,7 +43,7 @@ export default function SiteFooter() {
         <div>
           <Logo />
           <p className="mt-4 max-w-xs text-sm text-muted">
-            The ground truth of Indian land — plans, codes, rates and records,
+            The ground truth of Indian land: plans, codes, rates and records,
             in one conversation.
           </p>
         </div>

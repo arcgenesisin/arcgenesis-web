@@ -29,7 +29,7 @@ export const MODES: Mode[] = [
     glow: "rgba(245,166,90,0.16)",
     user: "Where's the sale deed Ramesh sent me last month?",
     reply:
-      "Found it — WhatsApp, 14 June. Filed under your Kharadi project, next to the 7/12 extract. Want the summary?",
+      "Found it on WhatsApp, 14 June. Filed under your Kharadi project, next to the 7/12 extract. Want the summary?",
   },
   {
     id: "site",
@@ -40,7 +40,7 @@ export const MODES: Mode[] = [
     glow: "rgba(99,102,241,0.18)",
     user: "What can I build on that plot?",
     reply:
-      "R2 zone on a 12 m road. Permissible FSI 1.65 — about 3,040 m² buildable. Generating the envelope now…",
+      "R2 zone on a 12 m road. Permissible FSI 1.65, about 3,040 m² buildable. Generating the envelope now…",
   },
   {
     id: "value",
@@ -51,7 +51,7 @@ export const MODES: Mode[] = [
     glow: "rgba(52,211,153,0.14)",
     user: "And what is it worth with that potential?",
     reply:
-      "ASR ₹48,700/m² for the location. Against the permissible 3,040 m² — market value ≈ ₹3.1 Cr. Draft report ready.",
+      "ASR ₹48,700/m² for the location. Against the permissible 3,040 m², market value ≈ ₹3.1 Cr. Draft report ready.",
   },
   {
     id: "title",
@@ -62,7 +62,7 @@ export const MODES: Mode[] = [
     glow: "rgba(192,132,252,0.15)",
     user: "Is the title clean?",
     reply:
-      "30-year chain traced — clean. One mortgage, released 2019. Two entries to verify at the SRO; both flagged in the report.",
+      "30-year chain traced, clean. One mortgage, released 2019. Two entries to verify at the SRO; both flagged in the report.",
   },
 ];
 

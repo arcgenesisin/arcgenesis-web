@@ -14,7 +14,7 @@ export function AssistantScene() {
       eyebrow="ARC AI"
       accent="#fbbf24"
       title="A mind that carries your world."
-      sub="Feed it on WhatsApp, Instagram, Telegram, X — any chat you already use. It holds your documents, projects and links as living memory, then does the work: fetches the deed, schedules the meeting, answers from your own files."
+      sub="Feed it on any chat you already use: WhatsApp, Instagram, Telegram, X. It holds your documents, projects and links as living memory, then does the work: fetches the deed, schedules the meeting, answers from your own files."
       base="#0d0905"
       glow="rgba(245,166,90,0.14)"
       draw={drawAssistant}
@@ -42,7 +42,7 @@ export function ReportScene() {
       eyebrow="The report"
       accent="#93c5fd"
       title="From a boundary to a building."
-      sub="Draw the plot. The engine reads the zone and the road, computes the envelope the code permits, generates the floor plates inside it — and prices the outcome. 2D, 3D, and the money, in one pass."
+      sub="Draw the plot, give the location. The engine reads the zone and the road, computes the envelope the code permits, generates the floor plates inside it, then prices the outcome. 2D, 3D, and the money, in one pass."
       base="#04070f"
       glow="rgba(59,130,246,0.13)"
       draw={drawReport}
@@ -56,7 +56,7 @@ export function ValuationScene() {
       eyebrow="Valuation"
       accent="#6ee7b7"
       title="A number that can defend itself."
-      sub="Not a guess — a weighing. Government rates, market instances, buildable potential, the property's own condition: every force of value converges, and every one keeps its source."
+      sub="Not a guess. A weighing. Government rates, market instances, buildable potential, the property's own condition: every force of value converges, and every one keeps its source."
       base="#04100a"
       glow="rgba(52,211,153,0.12)"
       draw={drawValuation}
@@ -70,7 +70,7 @@ export function TitleScene() {
       eyebrow="Title search"
       accent="#d8b4fe"
       title="Thirty years of paper. One click."
-      sub="Every government record of a property — revenue, registration, courts, maps — fetched, read, and reconciled into a single report that says its red flags out loud."
+      sub="Every government record of a property: revenue, registration, courts, maps. Fetched, read, and reconciled into a single report that says its red flags out loud."
       base="#0b0612"
       glow="rgba(192,132,252,0.13)"
       draw={drawTitle}

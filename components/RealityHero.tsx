@@ -64,7 +64,7 @@ export default function RealityHero() {
         </h1>
         <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
           Ask the way you&apos;d ask your architect, valuer or lawyer. Switch
-          the mode — the world changes around the same chat.
+          the mode and the world changes around the same chat.
         </p>
 
         {/* the constant conversation */}
@@ -98,7 +98,7 @@ export default function RealityHero() {
             </AnimatePresence>
           </div>
           <p className="mt-3 text-xs text-muted/80">
-            The same conversation — a different reality.
+            The same conversation, a different reality.
           </p>
         </div>
 
