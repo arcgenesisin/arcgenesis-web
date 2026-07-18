@@ -56,7 +56,7 @@ export const MODES: Mode[] = [
   {
     id: "assistant",
     label: "ARC AI",
-    tag: "One memory across every project",
+    tag: "One memory of every project & chat",
     color: [245, 166, 90],
     bgBase: "#0d0905",
     glow: "rgba(245,166,90,0.16)",

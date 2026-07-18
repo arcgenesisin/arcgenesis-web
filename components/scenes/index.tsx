@@ -13,7 +13,7 @@ export function AssistantScene() {
       id="show"
       eyebrow="ARC AI"
       accent="#fbbf24"
-      title="One memory across every project."
+      title="One memory of every project &amp; every chat."
       sub="ARC AI connects every platform you already use and every project you run. Open a project, switch to another, move a document from one to the next, ask what is pending. Whatever you sent, from wherever you sent it, is one unified memory."
       base="#0d0905"
       glow="rgba(245,166,90,0.14)"
