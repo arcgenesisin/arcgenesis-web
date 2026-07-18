@@ -60,6 +60,7 @@ export function ValuationScene() {
       base="#04100a"
       glow="rgba(52,211,153,0.12)"
       draw={drawValuation}
+      animScale={1.5}
     />
   );
 }
@@ -74,6 +75,7 @@ export function TitleScene() {
       base="#0b0612"
       glow="rgba(192,132,252,0.13)"
       draw={drawTitle}
+      animScale={1.5}
     />
   );
 }

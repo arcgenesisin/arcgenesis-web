@@ -27,12 +27,21 @@ export type DrawFn = (
 // and leaving a reality always takes a deliberate second scroll.
 const HOLD = 0.62;
 
+// Base geometry of a scene, split into the two things that cost scroll:
+//   film = BASE_VH * HOLD         (the animation plays across this)
+//   rest = BASE_VH * (1 - HOLD)   (the finished scene sits here)
+// `animScale` stretches ONLY the film; the resting length stays constant, so a
+// longer animation never means a longer stare at an already-finished frame.
+const BASE_VH = 340;
+
 function SceneCanvas({
   progress,
   draw,
+  hold,
 }: {
   progress: MotionValue<number>;
   draw: DrawFn;
+  hold: number;
 }) {
   const ref = useRef<HTMLCanvasElement>(null);
 
@@ -65,8 +74,8 @@ function SceneCanvas({
     const loop = (t: number) => {
       if (running && visible) {
         ctx.clearRect(0, 0, w, h);
-        // the film completes at HOLD, then rests finished while the user reads
-        const p = reduce ? 1 : Math.min(1, progress.get() / HOLD);
+        // the film completes at `hold`, then rests finished while the user reads
+        const p = reduce ? 1 : Math.min(1, progress.get() / hold);
         draw(ctx, w, h, p, t / 1000, w < 640);
       }
       raf = requestAnimationFrame(loop);
@@ -105,6 +114,7 @@ export default function Scene({
   base,
   glow,
   draw,
+  animScale = 1,
 }: {
   id?: string;
   eyebrow: string;
@@ -114,6 +124,7 @@ export default function Scene({
   base: string; // universe base color
   glow: string; // universe radial glow rgba
   draw: DrawFn;
+  animScale?: number; // stretch the film only; the resting hold is untouched
 }) {
   const ref = useRef<HTMLElement>(null);
   const { scrollYProgress } = useScroll({
@@ -121,16 +132,21 @@ export default function Scene({
     offset: ["start start", "end end"],
   });
 
+  const filmVh = BASE_VH * HOLD * animScale;
+  const restVh = BASE_VH * (1 - HOLD);
+  const heightVh = filmVh + restVh;
+  const hold = filmVh / heightVh;
+
   // copy stays visible through almost the whole hold
   const copyO = useTransform(scrollYProgress, [0.02, 0.08, 0.97, 0.998], [0, 1, 1, 0]);
   const copyY = useTransform(scrollYProgress, [0.02, 0.08], [26, 0]);
-  // the fold: a QUICK dark blink at each seam — not a long dark patch. The
-  // finished scene owns the whole hold; the fold is just the ~3% at the edges.
-  const veil = useTransform(scrollYProgress, [0, 0.015, 0.99, 1], [1, 0, 0, 1]);
+  // the fold: a QUICK dark blink at each seam, not a dark patch. Halved again
+  // (1.5%/1% -> 0.75%/0.5%): the scene owns nearly the whole section.
+  const veil = useTransform(scrollYProgress, [0, 0.0075, 0.995, 1], [1, 0, 0, 1]);
   const settle = useTransform(scrollYProgress, [0, 0.08], [1.04, 1]);
 
   return (
-    <section id={id} ref={ref} className="relative" style={{ height: "340vh" }}>
+    <section id={id} ref={ref} className="relative" style={{ height: `${heightVh}vh` }}>
       <div
         className="sticky top-0 h-screen overflow-hidden"
         style={{ backgroundColor: base }}
@@ -142,7 +158,7 @@ export default function Scene({
           }}
         />
         <motion.div className="absolute inset-0" style={{ scale: settle }}>
-          <SceneCanvas progress={scrollYProgress} draw={draw} />
+          <SceneCanvas progress={scrollYProgress} draw={draw} hold={hold} />
         </motion.div>
 
         {/* the words, low and quiet */}
