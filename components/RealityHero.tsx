@@ -144,10 +144,10 @@ export default function RealityHero() {
 
         <div className="mt-9 flex items-center gap-3">
           <Link
-            href="/login"
+            href="/request-access"
             className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-medium text-black transition-transform hover:scale-[1.03]"
           >
-            Log in to start <span aria-hidden>→</span>
+            Request access <span aria-hidden>→</span>
           </Link>
           <a
             href="#show"

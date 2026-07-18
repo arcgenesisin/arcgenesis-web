@@ -39,10 +39,10 @@ export default function EngineShell({
           <span className="min-w-0 truncate font-medium">{name}</span>
           <span className="hidden text-sm text-muted lg:inline">· {blurb}</span>
           <Link
-            href="/login"
+            href="/request-access"
             className="ml-auto shrink-0 rounded-full bg-white px-3 py-1.5 text-sm font-medium text-black transition-transform hover:scale-[1.03] sm:px-4"
           >
-            Sign in<span className="hidden sm:inline"> to run</span>
+            Request access
           </Link>
         </div>
       </div>

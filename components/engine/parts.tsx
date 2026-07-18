@@ -118,7 +118,7 @@ export function Badge({
 export function GateButton({ children }: { children: React.ReactNode }) {
   return (
     <Link
-      href="/login"
+      href="/request-access"
       className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-indigo-500 to-blue-500 px-4 py-2.5 text-sm font-medium text-white transition-transform hover:scale-[1.01]"
     >
       <span className="opacity-90 group-hover:opacity-100">🔒</span>
