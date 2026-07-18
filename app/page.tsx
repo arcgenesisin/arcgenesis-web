@@ -16,11 +16,11 @@ export default function Home() {
       <SiteNav />
       <main className="flex-1">
         <RealityHero />
-        <AssistantScene />
         <MapFlightScene />
         <ReportScene />
         <ValuationScene />
         <TitleScene />
+        <AssistantScene />
         <SignupCta />
       </main>
       <SiteFooter />

@@ -16,19 +16,19 @@ const CHANNELS = [
 ];
 
 const MEMORIES = [
-  "Sale deed.pdf",
   "Kharadi project",
-  "Site photos",
-  "IGR receipt",
+  "Baner project",
+  "Sale deed.pdf",
   "Plan.dxf",
-  "Meeting notes",
+  "7/12 extract",
   "Loan sanction",
-  "Survey map",
+  "Site photos",
+  "Meeting notes",
 ];
 
 const TASKS = [
-  "“Send the sale deed” → sent on WhatsApp ✓",
-  "“Meet the CA this week” → Tue 4:00 PM ✓",
+  "“Open the Kharadi project” → 24 files, all channels ✓",
+  "“Move that sale deed to Baner” → filed in Baner ✓",
   "“What's pending on Kharadi?” → 3 items, from your files ✓",
 ];
 
@@ -201,7 +201,7 @@ export const drawAssistant: DrawFn = (ctx, w, h, p, t, mobile) => {
     ctx,
     mobile ? cx : w * 0.76,
     baseY + 3 * (cardH + 12) + 6,
-    "no app to install — it's already in your chats",
+    "one memory across every project and every chat",
     "#ffedd5",
     "rgba(60,36,10,0.9)",
     ease(range(p, 0.9, 1)),

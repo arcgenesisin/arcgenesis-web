@@ -21,17 +21,6 @@ export type Mode = {
 
 export const MODES: Mode[] = [
   {
-    id: "assistant",
-    label: "ARC AI",
-    tag: "Everything you've ever sent it, remembered",
-    color: [245, 166, 90],
-    bgBase: "#0d0905",
-    glow: "rgba(245,166,90,0.16)",
-    user: "Where's the sale deed Ramesh sent me last month?",
-    reply:
-      "Found it on WhatsApp, 14 June. Filed under your Kharadi project, next to the 7/12 extract. Want the summary?",
-  },
-  {
     id: "site",
     label: "Site Potential",
     tag: "The buildable truth of any plot",
@@ -63,6 +52,17 @@ export const MODES: Mode[] = [
     user: "Is the title clean?",
     reply:
       "30-year chain traced, clean. One mortgage, released 2019. Two entries to verify at the SRO; both flagged in the report.",
+  },
+  {
+    id: "assistant",
+    label: "ARC AI",
+    tag: "One memory across every project",
+    color: [245, 166, 90],
+    bgBase: "#0d0905",
+    glow: "rgba(245,166,90,0.16)",
+    user: "Put Ramesh's sale deed into the Baner project.",
+    reply:
+      "Moved. It came in on WhatsApp, 14 June, and now sits in Baner beside the 7/12 extract. Want the summary?",
   },
 ];
 

@@ -13,8 +13,8 @@ export function AssistantScene() {
       id="show"
       eyebrow="ARC AI"
       accent="#fbbf24"
-      title="A mind that carries your world."
-      sub="Feed it on any chat you already use: WhatsApp, Instagram, Telegram, X. It holds your documents, projects and links as living memory, then does the work: fetches the deed, schedules the meeting, answers from your own files."
+      title="One memory across every project."
+      sub="ARC AI connects every platform you already use and every project you run. Open a project, switch to another, move a document from one to the next, ask what is pending. Whatever you sent, from wherever you sent it, is one unified memory."
       base="#0d0905"
       glow="rgba(245,166,90,0.14)"
       draw={drawAssistant}
