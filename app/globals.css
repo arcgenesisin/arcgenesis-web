@@ -84,12 +84,12 @@ body {
   100% { filter: blur(0);     opacity: 1;    transform: translateX(0) scale(1); }
 }
 .reality-shift {
-  /* Locked to the world it reacts to. The background colour + glow crossfade
-     runs 1200ms, so delay + duration is set to exactly that: the copy starts
-     late (0.3s in, once the world is visibly moving) and lands sharp on the
-     same beat the background settles. Earlier versions finished well before
-     the background and read as happening first. */
-  animation: reality-shift 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
+  /* A SHORT burst that ENDS with the world. The background crossfade runs
+     1200ms; the copy waits out most of it, then blurs and resettles in the
+     final 450ms so both land sharp on the same beat. Only the ending is
+     locked — the effect itself stays brief, because it fires every 4.2s.
+     Keep delay + duration = 1200ms when tuning. */
+  animation: reality-shift 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.75s;
   will-change: filter, transform;
 }
 
