@@ -131,7 +131,11 @@ function LoopCanvas() {
     let w = 0,
       h = 0,
       raf = 0,
-      visible = true;
+      visible = false,
+      // The clock is rewound every time the section comes into view, so the
+      // build always begins at the base plot and stacks floor by floor —
+      // rather than catching a free-running loop somewhere in the middle.
+      startedAt = 0;
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
       w = parent.clientWidth;
@@ -146,16 +150,24 @@ function LoopCanvas() {
     const loop = (t: number) => {
       if (visible) {
         ctx.clearRect(0, 0, w, h);
-        drawLoop(ctx, w, h, reduce ? 5.5 : t / 1000);
+        drawLoop(ctx, w, h, reduce ? 5.5 : (t - startedAt) / 1000);
       }
       if (!reduce) raf = requestAnimationFrame(loop);
     };
     raf = requestAnimationFrame(loop);
     const ro = new ResizeObserver(resize);
     ro.observe(parent);
-    const io = new IntersectionObserver(([e]) => {
-      visible = e.isIntersecting;
-    });
+    // Fire once the build is genuinely on screen (35% of the canvas), not the
+    // instant a single pixel appears — otherwise it starts while still below
+    // the fold and the visitor arrives to a building already half-built.
+    const io = new IntersectionObserver(
+      ([e]) => {
+        const nowVisible = e.isIntersecting && e.intersectionRatio >= 0.35;
+        if (nowVisible && !visible) startedAt = performance.now(); // rewind
+        visible = nowVisible;
+      },
+      { threshold: [0, 0.35, 0.6] },
+    );
     io.observe(parent);
     return () => {
       cancelAnimationFrame(raf);
