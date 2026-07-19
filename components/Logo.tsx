@@ -19,9 +19,18 @@ function arc(r: number, a1: number, a2: number): string {
   return `M ${x1.toFixed(2)} ${y1.toFixed(2)} A ${r} ${r} 0 ${large} 1 ${x2.toFixed(2)} ${y2.toFixed(2)}`;
 }
 
-const spin = (dur: number, dir: 1 | -1) => ({
+// Ring speed as a fraction of the previous cadence. 0.7 = 70% of the old
+// speed, so each revolution takes 1/0.7 as long. One knob keeps all three
+// rings in their relative rhythm (outer : middle : inner = 9 : 6 : 4).
+const SPEED = 0.7;
+
+const spin = (baseDur: number, dir: 1 | -1) => ({
   animate: { rotate: 360 * dir },
-  transition: { duration: dur, ease: "linear" as const, repeat: Infinity },
+  transition: {
+    duration: baseDur / SPEED,
+    ease: "linear" as const,
+    repeat: Infinity,
+  },
   style: { transformBox: "view-box" as const, transformOrigin: "50px 50px" },
 });
 
