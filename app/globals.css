@@ -65,9 +65,32 @@ body {
 .reveal { opacity: 0; }
 .reveal.in { animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
 
+/* ---- Reality shift: the hero copy pulls out of focus and judders as the
+   universe changes behind it, then resettles. Written as a CSS keyframe on
+   purpose — the element's RESTING state is sharp, so if the animation never
+   runs (JS error, old engine) the headline is simply crisp, never stuck
+   blurred. Kept short: it fires on every mode switch. ---- */
+@keyframes reality-shift {
+  /* Both endpoints are SHARP on purpose. The blur lives in the middle of the
+     timeline, so every state the element can rest in — before the animation,
+     stuck at 0% in a throttled tab, or after it ends — renders crisp text.
+     Putting the blur at 0% would leave the headline permanently soft if the
+     animation ever failed to advance. */
+  0%   { filter: blur(0);     opacity: 1;    transform: translateX(0) scale(1); }
+  22%  { filter: blur(5px);   opacity: 0.82; transform: translateX(-2.5px) scale(1.006); }
+  48%  { filter: blur(3px);                  transform: translateX(2px) scale(1.003); }
+  72%  { filter: blur(1.2px);                transform: translateX(-1px); }
+  100% { filter: blur(0);     opacity: 1;    transform: translateX(0) scale(1); }
+}
+.reality-shift {
+  animation: reality-shift 0.42s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: filter, transform;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .orb { animation: none !important; }
   .reveal { opacity: 1 !important; animation: none !important; }
+  .reality-shift { animation: none !important; }
   html { scroll-behavior: auto; }
 }
 

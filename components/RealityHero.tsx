@@ -2,16 +2,23 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { MODES, MODE_INDEX, type ModeId } from "@/lib/modes";
 import RealityField from "./RealityField";
 
 const CYCLE_MS = 4200;
 
+// The reality-shift on the hero copy (a fast focus-pull with a slight judder,
+// so the words feel like they sit INSIDE the world that just changed) lives in
+// the `.reality-shift` keyframe in globals.css — tune blur/judder/duration
+// there. Kept deliberately small: it fires every 4.2s, and anything heavier
+// turns the headline into a distraction instead of a scene.
+
 export default function RealityHero() {
   const [mode, setMode] = useState<ModeId>("site");
   const locked = useRef(false);
   const active = MODE_INDEX[mode];
+  const reduce = useReducedMotion();
 
   // slow auto-walk through the realities until the visitor takes the wheel
   useEffect(() => {
@@ -54,18 +61,28 @@ export default function RealityHero() {
 
       {/* content */}
       <div className="relative z-10 flex w-full max-w-3xl flex-col items-center text-center">
-        <span className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-muted">
-          ARC GENESIS
-        </span>
-        <h1 className="text-4xl font-semibold leading-[1.06] tracking-tight sm:text-6xl">
-          One conversation to construct
-          <br />
-          every reality of Land Development.
-        </h1>
-        <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
-          Ask the way you&apos;d ask your architect, valuer or lawyer. Switch
-          the mode and the world changes around the same chat.
-        </p>
+        {/* The copy rides the reality shift: as the universe changes behind it,
+            the words pull out of focus and judder, then resettle. Keyed on
+            `mode` so the remount restarts the CSS burst on every switch. The
+            resting state is sharp, so a failed animation can never leave the
+            headline blurred. */}
+        <div
+          key={reduce ? "static" : mode}
+          className={`flex flex-col items-center ${reduce ? "" : "reality-shift"}`}
+        >
+          <span className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-muted">
+            ARC GENESIS
+          </span>
+          <h1 className="text-4xl font-semibold leading-[1.06] tracking-tight sm:text-6xl">
+            One conversation to construct
+            <br />
+            every reality of Land Development.
+          </h1>
+          <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">
+            Ask the way you&apos;d ask your architect, valuer or lawyer. Switch
+            the mode and the world changes around the same chat.
+          </p>
+        </div>
 
         {/* the constant conversation */}
         <div className="mt-10 w-full max-w-xl">
