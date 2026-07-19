@@ -84,12 +84,12 @@ body {
   100% { filter: blur(0);     opacity: 1;    transform: translateX(0) scale(1); }
 }
 .reality-shift {
-  /* A SHORT burst that ENDS with the world. The background crossfade runs
-     1200ms; the copy waits out most of it, then blurs and resettles in the
-     final 450ms so both land sharp on the same beat. Only the ending is
-     locked — the effect itself stays brief, because it fires every 4.2s.
-     Keep delay + duration = 1200ms when tuning. */
-  animation: reality-shift 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.75s;
+  /* A SHORT burst CENTRED in the world's change. The background crossfade
+     runs 1200ms; this 450ms burst sits in the middle of it (375ms in, out at
+     825ms), so its peak lands at 600ms — the exact midpoint of the
+     transition. Kept brief on purpose: it fires every 4.2s.
+     To recentre after changing the length: delay = (1200 - duration) / 2. */
+  animation: reality-shift 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.375s;
   will-change: filter, transform;
 }
 
