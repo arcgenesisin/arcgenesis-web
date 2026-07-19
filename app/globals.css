@@ -84,13 +84,12 @@ body {
   100% { filter: blur(0);     opacity: 1;    transform: translateX(0) scale(1); }
 }
 .reality-shift {
-  /* Timed against the world it reacts to: the background colour + glow
-     crossfade over 1200ms and the particle field morphs over ~1070ms. At the
-     old 0.42s the copy had blurred and resolved while the world was barely a
-     third changed, so it read as happening BEFORE the transition. The 80ms
-     delay lets the world move first; the 0.95s span then resolves as the
-     background settles. */
-  animation: reality-shift 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.08s;
+  /* Locked to the world it reacts to. The background colour + glow crossfade
+     runs 1200ms, so delay + duration is set to exactly that: the copy starts
+     late (0.3s in, once the world is visibly moving) and lands sharp on the
+     same beat the background settles. Earlier versions finished well before
+     the background and read as happening first. */
+  animation: reality-shift 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
   will-change: filter, transform;
 }
 
