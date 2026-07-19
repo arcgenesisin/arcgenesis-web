@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import { useCallback, useEffect, useRef, useState } from "react";
 
 // Site ambience. Deliberately restrained:
@@ -22,6 +23,11 @@ const FADE = 0.7; // seconds
 type Ctx = AudioContext & { resume: () => Promise<void> };
 
 export default function Ambience() {
+  const pathname = usePathname();
+  // The page the visitor LANDED on decides the default. Captured once: if they
+  // arrive on the home page the ambience is armed, and it keeps playing as they
+  // browse on; if they land straight on /about or /features it stays silent.
+  const landedOnHome = useRef(pathname === "/");
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const ctxRef = useRef<Ctx | null>(null);
   const gainRef = useRef<GainNode | null>(null);
@@ -114,7 +120,10 @@ export default function Ambience() {
     audioRef.current = a;
     setReady(true);
 
-    const wanted = window.localStorage.getItem(KEY) === "on";
+    // An explicit choice always wins. With no choice on record, the home page
+    // defaults ON and every other page defaults OFF.
+    const stored = window.localStorage.getItem(KEY); // "on" | "off" | null
+    const wanted = stored ? stored === "on" : landedOnHome.current;
     if (!wanted) return;
 
     // Keep listening until playback actually SUCCEEDS. On iOS a scroll is not a
@@ -139,6 +148,10 @@ export default function Ambience() {
       setOn(true);
     }
     events.forEach((e) => window.addEventListener(e, resume, { passive: true }));
+
+    // Try straight away too: browsers refuse audio before any interaction, but
+    // a returning visitor may already be trusted, and then it simply plays.
+    void resume();
 
     return () => {
       done = true;
