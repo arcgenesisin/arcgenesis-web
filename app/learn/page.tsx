@@ -152,7 +152,7 @@ const tutorials: Tutorial[] = [
       {
         name: "Run the pre-submission cross-check",
         detail:
-          "Before anything is filed, your case is validated against the development code by the same rules engine that computed your report. Discrepancies are flagged while they're still cheap to fix.",
+          "Before anything is filed, your case is validated against the development code by the same engine that computed your report. Discrepancies are flagged while they're still cheap to fix.",
       },
       {
         name: "Auto-fill and review",

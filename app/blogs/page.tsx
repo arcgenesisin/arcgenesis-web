@@ -10,6 +10,10 @@ type Post = {
   body: string[];
 };
 
+// Public-facing notes. These describe WHAT we built and the principles behind
+// it — not model architectures, training recipes, benchmark numbers or exact
+// asset counts. Keep it that way: the direction of the work stays ours.
+
 const posts: Post[] = [
   {
     tag: "Georeferencing",
@@ -18,9 +22,9 @@ const posts: Post[] = [
     excerpt:
       "A Development Plan is ink on paper: road casings, dotted cadastral walls, colour washes, a legend. Getting a computer to see what a planner sees took a pipeline, not a prompt.",
     body: [
-      "Our rule from day one: the legend comes first. Before anything is extracted, the system reads the plan's own legend table — because every plan family draws roads, zones and reservations differently, and the legend is the plan telling you its language.",
-      "Roads are found as geometry, not colour: constant-width light channels running between ink casings. Text that severs a corridor is detected and the space handed back before the centreline is traced. Squiggles that survive every raster filter die at the vector stage, where a road's straightness betrays a scribble every time.",
-      "The bar we hold is human parity — a person can trace every road, plot and gully on these plans, so the machine must too. Every version of the extractor is scored against plans a human traced by hand, and the number, not an impression, decides whether it shipped.",
+      "A Development Plan is not a picture to caption — it is a technical drawing with its own grammar: a legend that declares its language, casings, washes and hatches that each mean something specific. Reading one means honouring that grammar, plan family by plan family, rather than hoping a single prompt guesses right.",
+      "The hard part is judgement: telling a real road from ink that merely looks like one, a true corridor from a label lying across it, a drawn feature from a scanned smudge. That is patient engineering, tuned against how these plans are actually drawn — not a model left to its own imagination.",
+      "The bar we hold is human parity — a person can trace every road, plot and gully on these plans, so the machine must too. Every version is scored against plans a human traced by hand, and the number, not an impression, decides whether it ships.",
     ],
   },
   {
@@ -28,35 +32,35 @@ const posts: Post[] = [
     accent: "#818cf8",
     title: "The model that knows where in India a plan belongs",
     excerpt:
-      "Given an anonymous scanned plan, which few square kilometres of the country does it govern? Eight hand-built matchers saturated. So we taught a network to recognise place.",
+      "Given an anonymous scanned plan, which few square kilometres of the country does it govern? We taught the system to recognise place — and then made it prove its answer.",
     body: [
-      "The insight: every tile of an already-georeferenced plan is a free training pair — the drawing, and the OpenStreetMap geometry of the same ground. Seven thousand such tiles trained a twin-tower embedding (a DINOv2 backbone with two projection heads) that pulls a drawing and its map to the same point in vector space.",
-      "One tile alone locates itself about a third of the time. But a whole plan's tiles vote — noise scatters, truth stacks. On districts the model had never seen, 96% of held-out plans located to the correct cell, and every plan with ten or more tiles found home.",
-      "The learned lock only proposes. Deterministic geometry — road consensus, river agreement, rail corroboration — still decides. That division of labour, AI proposes and geometry disposes, runs through everything we build.",
+      "The question sounds simple and isn't: hand the system an unlabelled scan and it narrows the country to a few square kilometres. It learns to recognise place from the plans we have already located, and carries that recognition to ground it has never seen.",
+      "No single guess is trusted. Many signals across a plan are weighed together, so noise scatters and the true location stacks up — a plan speaks more confidently than any one fragment of it.",
+      "And the learned answer only proposes. It is confirmed against hard evidence on the ground before we call a plan located. Recognition suggests; verification decides. That division of labour runs through everything we build.",
     ],
   },
   {
     tag: "Machine learning",
     accent: "#818cf8",
-    title: "Four models, one map",
+    title: "Reading a plan without hallucinating",
     excerpt:
-      "No single network reads a plan. The map layer is an ensemble of four, each with one job, each checked by code that doesn't hallucinate.",
+      "No single model reads a plan. Specialised readers each do one job, and code that can't hallucinate checks their work.",
     body: [
-      "One: a segmentation model (SegFormer) extracts roads, rails and water from scan ink — trained without a single hand-drawn label, using OSM geometry projected through our own georeferenced tiles as automatic ground truth.",
-      "Two: the coarse locator, which answers 'where in India is this?'. Three: a local vision-language model that reads village names, survey numbers and printed scales off degraded scans — the identifiers that tie a drawing to the revenue record. Four: a plan-reader that understands legends and zone colouring, so the map knows a residential wash from a reservation hatch.",
-      "Around them sits the discipline: a placement is only accepted when two independent feature families agree, because a wrong transform can satisfy roads or a river — but almost never both.",
+      "Different parts of a plan need different eyes — the linework, the words, the colours, the place — so each is handled by a reader built for that one job, rather than one model asked to do everything and trusted to have done it.",
+      "One lifts roads, rails and water out of the ink. One reads the printed names, numbers and scale that tie a drawing to the revenue record. One understands legends and zone colouring, so a residential wash isn't mistaken for a reservation. One places the plan in the country.",
+      "Around them sits the discipline: nothing is accepted on a model's word alone. Every answer has to survive an independent check before it counts — because a confident mistake is worse than an honest 'not sure'.",
     ],
   },
   {
     tag: "Cadastre",
     accent: "#d8b4fe",
-    title: "Bridging 12.67 million parcels",
+    title: "Bridging the survey number",
     excerpt:
       "The survey number is the true name of Indian land. We built the bridge between what a plan says and where a parcel actually is.",
     body: [
-      "Maharashtra's digital cadastre gave us 12.67 million georeferenced plot polygons — every gut and CTS number with a shape on the earth. That corpus is the skeleton key: a survey number printed on a plan, read by our vision model, resolves to a polygon; the polygon anchors the plan; the plan then governs every parcel inside it.",
+      "Maharashtra's digital cadastre gives a shape on the earth to millions of gut and CTS numbers. That corpus is the skeleton key: a survey number read off a plan resolves to a polygon; the polygon anchors the plan; the plan then governs every parcel inside it.",
       "The same bridge joins money to ground — circle rates are published against survey numbers, so valuation inherits geography for free.",
-      "We then probed every other state: outside Maharashtra, the standard portals serve raster pictures, not vector parcels. Knowing exactly where the vector frontier runs is itself an asset — it tells us where the moat is deepest.",
+      "Outside Maharashtra, the standard portals serve raster pictures, not measurable parcels. Knowing exactly where that vector frontier runs is itself an asset — it tells us where the moat is deepest.",
     ],
   },
   {
@@ -64,10 +68,10 @@ const posts: Post[] = [
     accent: "#6ee7b7",
     title: "Reading the ready reckoner, everywhere",
     excerpt:
-      "Every valuation stands on the government's own rate. We crawled it — state by state, portal by portal — into one queryable library.",
+      "Every valuation stands on the government's own rate. We gathered it — state by state, portal by portal — into one queryable library.",
     body: [
-      "The Annual Statement of Rates goes by many names — ready reckoner, circle rate, guidance value — and lives in as many portal designs as there are states. We built crawlers for each family, normalised the output, and unified it behind one national lookup: state, district, area, rate.",
-      "Hundreds of thousands of rate rows now sit in one schema, joined where possible to the cadastral layer, so a location resolves to its statutory value without a human opening a PDF.",
+      "The Annual Statement of Rates goes by many names — ready reckoner, circle rate, guidance value — and lives in as many portal designs as there are states. We gathered each, normalised the output, and unified it behind one national lookup: state, district, area, rate.",
+      "The rates now sit in one schema, joined where possible to the cadastral layer, so a location resolves to its statutory value without a human opening a PDF.",
       "It's unglamorous work, and it is exactly the kind of unglamorous work that makes a one-click valuation possible.",
     ],
   },
@@ -76,10 +80,10 @@ const posts: Post[] = [
     accent: "#93c5fd",
     title: "Turning the building code into software",
     excerpt:
-      "The development regulations are a book of interlocking rules. We codified them with one law: no invented figures.",
+      "The development regulations are a book of interlocking rules. We built them into software with one law: no invented figures.",
     body: [
-      "Every rule in our engine is either a literal from the regulation, a value derived from one (marked with the regulation it derives from), or a flagged heuristic under review. The engine will tell you the binding rule for every number it outputs — because a feasibility figure you can't defend is worthless.",
-      "The language model's role is deliberately small: translate a user's plain words into the engine's structured inputs. All regulation math is deterministic code, reconciled against a frozen oracle build before any rule change ships.",
+      "Every number the engine produces is either a literal from the regulation, a value derived from one (marked with the rule it derives from), or a flagged assumption under review. It will tell you the binding rule for every figure — because a feasibility number you can't defend is worthless.",
+      "You ask in plain words; the arithmetic of the regulation stays exact and testable, never improvised by a language model. The words are the interface; the maths is the engine.",
       "The result behaves less like a chatbot and more like a senior planner who never misremembers a clause.",
     ],
   },
@@ -90,9 +94,9 @@ const posts: Post[] = [
     excerpt:
       "An envelope tells you how much you may build. The generator tells you what that actually looks like — cores, shafts, units, plates.",
     body: [
-      "Stage one enumerates unit mixes: which combinations of apartments can honestly fill the permitted area. Stage two packs rooms into real floor plates — a band-wrap packer that places living spaces, wet areas and circulation with the constraints a working architect carries in their head: cores segregated, bathroom shafts shared, every unit reaching light.",
-      "Behind it sits our geometry model — envelope, corridor, core, wall and opening as one canonical graph, so the 2D plan, the DXF export and the 3D massing are the same object drawn three ways.",
-      "Headless verification checks every generated layout against the rules that produced it. Geometry that can't prove itself doesn't ship.",
+      "First it works out which apartment mixes can honestly fill the permitted area. Then it lays out real floor plates, placing living spaces, wet areas and circulation with the constraints a working architect carries in their head: cores segregated, bathroom shafts shared, every unit reaching light.",
+      "The 2D plan, the DXF export and the 3D massing are one and the same object drawn three ways — so nothing drifts between the drawing you read and the model you rotate.",
+      "Every generated layout is checked against the rules that produced it. Geometry that can't prove itself doesn't ship.",
     ],
   },
   {
@@ -103,7 +107,7 @@ const posts: Post[] = [
       "Potential without price is trivia. The financial model turns an envelope into a development decision.",
     body: [
       "Three acquisition modes — outright purchase, redevelopment, joint venture — each with its own cost structure and rehab obligations counted inside the buildable area where the law puts them.",
-      "Statutory charges are computed alongside the envelope: premiums for extra FSI at the plot's actual circle rate, development charges, cess. Sale realisations default from the ASR layer with every assumption flagged for override.",
+      "Statutory charges are computed alongside the envelope: premiums for extra FSI at the plot's actual circle rate, development charges, cess. Sale realisations default from the rate layer with every assumption flagged for override.",
       "Out the other end: gross development value, cost to complete, profit, breakeven and sensitivity — the sheet a lender or partner actually asks for, generated from the same pin on the map.",
     ],
   },
@@ -112,11 +116,11 @@ const posts: Post[] = [
     accent: "#6ee7b7",
     title: "From RERA PDFs to measurable drawings",
     excerpt:
-      "Hundreds of approved project plans, reconstructed as true-to-dimension DXF — and used to audit our own regulation engine both ways.",
+      "Approved project plans, reconstructed as true-to-dimension drawings — and used to audit our own regulation engine both ways.",
     body: [
-      "RERA filings contain the real, sanctioned drawings of Indian buildings. We extracted them into vector DXF that is true to measurement — 687 plans reconstructed exactly — and built an interpreter that segments a sheet into floors, finds walls as parallel ink pairs, and stacks the floors into a 3D model.",
-      "That corpus cuts both ways: it checks whether real approved buildings sit inside the envelopes our engine computes, and whether our engine reproduces what authorities actually sanction.",
-      "It also became training data — thousands of drawing-text pairs staged for a local plan-reading model, so the next generation reads blueprints natively.",
+      "RERA filings contain the real, sanctioned drawings of Indian buildings. We reconstruct them into vector drawings that are true to measurement, and read them up into 3D models.",
+      "That library cuts both ways: it checks whether real approved buildings sit inside the envelopes our engine computes, and whether our engine reproduces what authorities actually sanction.",
+      "It also teaches the next generation of our tools to read blueprints natively — the sanctioned record becomes the teacher.",
     ],
   },
   {
@@ -126,9 +130,9 @@ const posts: Post[] = [
     excerpt:
       "Height near an airport isn't a matter of FSI — it's a matter of aviation law. So the map carries the funnels.",
     body: [
-      "Using the ICAO obstacle-limitation geometry, we generated height-clearance surfaces for 224 airports across India — approach funnels, inner horizontal surfaces, conical surfaces — as map layers with a per-pin readout.",
-      "Drop a pin and the report says not only what the development code allows, but what the sky allows above it — conservative screening that tells you when the aviation authority's own clearance is the binding constraint.",
-      "Alongside it: 927,000 polygons of forests, water bodies, mining and protected land, loaded on demand — the silent no-go layers that kill projects late when nobody checked early.",
+      "Using the international obstacle-limitation standard, we generated height-clearance surfaces for airports across India — approach funnels, horizontal and conical surfaces — as map layers with a per-pin readout.",
+      "Drop a pin and the report says not only what the development code allows, but what the sky allows above it — conservative screening that tells you when the aviation authority's clearance is the binding constraint.",
+      "Alongside it: map layers of the silent no-go land — forest, water bodies, mining, protected areas — loaded on demand, the kind that kills a project late when nobody checked early.",
     ],
   },
   {
@@ -138,9 +142,9 @@ const posts: Post[] = [
     excerpt:
       "Title search is a scavenger hunt across portals that were never meant to talk to each other. We industrialised it.",
     body: [
-      "The engine starts from whatever you have — a survey number, an address, a stack of scanned documents — extracts the property's identity, and builds a search plan: which registries, which years, which record types, and what the captcha budget will be before you begin.",
-      "Fetches run batched across registration, revenue, court and RERA sources. A local vision model reads each record and reconciles them: does the mutation chain agree with the deeds? Does the area on the 7/12 match the sale?",
-      "The output is the report a lawyer starts from — chain of title, encumbrances, litigation, zoning — with a red-flag panel that says exactly what to verify. The certifying opinion stays human, as it should.",
+      "The engine starts from whatever you have — a survey number, an address, a stack of scanned documents — works out the property's identity, and plans the search: which registries, which years, which record types, scoped before you begin.",
+      "Records are gathered across registration, revenue, court and RERA sources, then read and reconciled against each other: does the mutation chain agree with the deeds? Does the area on the 7/12 match the sale?",
+      "The output is the report a lawyer starts from — chain of title, encumbrances, litigation, zoning — with a panel that says exactly what to verify. The certifying opinion stays human, as it should.",
     ],
   },
   {
@@ -160,11 +164,11 @@ const posts: Post[] = [
     accent: "#93c5fd",
     title: "Filing permissions while you sleep",
     excerpt:
-      "The state building-permission portal is a ~500-field wizard demanding 31 documents. We taught a bot to walk it.",
+      "The state building-permission portal is a wizard of hundreds of fields and dozens of documents. We taught a bot to walk it.",
     body: [
-      "First, tracing: the training bot mapped the portal's New Project wizard end to end — every field, every conditional branch, every document slot — into a knowledge base that stays current.",
-      "Then, the cross-check: before anything is filed, your case is validated against the development code by the same engine that computes your potential report, so the application and the regulation agree before a clerk ever sees them.",
-      "Finally, submission: the bot fills the wizard from your project's own data, attaches the document set, and stops for your review and signature. Hours of form-filling become minutes of checking.",
+      "First it learns the portal: the New Project wizard mapped end to end — every field, every conditional branch, every document slot — into a knowledge base that stays current.",
+      "Then it cross-checks: before anything is filed, your case is validated against the development code by the same engine that computes your potential report, so the application and the regulation agree before a clerk ever sees them.",
+      "Finally it drafts the submission from your project's own data, attaches the document set, and stops for your review and signature. Hours of form-filling become minutes of checking.",
     ],
   },
   {
