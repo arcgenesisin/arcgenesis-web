@@ -1,8 +1,8 @@
 import PageShell from "@/components/PageShell";
 
-export const metadata = { title: "About — ARC GENESIS" };
+export const metadata = { title: "About, ARC GENESIS" };
 
-// The lab page. Exact copy — a research-program manifesto. Each "We are…" line
+// The lab page. Exact copy, a research-program manifesto. Each "We are…" line
 // is one line of the programme; the closing lines are the stance.
 
 const PROGRAMME = [

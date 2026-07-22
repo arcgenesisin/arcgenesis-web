@@ -10,7 +10,7 @@ import {
 
 // A reality scene: a tall scroll section whose sticky viewport plays a
 // scroll-scrubbed canvas film. Entering and leaving passes through a dark
-// veil — the teleport fold between realities.
+// veil, the teleport fold between realities.
 
 export type DrawFn = (
   ctx: CanvasRenderingContext2D,
@@ -22,7 +22,7 @@ export type DrawFn = (
 ) => void;
 
 // Fraction of the scroll at which the film reaches its final frame.
-// The rest of the travel is a HOLD — a soft lock: the finished scene stays
+// The rest of the travel is a HOLD, a soft lock: the finished scene stays
 // fixed for ~a full viewport of scrolling, so a fast flick dies inside it
 // and leaving a reality always takes a deliberate second scroll.
 const HOLD = 0.62;

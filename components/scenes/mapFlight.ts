@@ -1,8 +1,8 @@
 import type { DrawFn } from "./Scene";
 import { chip, ease, label, lerp, range, seeded } from "./helpers";
 
-// The Map reality: a flight over the Mumbai–Pune region on our georeferenced
-// plan layer — city networks resolve, DP overlays light up, airport OLS
+// The Map reality: a flight over the Mumbai, Pune region on our georeferenced
+// plan layer, city networks resolve, DP overlays light up, airport OLS
 // funnels rise. World space is 1000 × 600.
 
 type Seg = { x1: number; y1: number; x2: number; y2: number };
@@ -238,7 +238,7 @@ export const drawMapFlight: DrawFn = (ctx, w, h, p, t, mobile) => {
   const seePune = ease(range(p, 0.62, 0.8));
   const seeAll = ease(range(p, 0.84, 0.98));
 
-  // expressway — the corridor between the cities
+  // expressway, the corridor between the cities
   const exwy = ease(range(p, 0.4, 0.66));
   if (exwy > 0.01) {
     ctx.strokeStyle = `rgba(138,180,255,${0.35 + exwy * 0.45})`;

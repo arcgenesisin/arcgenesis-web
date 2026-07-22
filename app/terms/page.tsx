@@ -1,6 +1,6 @@
 import PageShell from "@/components/PageShell";
 
-export const metadata = { title: "Terms of Service — ARC GENESIS" };
+export const metadata = { title: "Terms of Service, ARC GENESIS" };
 
 function S({ title, children }: { title: string; children: React.ReactNode }) {
   return (
@@ -31,7 +31,7 @@ export default function TermsPage() {
             ARC GENESIS provides ARC AI, an AI assistant for land and development
             intelligence in India: document organisation into your own Google
             Drive, site-potential and feasibility outputs, valuation workings and
-            title-search assistance — through the website and linked chat
+            title-search assistance, through the website and linked chat
             channels (WhatsApp, Telegram and others as they come online).
           </p>
         </S>
@@ -40,7 +40,7 @@ export default function TermsPage() {
           <p>
             You sign in with Google and may link chat channels to your account
             using one-time codes. Keep control of your Google account and linked
-            numbers — activity from your linked channels is treated as yours.
+            numbers, activity from your linked channels is treated as yours.
             You must be able to enter a contract and be 18 or older to subscribe.
           </p>
         </S>
@@ -57,7 +57,7 @@ export default function TermsPage() {
         <S title="The honest limits of our outputs">
           <p>
             Our reports, numbers and answers are decision-support information
-            derived from public records, government data and AI reading — they
+            derived from public records, government data and AI reading, they
             are <strong>not</strong> statutory sanction, legal opinion, a
             registered valuation, or professional certification. Verify with the
             competent authority or a licensed professional before acting where
@@ -78,7 +78,7 @@ export default function TermsPage() {
         <S title="Your content">
           <p>
             Documents you send remain yours. You grant us the limited rights
-            needed to operate the service — to store, read, classify, index and
+            needed to operate the service, to store, read, classify, index and
             file them for you. We don&rsquo;t use your documents to train models
             or sell them.
           </p>

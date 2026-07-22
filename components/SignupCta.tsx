@@ -4,8 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 
-// The closer: a plot draws itself and rises into a building, on a quiet loop —
-// the same journey your first project will take.
+// The closer: a plot draws itself and rises into a building, on a quiet loop, // the same journey your first project will take.
 
 const PLATE: [number, number][] = [
   [-30, -22],
@@ -133,8 +132,7 @@ function LoopCanvas() {
       raf = 0,
       visible = false,
       // The clock is rewound every time the section comes into view, so the
-      // build always begins at the base plot and stacks floor by floor —
-      // rather than catching a free-running loop somewhere in the middle.
+      // build always begins at the base plot and stacks floor by floor, // rather than catching a free-running loop somewhere in the middle.
       startedAt = 0;
     const resize = () => {
       const dpr = Math.min(window.devicePixelRatio || 1, 1.5);
@@ -158,7 +156,7 @@ function LoopCanvas() {
     const ro = new ResizeObserver(resize);
     ro.observe(parent);
     // Fire once the build is genuinely on screen (35% of the canvas), not the
-    // instant a single pixel appears — otherwise it starts while still below
+    // instant a single pixel appears, otherwise it starts while still below
     // the fold and the visitor arrives to a building already half-built.
     const io = new IntersectionObserver(
       ([e]) => {
@@ -184,7 +182,7 @@ export default function SignupCta() {
 
   return (
     <section className="relative mx-4 mt-32 mb-10 sm:mx-auto sm:max-w-6xl">
-      {/* the rising building floats ABOVE the card — no clipping, it climbs out
+      {/* the rising building floats ABOVE the card, no clipping, it climbs out
           of the bounding box while the card itself stays a clean frame */}
       <div className="pointer-events-none absolute inset-x-0 -top-[230px] z-10 h-[500px]">
         <LoopCanvas />

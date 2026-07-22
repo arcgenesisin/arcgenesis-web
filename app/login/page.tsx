@@ -4,7 +4,7 @@ import Logo from "@/components/Logo";
 import LiveBackground from "@/components/LiveBackground";
 import { auth, signIn } from "@/auth";
 
-export const metadata = { title: "Log in — ARC GENESIS" };
+export const metadata = { title: "Log in, ARC GENESIS" };
 
 function GoogleG() {
   return (
@@ -72,7 +72,7 @@ export default async function LoginPage() {
             </form>
             <p className="mt-4 text-center text-xs text-muted">
               By continuing you agree to our terms. We read your name, email and
-              photo, and — only for files ARC creates — your Google Drive.
+              photo. For your Google Drive, we only ever touch files ARC creates.
             </p>
           </>
         ) : (

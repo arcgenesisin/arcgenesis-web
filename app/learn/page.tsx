@@ -1,6 +1,6 @@
 import PageShell from "@/components/PageShell";
 
-export const metadata = { title: "Learn — ARC GENESIS" };
+export const metadata = { title: "Learn, ARC GENESIS" };
 
 type Tutorial = {
   tag: string;
@@ -25,17 +25,17 @@ const tutorials: Tutorial[] = [
       {
         name: "Link your channels",
         detail:
-          "From your account page, generate a link code and send it to ARC AI on WhatsApp, Telegram, Instagram — whichever chats you live in. Each channel now knows it's you.",
+          "From your account page, generate a link code and send it to ARC AI on WhatsApp, Telegram, Instagram, whichever chats you live in. Each channel now knows it's you.",
       },
       {
         name: "Feed it",
         detail:
-          "Forward documents, links, notes — anything. It files them by project automatically. Tell it 'this is for the Kharadi project' when you want to be explicit.",
+          "Forward documents, links, notes, anything. It files them by project automatically. Tell it 'this is for the Kharadi project' when you want to be explicit.",
       },
       {
         name: "Ask for work",
         detail:
-          "'Send me the sale deed from June.' 'Set a meeting with the CA this week.' 'What's pending on Kharadi?' — it fetches, schedules, and answers from your own files.",
+          "'Send me the sale deed from June.' 'Set a meeting with the CA this week.' 'What's pending on Kharadi?' It fetches, schedules and answers, all from your own files.",
       },
     ],
   },
@@ -48,27 +48,27 @@ const tutorials: Tutorial[] = [
       {
         name: "Locate and draw",
         detail:
-          "Pin your plot, then trace its boundary on the plan overlay — or drop a DXF and let it place itself. Area, frontage and abutting road widths are read from the drawing.",
+          "Pin your plot, then trace its boundary on the plan overlay, or drop a DXF and let it place itself. Area, frontage and abutting road widths are read from the drawing.",
       },
       {
         name: "Let vision fill the context",
         detail:
-          "'Assess this pin' reads the zone, road width and authority off the georeferenced plan. Everything stays editable — auto-fill is a head start, not a verdict.",
+          "'Assess this pin' reads the zone, road width and authority off the georeferenced plan. Everything stays editable. The auto-fill is a head start, not a verdict.",
       },
       {
         name: "Choose the development route",
         detail:
-          "Building, layout, group housing, township — the engine shows which routes your plot qualifies for and why.",
+          "Building, layout, group housing, township: the engine shows which routes your plot qualifies for, and why.",
       },
       {
         name: "Compute",
         detail:
-          "FSI, buildable area, setbacks, height, parking, premiums and charges — each figure carries the regulation that binds it. Pin what you want ('200 m² plate, 3 floors') and the engine tells you what's feasible and what rule stops you.",
+          "FSI, buildable area, setbacks, height, parking, premiums, charges: every figure carries the regulation that binds it. Say what you want ('200 m² plate, three floors') and the engine tells you what's feasible, and which rule stops you if it isn't.",
       },
       {
         name: "Generate geometry and money",
         detail:
-          "Ask for the floor plates and layout inside your envelope, then the financials — GDV, cost, profit, breakeven — priced at your plot's actual circle rate.",
+          "Ask for the floor plates and layout inside your envelope, then the financials: GDV, cost, profit and breakeven, all priced at your plot's actual circle rate.",
       },
     ],
   },
@@ -81,12 +81,12 @@ const tutorials: Tutorial[] = [
       {
         name: "Pick the report type",
         detail:
-          "Land by market, land + building, residual, reinstatement, work-in-progress, income or profit method — the form reshapes itself to the approach.",
+          "Land by market, land plus building, residual, reinstatement, work-in-progress, income or profit method: the form reshapes itself to whichever you pick.",
       },
       {
         name: "Pull, don't type",
         detail:
-          "ASR ↺ fetches the circle rate for the address. DP ↺ pulls zone, road and permissible FSI from the potential engine. 'AI read' extracts fields from a photographed document — with its confidence shown.",
+          "ASR ↺ fetches the circle rate for the address. DP ↺ pulls zone, road and permissible FSI from the potential engine. 'AI read' extracts fields from a photographed document, with its confidence shown.",
       },
       {
         name: "Add comparables",
@@ -96,12 +96,12 @@ const tutorials: Tutorial[] = [
       {
         name: "Compute and inspect",
         detail:
-          "The valuation lines appear with every warning the engine caught — including the declared-BUA vs permissible-FSI cross-check.",
+          "The valuation lines appear with every warning the engine caught, including the declared-BUA vs permissible-FSI cross-check.",
       },
       {
         name: "Generate the draft",
         detail:
-          "One click produces the IBBI-format report with the full evidence trail. You verify, you inspect, you sign — the engine assembled, you judged.",
+          "One click produces the IBBI-format report with the full evidence trail. You verify, you inspect, you sign. The engine assembles; you judge.",
       },
     ],
   },
@@ -114,12 +114,12 @@ const tutorials: Tutorial[] = [
       {
         name: "Choose the spine",
         detail:
-          "Urban (CTS / City Survey) or rural (7/12, mutation, 8A) — the identity fields adapt.",
+          "Urban (CTS / City Survey) or rural (7/12, mutation, 8A): the identity fields adapt to whichever it is.",
       },
       {
         name: "Give it anything",
         detail:
-          "Upload the documents you have — or just paste a survey number. The extractor identifies the property and builds the search plan: which portals, which years, how many captchas.",
+          "Upload the documents you have, or just paste a survey number. The engine works out the property's identity and builds the search plan: which sources to hit, and which years to cover.",
       },
       {
         name: "Start the batched fetch",
@@ -129,7 +129,7 @@ const tutorials: Tutorial[] = [
       {
         name: "Read the report",
         detail:
-          "Chain of title, encumbrances, litigation, parcel and zoning — with the red-flag panel telling you exactly what to verify at the SRO. Export and hand it to your lawyer for the opinion.",
+          "Chain of title, encumbrances, litigation, parcel and zoning, with the red-flag panel telling you exactly what to verify at the SRO. Export and hand it to your lawyer for the opinion.",
       },
     ],
   },
@@ -142,12 +142,12 @@ const tutorials: Tutorial[] = [
       {
         name: "Understand what the bot knows",
         detail:
-          "The training bot has traced the state building-permission portal end to end — the New Project wizard's ~500 fields, its conditional branches, and all 31 document requirements. That map stays current as the portal changes.",
+          "The assistant has traced the state building-permission portal end to end: its New Project wizard, its conditional branches and its document requirements. That map stays current as the portal changes.",
       },
       {
         name: "Connect your project",
         detail:
-          "Point the bot at your potential report and project files. It maps your data onto the portal's fields — plot details, FSI computation, drawings, NOCs.",
+          "Point the bot at your potential report and project files. It maps your data onto the portal's fields, plot details, FSI computation, drawings, NOCs.",
       },
       {
         name: "Run the pre-submission cross-check",
@@ -157,7 +157,7 @@ const tutorials: Tutorial[] = [
       {
         name: "Auto-fill and review",
         detail:
-          "The submission bot walks the wizard and fills it from your project. Every page is presented for your review — nothing is submitted without your eyes and your sign-off.",
+          "The submission bot walks the wizard and fills it from your project. Every page is presented for your review, nothing is submitted without your eyes and your sign-off.",
       },
       {
         name: "File",
@@ -176,27 +176,27 @@ const tutorials: Tutorial[] = [
       {
         name: "Development Plan (DP) / Regional Plan (RP)",
         detail:
-          "The statutory maps of what may be built where — zones, reservations, proposed roads. Our map layer is these plans, georeferenced.",
+          "The statutory maps of what may be built where, zones, reservations, proposed roads. Our map layer is these plans, georeferenced.",
       },
       {
         name: "FSI / BUA",
         detail:
-          "Floor Space Index — the ratio of buildable floor area to plot area. BUA is what it translates to on your plot, after the code's additions and deductions.",
+          "Floor Space Index, the ratio of buildable floor area to plot area. BUA is what it translates to on your plot, after the code's additions and deductions.",
       },
       {
         name: "7/12, CTS, mutation",
         detail:
-          "The rural record of rights, the urban city-survey number, and the register of changes — the three documents most title questions begin with.",
+          "The rural record of rights, the urban city-survey number and the register of changes: the three documents most title questions begin with.",
       },
       {
         name: "ASR / ready reckoner / circle rate",
         detail:
-          "The government's published minimum rates by location — the floor under valuation, stamp duty and our premium-FSI pricing.",
+          "The government's published minimum rates by location, the floor under valuation, stamp duty and our premium-FSI pricing.",
       },
       {
         name: "OLS funnel",
         detail:
-          "Obstacle Limitation Surfaces — the aviation height limits around an airport. Near one, the sky's rule can bind before the city's does.",
+          "Obstacle Limitation Surfaces, the aviation height limits around an airport. Near one, the sky's rule can bind before the city's does.",
       },
     ],
   },
@@ -207,7 +207,7 @@ export default function LearnPage() {
     <PageShell
       eyebrow="Learn"
       title="Tutorials for every instrument"
-      intro="Short, honest walkthroughs — what to do, what the engine does in response, and where your judgment stays in the loop."
+      intro="Short, honest walkthroughs: what to do, what the engine does back, and where your judgment stays in the loop."
     >
       <div className="space-y-4">
         {tutorials.map((t) => (

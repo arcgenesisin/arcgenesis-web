@@ -147,12 +147,12 @@ export default function SitePotentialPage() {
             </div>
 
             <div className="mt-2 text-xs text-muted">
-              Road widths (m) — enter whichever sides abut a road
+              Road widths (m), enter whichever sides abut a road
             </div>
             <div className="mt-2 grid grid-cols-2 gap-x-4 sm:grid-cols-4">
               {["Front", "Rear", "Left", "Right"].map((s) => (
                 <Field key={s} label={s}>
-                  <TextInput type="number" placeholder="—" />
+                  <TextInput type="number" placeholder=", " />
                 </Field>
               ))}
             </div>
@@ -173,12 +173,12 @@ export default function SitePotentialPage() {
             <SectionTitle gold>Development potential</SectionTitle>
             <div className="space-y-2.5 text-sm">
               {[
-                ["Permissible FSI", "— · —"],
-                ["Buildable-up area", "— m²"],
-                ["Ground coverage", "—"],
-                ["Setbacks (F/R/S)", "— / — / —"],
-                ["Parking required", "—"],
-                ["Premium / charges", "—"],
+                ["Permissible FSI", ", ·, "],
+                ["Buildable-up area", ", m²"],
+                ["Ground coverage", ", "],
+                ["Setbacks (F/R/S)", ", /, /, "],
+                ["Parking required", ", "],
+                ["Premium / charges", ", "],
               ].map(([k, v]) => (
                 <div
                   key={k}

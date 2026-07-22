@@ -19,7 +19,7 @@ export default async function TracePortal() {
     <div style={{ position: "fixed", inset: 0, background: "#0b0e14" }}>
       <iframe
         src={src}
-        title="ARC GENESIS — Human Trace"
+        title="ARC GENESIS, Human Trace"
         style={{ width: "100%", height: "100%", border: 0 }}
         allow="clipboard-read; clipboard-write; geolocation"
       />

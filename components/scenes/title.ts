@@ -1,7 +1,7 @@
 import type { DrawFn } from "./Scene";
 import { chip, ease, easeOut, lerp, range, rr, seeded } from "./helpers";
 
-// The Title reality: one click — and every government record of the property
+// The Title reality: one click, and every government record of the property
 // flies in from its portal and reconciles into a single search report.
 
 const RECORDS = [
@@ -155,7 +155,7 @@ export const drawTitle: DrawFn = (ctx, w, h, p, t, mobile) => {
     ctx.fillText("TITLE SEARCH REPORT", -RW / 2 + 20, -RH / 2 + 28);
 
     const rows: [string, string, string][] = [
-      ["✓", "30-year chain traced — clean", "rgba(134,239,172,0.95)"],
+      ["✓", "30-year chain traced, clean", "rgba(134,239,172,0.95)"],
       ["✓", "No litigation found", "rgba(134,239,172,0.95)"],
       ["✓", `${RECORDS.length} records reconciled`, "rgba(134,239,172,0.95)"],
       ["▲", "2 entries to verify at the SRO", "rgba(252,211,77,0.95)"],

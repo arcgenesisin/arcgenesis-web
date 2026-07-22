@@ -10,7 +10,7 @@ const CYCLE_MS = 4200;
 
 // The reality-shift on the hero copy (a fast focus-pull with a slight judder,
 // so the words feel like they sit INSIDE the world that just changed) lives in
-// the `.reality-shift` keyframe in globals.css — tune blur/judder/duration
+// the `.reality-shift` keyframe in globals.css, tune blur/judder/duration
 // there. Kept deliberately small: it fires every 4.2s, and anything heavier
 // turns the headline into a distraction instead of a scene.
 

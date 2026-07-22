@@ -2,7 +2,7 @@ import type { DrawFn } from "./Scene";
 import { chip, ease, inr, range, seeded } from "./helpers";
 
 // The Valuation reality: a dozen forces of value fly in from the dark and
-// are weighed into a single number — and each keeps its source.
+// are weighed into a single number, and each keeps its source.
 
 const FACTORS = [
   { text: "ASR / circle rate", src: "IGR" },

@@ -2,8 +2,8 @@ import type { DrawFn } from "./Scene";
 import { chip, ease, easeOut, inr, lerp, range, rr } from "./helpers";
 
 // The Report reality: a potential report assembles itself.
-// Act 1 — the 2D floor plate draws. Act 2 — it extrudes into a 3D massing.
-// Act 3 — the money resolves.
+// Act 1, the 2D floor plate draws. Act 2, it extrudes into a 3D massing.
+// Act 3, the money resolves.
 
 // L-shaped footprint in local units (0..100)
 const PLATE: [number, number][] = [
@@ -217,7 +217,7 @@ export const drawReport: DrawFn = (ctx, w, h, p, t, mobile) => {
     ctx.font = "600 11px ui-monospace, monospace";
     ctx.fillStyle = "rgba(148,163,184,0.9)";
     ctx.textAlign = "left";
-    ctx.fillText("POTENTIAL REPORT — DRAFT", cxr + 18, cyr + 26);
+    ctx.fillText("POTENTIAL REPORT, DRAFT", cxr + 18, cyr + 26);
 
     const rows: [string, string][] = [
       ["Permissible FSI", (1.65 * a3).toFixed(2)],

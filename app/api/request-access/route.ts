@@ -34,7 +34,7 @@ async function notify(r: {
         from: FROM,
         to: [TO],
         reply_to: r.email,
-        subject: `Pilot access request — ${r.name}`,
+        subject: `Pilot access request, ${r.name}`,
         text:
           `New pilot access request\n\n` +
           `Name:         ${r.name}\n` +
@@ -93,7 +93,7 @@ export async function POST(req: Request) {
       // fall through: still try to notify so the request isn't lost
     }
   } else {
-    console.warn("[access-request] DATABASE_URL not set — not stored");
+    console.warn("[access-request] DATABASE_URL not set, not stored");
   }
 
   const mail = await notify({ name, email, organisation, purpose });

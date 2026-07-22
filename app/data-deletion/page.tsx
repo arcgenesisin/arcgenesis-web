@@ -1,9 +1,9 @@
 import PageShell from "@/components/PageShell";
 
-export const metadata = { title: "Data Deletion — ARC GENESIS" };
+export const metadata = { title: "Data Deletion, ARC GENESIS" };
 
 // Meta requires a public data-deletion instructions URL for Live apps.
-// These instructions are the real procedure — keep them true.
+// These instructions are the real procedure, keep them true.
 
 export default function DataDeletionPage() {
   return (
@@ -19,7 +19,7 @@ export default function DataDeletionPage() {
             <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
               contact@arcgenesis.ai
             </a>{" "}
-            with the subject <strong>&ldquo;Delete my data&rdquo;</strong> — from
+            with the subject <strong>&ldquo;Delete my data&rdquo;</strong>, from
             the email address you signed in with, or include the phone number /
             handle of a chat channel you linked (WhatsApp or Telegram), so we can
             locate your account.
@@ -31,7 +31,7 @@ export default function DataDeletionPage() {
           </li>
           <li>
             Files our app filed into <strong>your own Google Drive</strong> are
-            under your control — we don&rsquo;t delete your Drive contents unless
+            under your control, we don&rsquo;t delete your Drive contents unless
             you ask us to remove the folders our app created. You can also revoke
             our Drive access instantly at{" "}
             <a

@@ -7,7 +7,7 @@ import { MODES } from "@/lib/modes";
 import { mintLinkCode, getChannels, type Channel } from "@/lib/queries";
 import ChannelLink from "@/components/ChannelLink";
 
-export const metadata = { title: "Your account — ARC GENESIS" };
+export const metadata = { title: "Your account, ARC GENESIS" };
 
 export default async function AccountPage() {
   let session = null;
@@ -109,7 +109,7 @@ export default async function AccountPage() {
             ))}
           </div>
           <p className="mt-3 text-xs text-muted">
-            The conversation surface opens here next — each reality wired to its
+            The conversation surface opens here next, each reality wired to its
             engine.
           </p>
 

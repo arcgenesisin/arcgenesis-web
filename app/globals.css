@@ -67,13 +67,13 @@ body {
 
 /* ---- Reality shift: the hero copy pulls out of focus and judders as the
    universe changes behind it, then resettles. Written as a CSS keyframe on
-   purpose — the element's RESTING state is sharp, so if the animation never
+   purpose, the element's RESTING state is sharp, so if the animation never
    runs (JS error, old engine) the headline is simply crisp, never stuck
    blurred. Kept short: it fires on every mode switch. ---- */
 @keyframes reality-shift {
   /* Both endpoints are SHARP on purpose. The blur lives in the middle of the
-     timeline, so every state the element can rest in — before the animation,
-     stuck at 0% in a throttled tab, or after it ends — renders crisp text.
+     timeline, so every state the element can rest in, before the animation,
+     stuck at 0% in a throttled tab, or after it ends, renders crisp text.
      Putting the blur at 0% would leave the headline permanently soft if the
      animation ever failed to advance. */
   0%   { filter: blur(0);     opacity: 1;    transform: translateX(0) scale(1); }
@@ -86,7 +86,7 @@ body {
 .reality-shift {
   /* A SHORT burst CENTRED in the world's change. The background crossfade
      runs 1200ms; this 450ms burst sits in the middle of it (375ms in, out at
-     825ms), so its peak lands at 600ms — the exact midpoint of the
+     825ms), so its peak lands at 600ms, the exact midpoint of the
      transition. Kept brief on purpose: it fires every 4.2s.
      To recentre after changing the length: delay = (1200 - duration) / 2. */
   animation: reality-shift 0.45s cubic-bezier(0.16, 1, 0.3, 1) 0.375s;

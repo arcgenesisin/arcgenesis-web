@@ -41,7 +41,7 @@ export default function PropertySearchPage() {
             land === "urban" ? "bg-white text-black" : "text-muted"
           }`}
         >
-          🏙 Urban — City Survey (CTS)
+          🏙 Urban, City Survey (CTS)
         </button>
         <button
           onClick={() => setLand("rural")}
@@ -49,7 +49,7 @@ export default function PropertySearchPage() {
             land === "rural" ? "bg-white text-black" : "text-muted"
           }`}
         >
-          🌾 Rural — 7/12 (Satbara)
+          🌾 Rural, 7/12 (Satbara)
         </button>
       </div>
 
@@ -61,11 +61,11 @@ export default function PropertySearchPage() {
             <div className="rounded-xl border border-dashed border-white/15 bg-white/[0.02] p-8 text-center">
               <div className="text-sm">Drag &amp; drop files here, or click to browse</div>
               <div className="mt-1 text-[11px] text-muted">
-                PDF / JPG / PNG — one document or the whole file. Tag each with
+                PDF / JPG / PNG, one document or the whole file. Tag each with
                 its type.
               </div>
             </div>
-            <Field label="Or paste text (survey number, address, record text) — optional">
+            <Field label="Or paste text (survey number, address, record text), optional">
               <textarea
                 className="w-full rounded-lg border border-white/12 bg-white/[0.03] px-3 py-2 text-sm text-foreground placeholder:text-muted/50 focus:border-accent focus:outline-none"
                 rows={3}
@@ -86,17 +86,17 @@ export default function PropertySearchPage() {
             <SectionTitle n="2">Identified property</SectionTitle>
             <div className="grid gap-x-4 sm:grid-cols-2">
               <Field label={land === "urban" ? "CTS / Survey No." : "Survey / Gut No."}>
-                <TextInput placeholder="—" />
+                <TextInput placeholder=", " />
               </Field>
               <Field label={land === "urban" ? "Ward" : "Village"}>
-                <TextInput placeholder="—" />
+                <TextInput placeholder=", " />
               </Field>
               <Field label="District">
-                <TextInput placeholder="—" />
+                <TextInput placeholder=", " />
               </Field>
               {land === "rural" && (
                 <Field label="Khata No. (8A)">
-                  <TextInput placeholder="—" />
+                  <TextInput placeholder=", " />
                 </Field>
               )}
               <Field label="Area">
@@ -115,7 +115,7 @@ export default function PropertySearchPage() {
             <SectionTitle n="3">Fetch plan</SectionTitle>
             <div className="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.02] p-4">
               <div>
-                <div className="text-2xl font-semibold">—</div>
+                <div className="text-2xl font-semibold">, </div>
                 <div className="text-[11px] text-muted">
                   estimated captcha solves for this plot
                 </div>
@@ -148,7 +148,7 @@ export default function PropertySearchPage() {
                   </div>
                   <div className="mt-2 text-xs text-muted">
                     {s.title === "Opinion"
-                      ? "Reserved for the certifying lawyer — the engine produces evidence and flags, not the marketability opinion."
+                      ? "Reserved for the certifying lawyer. The engine produces the evidence and the flags, never the marketability opinion itself."
                       : "Populated after extraction and fetch."}
                   </div>
                 </div>

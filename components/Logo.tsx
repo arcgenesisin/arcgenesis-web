@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 // The ARC GENESIS mark: three broken rings in orbit.
-// Outer clockwise, middle counter-clockwise, inner clockwise — each ring
+// Outer clockwise, middle counter-clockwise, inner clockwise, each ring
 // rotates as one rigid body, so segments can never collide.
 // Framer Motion drives the transforms (reliable across SVG renderers).
 
@@ -65,17 +65,17 @@ export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
         </linearGradient>
       </defs>
 
-      {/* outer ring — clockwise */}
+      {/* outer ring, clockwise */}
       <motion.g {...spin(9, 1)}>
         <path d={arc(41, -150, 60)} stroke="url(#lg-o1)" strokeWidth="9" strokeLinecap="round" />
         <path d={arc(41, 82, 188)} stroke="url(#lg-o2)" strokeWidth="9" strokeLinecap="round" />
       </motion.g>
-      {/* middle ring — counter-clockwise */}
+      {/* middle ring, counter-clockwise */}
       <motion.g {...spin(6, -1)}>
         <path d={arc(28.5, -122, 30)} stroke="url(#lg-m1)" strokeWidth="9" strokeLinecap="round" />
         <path d={arc(28.5, 58, 208)} stroke="url(#lg-m2)" strokeWidth="9" strokeLinecap="round" />
       </motion.g>
-      {/* inner ring — clockwise, fastest */}
+      {/* inner ring, clockwise, fastest */}
       <motion.g {...spin(4, 1)}>
         <path d={arc(17, -28, 118)} stroke="url(#lg-i1)" strokeWidth="8" strokeLinecap="round" />
         <path d={arc(17, 148, 292)} stroke="url(#lg-i2)" strokeWidth="8" strokeLinecap="round" />

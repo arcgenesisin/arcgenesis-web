@@ -1,10 +1,10 @@
 import Logo from "@/components/Logo";
 import LiveBackground from "@/components/LiveBackground";
 
-// Unlisted demo page (noindex): two doors — the live product (Pune-fenced)
+// Unlisted demo page (noindex): two doors, the live product (Pune-fenced)
 // and the product video. This is the link we hand to reviewers (Sarvam etc.).
 export const metadata = {
-  title: "Demo — ARC GENESIS",
+  title: "Demo, ARC GENESIS",
   robots: { index: false, follow: false },
 };
 
@@ -26,8 +26,8 @@ export default function DemoPage() {
           The Site Potential Engine.
         </h1>
         <p className="mt-4 max-w-2xl text-muted">
-          Drop a pin, and the engine reads the georeferenced Development Plan at
-          that point — zone, roads, reservations — then solves the buildable
+          Drop a pin and the engine reads the georeferenced Development Plan at
+          that point (zone, roads, reservations), then solves the buildable
           envelope under UDCPR and prices the whole project.
         </p>
 
@@ -39,7 +39,7 @@ export default function DemoPage() {
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-black transition-transform hover:scale-[1.02]"
           >
-            ⚡ Product — live demo
+            ⚡ Open the live product
           </a>
           <a
             href="#video"
@@ -50,11 +50,11 @@ export default function DemoPage() {
         </div>
         <p className="mt-4 max-w-2xl text-xs text-muted">
           The live demo runs the real engine against our georeferenced{" "}
-          <b className="text-foreground">Pune city DP</b> — pin anywhere in
-          Pune, Vision assesses your plot, and the full report generates: 2D
-          plan, 3D massing, charges, financials. The demo is fenced to Pune; the
-          platform covers all of India. It streams live from our lab — give it a
-          breath if it queues.
+          <b className="text-foreground">Pune city DP</b>. Pin anywhere in Pune
+          and Vision assesses your plot, then the full report generates: 2D
+          plan, 3D massing, charges, financials. It&rsquo;s fenced to Pune for
+          now; the platform itself covers all of India. And it streams live from
+          our lab, so give it a breath if it queues.
         </p>
 
         {/* the film */}
@@ -72,16 +72,15 @@ export default function DemoPage() {
           />
           <div className="border-t border-white/10 p-4">
             <p className="text-sm text-muted">
-              One complete run, 2½ minutes: a 20 × 40 m plot located on the DP,
-              read by Vision, road marked, solved in 2D and 3D, priced — every
-              tab of the report.
+              One complete run in two and a half minutes: a 20 × 40 m plot
+              located on the DP, read by Vision, its road marked, solved in 2D
+              and 3D, priced, and walked through every tab of the report.
             </p>
           </div>
         </div>
 
         <p className="mt-10 text-xs text-muted">
-          © {new Date().getFullYear()} ARC GENESIS · This page is unlisted —
-          shared by link only. Outputs are decision-support, not statutory
+          © {new Date().getFullYear()} ARC GENESIS · This page is unlisted, shared by link only. Outputs are decision-support, not statutory
           sanction.
         </p>
       </div>

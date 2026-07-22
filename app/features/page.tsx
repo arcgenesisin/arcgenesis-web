@@ -1,6 +1,6 @@
 import PageShell from "@/components/PageShell";
 
-export const metadata = { title: "Features — ARC GENESIS" };
+export const metadata = { title: "Features, ARC GENESIS" };
 
 type Block = {
   id: string;
@@ -18,31 +18,31 @@ const blocks: Block[] = [
     eyebrow: "ARC AI",
     title: "A mind that carries your world",
     intro:
-      "ARC AI holds everything you give it — and lives inside the chats you already use. No app to install, no new habit to learn.",
+      "Everything you hand ARC AI stays with it, and it lives inside the chats you already use. Nothing to install, no new habit to pick up.",
     groups: [
       {
         heading: "Every chat window is a door",
         items: [
-          "WhatsApp, Instagram, Facebook Messenger, Telegram, X and email — feed it or ask it from any of them",
-          "One identity across all channels: link once, and ARC AI knows it's you everywhere",
-          "Send a document from WhatsApp, retrieve it from the web — the memory is one",
+          "Reach it from WhatsApp, Instagram, Messenger, Telegram, X or email. Feed it there, or ask it there.",
+          "Link it once and it recognises you on every channel, so your memory follows you across all of them.",
+          "Send a document on WhatsApp and pull it up from the web weeks later. It's all one memory.",
         ],
       },
       {
         heading: "Living memory",
         items: [
-          "Documents — deeds, plans, sanctions, receipts — filed automatically under the project they belong to",
-          "Projects — it learns your projects' structure, so 'what's pending on Kharadi?' is answerable from your own files",
-          "Links, notes and conversations — everything you've ever sent it stays retrievable in plain language",
-          "Your calendar — it reads it, writes to it, and reminds you",
+          "Every document you send (deeds, plans, sanction letters, receipts) is filed on its own, under the project it belongs to.",
+          "It learns how your projects are shaped, so a question like 'what's still pending on Kharadi?' gets answered from your own files.",
+          "Links, notes and whole conversations stay findable later, in plain words rather than folders.",
+          "It reads your calendar, adds to it, and nudges you before something slips.",
         ],
       },
       {
         heading: "It does the work",
         items: [
-          "Fetches: 'send me the sale deed Ramesh shared last month' → the file, in seconds",
-          "Schedules: 'set the CA meeting this week' → checked against your calendar, booked, confirmed",
-          "Answers from your material: project status, references, what a document actually says",
+          "Ask it to fetch: 'send me the sale deed Ramesh shared last month' → the file, back in seconds.",
+          "Ask it to schedule: 'set the CA meeting this week' → it checks your calendar, books it, confirms.",
+          "Ask it about your own material and it answers from what you've loaded: project status, a reference, what a document actually says.",
         ],
       },
     ],
@@ -53,32 +53,32 @@ const blocks: Block[] = [
     eyebrow: "The Map",
     title: "India's plans, georeferenced by machine",
     intro:
-      "The first system to place the country's Development and Regional Plans onto the earth they govern. Not scanned pictures — measurable, queryable geography you can drop a pin into.",
+      "We've placed the country's Development and Regional Plans onto the ground they actually govern. Not scans you squint at, but geography you can measure and drop a pin into.",
     groups: [
       {
         heading: "It reads the plan",
         items: [
-          "Roads, rails and water lifted out of scanned plan ink into real geometry",
-          "Zones, legends and hatching understood — the map knows what each colour means",
-          "Village names, survey numbers and scale read off degraded, decades-old scans",
-          "Every plan pinned to its true coordinates, so a location returns the law of that land",
+          "It pulls the roads, rails and water out of the scanned ink and turns them into real geometry.",
+          "It reads the legend, the zones and the hatching, so the map understands what every colour on a sheet means.",
+          "It makes out village names, survey numbers and the printed scale even on scans that are decades old and half faded.",
+          "Every plan is fixed to its true coordinates, so a location hands you back the law of that piece of land.",
         ],
       },
       {
         heading: "Trust you can see",
         items: [
-          "Placements are verified against independent evidence on the ground before we trust them",
-          "The plan-specific figures are measured from the plan, not assumed",
-          "You judge it the way a professional would — the plan warped over live satellite, opacity in your hand",
+          "A placement only stands once independent features on the ground agree with it. We never take the machine's word alone.",
+          "The numbers that come off a plan are measured from that plan, never guessed.",
+          "And you can check it yourself: the plan laid over live satellite, with the opacity slider in your hand.",
         ],
       },
       {
         heading: "The layers on top",
         items: [
-          "Cadastral parcels: your survey / gut / CTS number resolves to a polygon on the map",
-          "Airport height-clearance funnels across the country",
-          "Land-status overlays — forest, water bodies, mining, protected areas",
-          "Circle rates joined to geography — the ready-reckoner value of where you're standing",
+          "Cadastral parcels, so your survey, gut or CTS number lands on an actual polygon.",
+          "Airport height-clearance funnels for airports across the country.",
+          "Land-status overlays for forest, water bodies, mining and protected areas.",
+          "Circle rates tied to the map, so you see the ready-reckoner value of wherever you're standing.",
         ],
       },
     ],
@@ -89,32 +89,32 @@ const blocks: Block[] = [
     eyebrow: "Building Potential",
     title: "The development code, wired end to end",
     intro:
-      "Not a calculator — a chain. The regulation, the georeferenced map, the rates, the geometry and the money, connected so an answer flows from a pin to a P&L.",
+      "This isn't a calculator. The regulation, the map, the rates, the geometry and the money are wired together, so one pin turns into a full answer, all the way out to a P&L.",
     groups: [
       {
         heading: "The code, applied",
         items: [
-          "The building regulations applied rule by rule — FSI, setbacks, height, coverage, parking, amenity, premiums",
-          "No invented figures: every number is a literal from the regulation or flagged as derived, and the report cites the binding rule",
-          "You ask in plain words; the regulation math stays exact, never left to a language model",
+          "The building regulations are applied rule by rule: FSI, setbacks, height, coverage, parking, amenity, premiums.",
+          "Nothing is invented. Every figure is either straight from the regulation or clearly marked as derived, and the report cites the rule it rests on.",
+          "You describe the plot in plain words. The regulation maths stays exact, and never gets handed to a language model to guess at.",
         ],
       },
       {
         heading: "Reads your plot, in place",
         items: [
-          "Drop a pin: the zone, abutting road width and authority are read straight off the plan",
-          "Charges and premium calculations use the actual circle rate of that plot, pulled for you",
-          "The buildable envelope resolves into real floor plates — cores, lifts, stairs and shafts placed correctly",
-          "A layout that respects the plan: unit mix and rooms packed to fit, not a generic template",
+          "Drop a pin and it reads the zone, the abutting road width and the authority straight off the plan.",
+          "Charges and premium sums use that plot's actual circle rate, pulled in for you.",
+          "The buildable envelope resolves into real floor plates, with cores, lifts, stairs and shafts sitting where they should.",
+          "The layout respects the plan too: a unit mix and rooms packed to fit the site, not a template dropped on top.",
         ],
       },
       {
         heading: "The money and the filing",
         items: [
-          "Statutory charges computed alongside the envelope — premiums, development charges, labour cess",
-          "Development financials: three acquisition modes (purchase, redevelopment, JV), GDV, cost, profit, breakeven, sensitivity",
-          "Building-permission assistant: cross-checks your case against the code and readies the authority's application before you file",
-          "The submission is drafted from your project, for your review and sign-off",
+          "Statutory charges are worked out alongside the envelope: premiums, development charges, labour cess.",
+          "A development P&L with three ways in (outright purchase, redevelopment, JV) and the numbers a lender asks for: GDV, cost, profit, breakeven, sensitivity.",
+          "A building-permission assistant checks your case against the code and gets the authority's application ready before you file.",
+          "The submission is drafted from your own project, then handed back for your review and sign-off.",
         ],
       },
     ],
@@ -125,31 +125,31 @@ const blocks: Block[] = [
     eyebrow: "Valuation",
     title: "A number that can defend itself",
     intro:
-      "A co-pilot for Registered Valuers and anyone who needs a defensible figure — every input sourced, every approach reasoned, drafted to the professional format.",
+      "A co-pilot for Registered Valuers, and for anyone who needs a figure that holds up. Every input has a source, every approach has a reason, and it drafts to the format the profession expects.",
     groups: [
       {
         heading: "Seven ways to value, one form",
         items: [
-          "Land by market comparison · land + building · residual/development · reinstatement (insurance) · work-in-progress · income capitalisation · profit method",
-          "The form adapts to the report type — only the fields that approach needs",
-          "Comparable-sales grid with adjustment percentages and a weighted adopted rate",
+          "Seven approaches in one place: market comparison, land plus building, residual or development, reinstatement for insurance, work-in-progress, income capitalisation, and the profit method.",
+          "The form changes with the report type, showing only the fields that approach actually needs.",
+          "A comparable-sales grid with your own adjustment percentages and a weighted rate at the end.",
         ],
       },
       {
         heading: "Inputs that fetch themselves",
         items: [
-          "ASR / ready-reckoner rate pulled for the property's location",
-          "Zone, road width and permissible FSI pulled from the Building Potential engine at your location",
-          "Your documents — sanctioned plans, tax receipts — read in place, with confidence scores; nothing leaves your machine",
-          "The signature cross-check: declared built-up area versus the permissible envelope — a discrepancy no manual valuation catches",
+          "The ready-reckoner rate for the property's location, pulled in on its own.",
+          "Zone, road width and permissible FSI drawn from the Building Potential engine at that location.",
+          "Your documents (sanctioned plans, tax receipts) read right on your machine, with confidence scores, and nothing leaves it.",
+          "The cross-check that matters: declared built-up area against the permissible envelope, a gap a manual valuation almost never catches.",
         ],
       },
       {
         heading: "A draft you can stand behind",
         items: [
-          "IBBI-format report draft with the full evidence trail — the source of every field, on the record",
-          "Warnings and exceptions flagged by the engine, not buried",
-          "The final opinion, inspection and signature remain the valuer's — the engine does the assembly, you do the judgment",
+          "An IBBI-format draft with the full evidence trail, so the source of every field is on the record.",
+          "Warnings and exceptions the engine raises are shown, not tucked away.",
+          "The opinion, the inspection and the signature stay yours. The engine assembles; you judge.",
         ],
       },
     ],
@@ -160,31 +160,31 @@ const blocks: Block[] = [
     eyebrow: "Property Search",
     title: "Thirty years of paper. One click.",
     intro:
-      "A title and developability due diligence engine: every government record of a property fetched, read and reconciled into one complete, objective report of where the title stands, with every finding traced to the evidence behind it.",
+      "A due-diligence engine for title and developability. It pulls every government record of a property, reads them, and reconciles them into one plain report of where the title stands, with each finding tied back to its evidence.",
     groups: [
       {
         heading: "Both spines of Indian land records",
         items: [
-          "Urban: City Survey (CTS) numbers, property cards, sanctioned context",
-          "Rural: 7/12 extracts, mutation (ferfar) entries, 8A khata",
-          "Your parcel located in our cadastral map — and verified against the live record",
+          "Urban records: City Survey (CTS) numbers, property cards, sanctioned context.",
+          "Rural records: 7/12 extracts, mutation (ferfar) entries, 8A khata.",
+          "Your parcel found on our cadastral map, then checked against the live record.",
         ],
       },
       {
         heading: "The fetch, industrialised",
         items: [
-          "The engine plans the search: which sources, which years, which documents — scoped before you start",
-          "Records gathered across registration, revenue, court and RERA sources",
-          "Each record read, its names, areas and encumbrances pulled, and reconciled against the others",
+          "It plans the search first: which sources, which years, which document types, all scoped before you begin.",
+          "Then it gathers records across registration, revenue, court and RERA sources.",
+          "Each one is read, its names, areas and encumbrances pulled out, and reconciled against the rest.",
         ],
       },
       {
         heading: "The report a lawyer starts from",
         items: [
-          "Chain of title traced across decades — every devolution listed with its instrument",
-          "Encumbrances, charges and litigation surfaced with sources",
-          "Zoning and developability from our own map layer — no extra fetch, no captcha",
-          "A red-flag panel that says what to verify and where — the engine produces evidence; the certifying opinion stays human",
+          "The chain of title traced across decades, with every devolution and its instrument listed.",
+          "Encumbrances, charges and litigation brought to the surface, each with its source.",
+          "Zoning and developability from our own map layer, with no extra fetch and no captcha.",
+          "A panel of flags telling you what to verify and where. The engine gathers the evidence; the certifying opinion stays human.",
         ],
       },
     ],
@@ -196,7 +196,7 @@ export default function FeaturesPage() {
     <PageShell
       eyebrow="Features"
       title="Five instruments. One conversation."
-      intro="Everything below is live engineering — built, measured and running. Each mode of the chat is one of these instruments taking the seat."
+      intro="Everything below is real and running, not a roadmap. Each mode of the chat is one of these instruments taking the wheel."
     >
       <div className="space-y-20">
         {blocks.map((b) => (

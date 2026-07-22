@@ -2,9 +2,9 @@ import type { DrawFn } from "./Scene";
 import { chip, ease, lerp, range, rr, seeded } from "./helpers";
 
 // The ARC AI reality: one mind at the centre of your life's channels.
-// Act 1 — the chats you already use connect to it.
-// Act 2 — everything you send becomes orbiting memory.
-// Act 3 — it does the work: fetches, schedules, answers from your own files.
+// Act 1, the chats you already use connect to it.
+// Act 2, everything you send becomes orbiting memory.
+// Act 3, it does the work: fetches, schedules, answers from your own files.
 
 const CHANNELS = [
   { name: "WhatsApp", color: "#25D366" },
@@ -66,7 +66,7 @@ export const drawAssistant: DrawFn = (ctx, w, h, p, t, mobile) => {
   ctx.beginPath();
   ctx.arc(cx, cy, coreR * 4, 0, Math.PI * 2);
   ctx.fill();
-  // three rotating arcs — the mark itself, alive
+  // three rotating arcs, the mark itself, alive
   const arcs: [number, number, number][] = [
     [coreR * 1.0, t * 0.7, 4.2],
     [coreR * 1.45, -t * 0.5, 3.6],

@@ -97,7 +97,7 @@ export default function HumanTracePage() {
             Open tracer
           </button>
           <div style={{ fontSize: 11, color: "#6b7589", marginTop: 12, lineHeight: 1.5 }}>
-            First load shows a one-time tunnel reminder page — enter the tunnel password
+            First load shows a one-time tunnel reminder page, enter the tunnel password
             (the host&apos;s public IP) once, then trace normally. Your traces flow straight into
             the live v6 georef board.
           </div>

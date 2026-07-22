@@ -5,7 +5,7 @@ import { MODE_INDEX, type ModeId } from "@/lib/modes";
 
 // One persistent particle field. Each mode is a formation; switching modes
 // sends every particle on a curved flight to its place in the new reality.
-// The field never unmounts — the atoms are constant, the universe changes.
+// The field never unmounts, the atoms are constant, the universe changes.
 
 type Particle = {
   x: number;
@@ -223,7 +223,7 @@ export default function RealityField({
           p.y = u * u * p.sy + 2 * u * e * p.cyp + e * e * p.ty;
           settled = Math.min(settled, e);
         } else {
-          // settled: alive — personal breath + a slow current that travels
+          // settled: alive, personal breath + a slow current that travels
           // ACROSS the formation (phase keyed to position), so the whole
           // shape undulates like it's suspended in fluid, never frozen.
           const breath = now / 2400 + p.tw;

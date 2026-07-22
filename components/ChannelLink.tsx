@@ -35,7 +35,7 @@ export default function ChannelLink({
       setCopied(true);
       setTimeout(() => setCopied(false), 1600);
     } catch {
-      /* clipboard blocked — the code is visible to type manually */
+      /* clipboard blocked, the code is visible to type manually */
     }
   };
 
@@ -99,7 +99,7 @@ export default function ChannelLink({
           </a>
         ) : (
           <span className="flex items-center gap-2 rounded-full border border-white/10 px-5 py-2.5 text-sm text-muted">
-            WhatsApp — coming online
+WhatsApp coming soon
           </span>
         )}
       </div>

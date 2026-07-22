@@ -1,7 +1,7 @@
 import PageShell from "@/components/PageShell";
 import AccessRequestForm from "@/components/AccessRequestForm";
 
-export const metadata = { title: "Request access — ARC GENESIS" };
+export const metadata = { title: "Request access, ARC GENESIS" };
 
 export default function RequestAccessPage() {
   return (

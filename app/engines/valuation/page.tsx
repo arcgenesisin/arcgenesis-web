@@ -13,7 +13,7 @@ import {
 } from "@/components/engine/parts";
 
 const reports = [
-  { id: "land_market", icon: "🌐", tag: "MARKET", name: "Land — market value", note: "Sales-comparison from comparable instances." },
+  { id: "land_market", icon: "🌐", tag: "MARKET", name: "Land, market value", note: "Sales-comparison from comparable instances." },
   { id: "land_plus_building", icon: "🏠", tag: "MARKET + COST", name: "Land + Building", note: "Market land + depreciated replacement cost." },
   { id: "residual", icon: "🏗", tag: "RESIDUAL", name: "Residual / development", note: "Value from the permissible development envelope." },
   { id: "reinstatement", icon: "🛡", tag: "COST", name: "Reinstatement (insurance)", note: "Current cost to rebuild new-for-old." },
@@ -35,7 +35,7 @@ export default function ValuationPage() {
       <div className="mb-2">
         <h1 className="text-xl font-semibold">Choose the valuation you need</h1>
         <p className="mt-1 text-sm text-muted">
-          The form adapts to the report type — each field is pulled from the
+          The form adapts to the report type, each field is pulled from the
           georef plot, ASR, the potential engine, or read from a document you
           upload. You confirm every value; you sign it.
         </p>
@@ -156,7 +156,7 @@ export default function ValuationPage() {
 
               <div className="mt-4 rounded-xl border border-red-500/20 bg-red-500/[0.06] p-3 text-[11px] text-red-200/80">
                 <b>Boundaries (built-in).</b> AI-read values are advisory and
-                carry their source — verify against originals. The final value
+                carry their source, verify against originals. The final value
                 opinion, inspection and signature remain the Registered
                 Valuer&apos;s.
               </div>
@@ -169,9 +169,9 @@ export default function ValuationPage() {
               <SectionTitle gold>Valuation summary</SectionTitle>
               <div className="space-y-2 text-sm">
                 {[
-                  ["Land value (market)", "—"],
-                  ["Building value (DRC)", "—"],
-                  ["Less depreciation", "—"],
+                  ["Land value (market)", ", "],
+                  ["Building value (DRC)", ", "],
+                  ["Less depreciation", ", "],
                 ].map(([k, v]) => (
                   <div
                     key={k}
@@ -183,7 +183,7 @@ export default function ValuationPage() {
                 ))}
                 <div className="flex justify-between rounded-lg bg-emerald-500/10 px-3 py-2.5 text-emerald-300">
                   <span className="font-medium">MARKET VALUE</span>
-                  <span className="font-semibold">₹ —</span>
+                  <span className="font-semibold">₹, </span>
                 </div>
               </div>
               <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.02] p-4 text-center text-sm text-muted">
