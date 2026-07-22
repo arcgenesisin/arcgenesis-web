@@ -53,31 +53,31 @@ const blocks: Block[] = [
     eyebrow: "The Map",
     title: "India's plans, georeferenced by machine",
     intro:
-      "The first AI system to place the country's Development Plans and Regional Plans onto the earth they govern. Not scanned pictures — measurable, queryable geography.",
+      "The first system to place the country's Development and Regional Plans onto the earth they govern. Not scanned pictures — measurable, queryable geography you can drop a pin into.",
     groups: [
       {
-        heading: "Four ML models, trained by us",
+        heading: "It reads the plan",
         items: [
-          "An extraction model (SegFormer) that reads roads, rails and water out of scanned plan ink — trained on auto-labels from our own georeferenced tiles",
-          "A locator model (DINOv2 twin-tower embedding) that recognises WHERE in India a plan belongs — 96% of held-out plans located to the correct few km², on districts it never saw in training",
-          "A local vision-language model that reads village names, survey numbers and scale off degraded scans — the identifiers that anchor a plan to the record",
-          "A plan-reader model that understands legends, zones and drawing content, so the map knows what each colour and hatch means",
+          "Roads, rails and water lifted out of scanned plan ink into real geometry",
+          "Zones, legends and hatching understood — the map knows what each colour means",
+          "Village names, survey numbers and scale read off degraded, decades-old scans",
+          "Every plan pinned to its true coordinates, so a location returns the law of that land",
         ],
       },
       {
-        heading: "Engineering that doesn't guess",
+        heading: "Trust you can see",
         items: [
-          "AI proposes; deterministic geometry decides — every accepted placement must be corroborated by two independent features (roads AND a river, or rail) before we call it located",
-          "Every plan-specific number is measured from the plan itself — scale from printed road widths, never assumed",
-          "The result: the plan raster warped over satellite, with an opacity slider — judged the way a human would judge it",
+          "Placements are verified against independent evidence on the ground before we trust them",
+          "The plan-specific figures are measured from the plan, not assumed",
+          "You judge it the way a professional would — the plan warped over live satellite, opacity in your hand",
         ],
       },
       {
         heading: "The layers on top",
         items: [
-          "12.67 million georeferenced cadastral parcels — your survey / gut / CTS number resolves to a polygon on the map",
-          "Airport OLS height-clearance funnels for 224 airports across India",
-          "927,000 land-status polygons — forest, water bodies, mining, protected areas",
+          "Cadastral parcels: your survey / gut / CTS number resolves to a polygon on the map",
+          "Airport height-clearance funnels across the country",
+          "Land-status overlays — forest, water bodies, mining, protected areas",
           "Circle rates joined to geography — the ready-reckoner value of where you're standing",
         ],
       },
@@ -89,23 +89,23 @@ const blocks: Block[] = [
     eyebrow: "Building Potential",
     title: "The development code, wired end to end",
     intro:
-      "Not a calculator — a chain. The regulation hardcoded rule by rule, wired to the georeferenced map, to the rates, to floor-plate geometry, and out to the money.",
+      "Not a calculator — a chain. The regulation, the georeferenced map, the rates, the geometry and the money, connected so an answer flows from a pin to a P&L.",
     groups: [
       {
-        heading: "The code, hardcoded",
+        heading: "The code, applied",
         items: [
-          "Development Control Regulations codified into a deterministic rules engine — FSI, setbacks, height, coverage, parking, amenity, premiums",
+          "The building regulations applied rule by rule — FSI, setbacks, height, coverage, parking, amenity, premiums",
           "No invented figures: every number is a literal from the regulation or flagged as derived, and the report cites the binding rule",
-          "The language model only translates your words into the engine's inputs — it never does the regulation math",
+          "You ask in plain words; the regulation math stays exact, never left to a language model",
         ],
       },
       {
-        heading: "Wired to everything",
+        heading: "Reads your plot, in place",
         items: [
-          "To the georeferenced map: drop a pin and the zone, abutting road width and authority are read off the plan by vision",
-          "To ASR rates: the premium-FSI and charge calculations use the actual circle rate of your plot, pulled automatically",
-          "To floor-plate logic: shafts, cores, lifts and stairs dock against the FSI-free envelope correctly",
-          "To the layout generator: a two-stage engine that enumerates unit mixes, then packs rooms into real floor plates — cores segregated, bath shafts shared",
+          "Drop a pin: the zone, abutting road width and authority are read straight off the plan",
+          "Charges and premium calculations use the actual circle rate of that plot, pulled for you",
+          "The buildable envelope resolves into real floor plates — cores, lifts, stairs and shafts placed correctly",
+          "A layout that respects the plan: unit mix and rooms packed to fit, not a generic template",
         ],
       },
       {
@@ -113,8 +113,8 @@ const blocks: Block[] = [
         items: [
           "Statutory charges computed alongside the envelope — premiums, development charges, labour cess",
           "Development financials: three acquisition modes (purchase, redevelopment, JV), GDV, cost, profit, breakeven, sensitivity",
-          "BPMS training bot: it has traced the state building-permission portal's New Project wizard — ~500 fields, 31 documents — and cross-checks your case against the code before you file",
-          "BPMS submission bot: auto-fills the application from your project, ready for your review and sign-off",
+          "Building-permission assistant: cross-checks your case against the code and readies the authority's application before you file",
+          "The submission is drafted from your project, for your review and sign-off",
         ],
       },
     ],
@@ -139,8 +139,8 @@ const blocks: Block[] = [
         heading: "Inputs that fetch themselves",
         items: [
           "ASR / ready-reckoner rate pulled for the property's location",
-          "Zone, road width and permissible FSI pulled from the Building Potential engine at your lat-long",
-          "Documents read by a local vision model — sanctioned plans, tax receipts — with confidence scores; nothing leaves your machine",
+          "Zone, road width and permissible FSI pulled from the Building Potential engine at your location",
+          "Your documents — sanctioned plans, tax receipts — read in place, with confidence scores; nothing leaves your machine",
           "The signature cross-check: declared built-up area versus the permissible envelope — a discrepancy no manual valuation catches",
         ],
       },
@@ -167,15 +167,15 @@ const blocks: Block[] = [
         items: [
           "Urban: City Survey (CTS) numbers, property cards, sanctioned context",
           "Rural: 7/12 extracts, mutation (ferfar) entries, 8A khata",
-          "Your parcel located in our 12.67-million-polygon cadastral database — and verified against the live record",
+          "Your parcel located in our cadastral map — and verified against the live record",
         ],
       },
       {
         heading: "The fetch, industrialised",
         items: [
-          "The engine builds a search plan: which portals, which years, which documents — and estimates the captcha budget before you start",
-          "Batched fetching across registration, revenue, court and RERA sources",
-          "A local vision model extracts each record — names, areas, encumbrances — and reconciles them against each other",
+          "The engine plans the search: which sources, which years, which documents — scoped before you start",
+          "Records gathered across registration, revenue, court and RERA sources",
+          "Each record read, its names, areas and encumbrances pulled, and reconciled against the others",
         ],
       },
       {
