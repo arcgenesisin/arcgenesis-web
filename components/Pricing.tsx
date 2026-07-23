@@ -166,7 +166,7 @@ function TierCard({ t, i, inView }: { t: Tier; i: number; inView: boolean }) {
         </div>
 
         <Link
-          href="/login"
+          href="/request-access"
           className={`mt-6 rounded-full px-5 py-2.5 text-center text-sm font-medium transition-transform hover:scale-[1.02] ${
             t.highlight
               ? "bg-white text-black"

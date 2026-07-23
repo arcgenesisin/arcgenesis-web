@@ -41,7 +41,9 @@ async function notify(r: {
           `Email:        ${r.email}\n` +
           `Organisation: ${r.organisation || "(not given)"}\n\n` +
           `Purpose:\n${r.purpose}\n\n` +
-          `To approve: add ${r.email} as a Google test user, then send them the sign-in link.\n`,
+          `To approve: the request is already in your admin ledger (localhost:3001/auth/admin).\n` +
+          `Reply to ${r.email} with the signup link https://app.arcgenesis.ai/signup, and approve\n` +
+          `their account in the ledger once they register.\n`,
       }),
     });
     if (!res.ok) return { emailed: false, reason: `resend ${res.status}` };

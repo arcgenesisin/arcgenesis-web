@@ -46,6 +46,12 @@ export default function AccessRequestForm() {
           We read every application. If your work fits the pilot, we will enable
           your email for access and send you a sign-in link.
         </p>
+        <a
+          href="https://app.arcgenesis.ai/login"
+          className="mt-6 inline-flex items-center gap-2 rounded-full border border-white/15 px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-white/5"
+        >
+          Already have an account? Sign in
+        </a>
       </div>
     );
   }
@@ -129,6 +135,12 @@ export default function AccessRequestForm() {
         >
           {state === "sending" ? "Sending…" : "Submit request"}
         </button>
+        <a
+          href="https://app.arcgenesis.ai/login"
+          className="inline-flex items-center gap-2 rounded-full border border-white/15 px-7 py-3.5 text-sm font-semibold text-foreground transition-colors hover:bg-white/5"
+        >
+          Already have an account? Sign in
+        </a>
         <p className="text-xs text-muted">
           Or write to{" "}
           <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
