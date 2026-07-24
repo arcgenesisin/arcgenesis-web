@@ -212,12 +212,12 @@ export default function SignupCta() {
           transition={{ duration: 0.7, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
           className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
         >
-          <a
-            href="mailto:contact@arcgenesis.ai?subject=Pilot%20access%20request"
+          <Link
+            href="/request-access"
             className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-black transition-transform hover:scale-[1.04]"
           >
             <span aria-hidden>↗</span> Request pilot access
-          </a>
+          </Link>
           <Link
             href="/about"
             className="rounded-full border border-white/20 px-7 py-3.5 text-sm font-medium text-foreground hover:bg-white/5"

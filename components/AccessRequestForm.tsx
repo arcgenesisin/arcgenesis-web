@@ -24,6 +24,7 @@ export default function AccessRequestForm() {
         body: JSON.stringify({
           name: fd.get("name"),
           email: fd.get("email"),
+          phone: fd.get("phone"),
           organisation: fd.get("organisation"),
           purpose: fd.get("purpose"),
           website: fd.get("website"), // honeypot
@@ -84,17 +85,33 @@ export default function AccessRequestForm() {
         </div>
       </div>
 
-      <div>
-        <label htmlFor="organisation" className="mb-2 block text-xs font-medium uppercase tracking-wide text-muted">
-          Organisation <span className="normal-case text-muted/70">(optional)</span>
-        </label>
-        <input
-          id="organisation"
-          name="organisation"
-          autoComplete="organization"
-          className={field}
-          placeholder="Firm, institution or independent"
-        />
+      <div className="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label htmlFor="phone" className="mb-2 block text-xs font-medium uppercase tracking-wide text-muted">
+            Phone number
+          </label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            required
+            autoComplete="tel"
+            className={field}
+            placeholder="+91 98765 43210"
+          />
+        </div>
+        <div>
+          <label htmlFor="organisation" className="mb-2 block text-xs font-medium uppercase tracking-wide text-muted">
+            Organisation <span className="normal-case text-muted/70">(optional)</span>
+          </label>
+          <input
+            id="organisation"
+            name="organisation"
+            autoComplete="organization"
+            className={field}
+            placeholder="Firm, institution or independent"
+          />
+        </div>
       </div>
 
       <div>
@@ -141,12 +158,6 @@ export default function AccessRequestForm() {
         >
           Already have an account? Sign in
         </a>
-        <p className="text-xs text-muted">
-          Or write to{" "}
-          <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
-            contact@arcgenesis.ai
-          </a>
-        </p>
       </div>
     </form>
   );

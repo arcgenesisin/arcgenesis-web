@@ -18,6 +18,7 @@ const clean = (v: unknown, max: number) =>
 async function notify(r: {
   name: string;
   email: string;
+  phone: string;
   organisation: string;
   purpose: string;
 }) {
@@ -39,6 +40,7 @@ async function notify(r: {
           `New pilot access request\n\n` +
           `Name:         ${r.name}\n` +
           `Email:        ${r.email}\n` +
+          `Phone:        ${r.phone}\n` +
           `Organisation: ${r.organisation || "(not given)"}\n\n` +
           `Purpose:\n${r.purpose}\n\n` +
           `To approve: the request is already in your admin ledger (localhost:3001/auth/admin).\n` +
@@ -66,6 +68,7 @@ export async function POST(req: Request) {
 
   const name = clean(body.name, 120);
   const email = clean(body.email, 200).toLowerCase();
+  const phone = clean(body.phone, 40).replace(/[\s\-().]/g, "");
   const organisation = clean(body.organisation, 160);
   const purpose = clean(body.purpose, 2000);
 
@@ -81,15 +84,31 @@ export async function POST(req: Request) {
       { status: 400 },
     );
   }
+  if (!/^\+?\d{8,15}$/.test(phone)) {
+    return NextResponse.json(
+      { ok: false, error: "That phone number doesn't look right — digits only, e.g. +91 98765 43210." },
+      { status: 400 },
+    );
+  }
 
   const pool = getPool();
   if (pool) {
-    try {
-      await pool.query(
-        `INSERT INTO access_requests (name, email, organisation, purpose)
-         VALUES ($1, $2, $3, $4)`,
-        [name, email, organisation || null, purpose],
+    const insert = () =>
+      pool.query(
+        `INSERT INTO access_requests (name, email, phone, organisation, purpose)
+         VALUES ($1, $2, $3, $4, $5)`,
+        [name, email, phone, organisation || null, purpose],
       );
+    try {
+      try {
+        await insert();
+      } catch (e) {
+        // self-heal: older table without the phone column — add it once, retry
+        if ((e as { code?: string }).code === "42703") {
+          await pool.query(`ALTER TABLE access_requests ADD COLUMN IF NOT EXISTS phone text`);
+          await insert();
+        } else throw e;
+      }
     } catch (e) {
       console.error("[access-request] store failed:", e);
       // fall through: still try to notify so the request isn't lost
@@ -98,7 +117,7 @@ export async function POST(req: Request) {
     console.warn("[access-request] DATABASE_URL not set, not stored");
   }
 
-  const mail = await notify({ name, email, organisation, purpose });
+  const mail = await notify({ name, email, phone, organisation, purpose });
   if (!mail.emailed) console.warn("[access-request] not emailed:", mail.reason);
 
   return NextResponse.json({ ok: true });
