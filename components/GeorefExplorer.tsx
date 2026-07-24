@@ -185,9 +185,9 @@ export default function GeorefExplorer() {
         ))}
       </div>
 
-      <div className="grid lg:grid-cols-[minmax(0,380px)_1fr]">
+      <div className="grid lg:h-[82vh] lg:min-h-[620px] lg:grid-cols-[minmax(0,400px)_1fr]">
         {/* register */}
-        <div className="flex min-h-0 flex-col border-b border-white/10 lg:border-b-0 lg:border-r">
+        <div className="flex min-h-0 flex-col border-b border-white/10 lg:h-full lg:border-b-0 lg:border-r">
           <div className="flex flex-wrap gap-2 p-4">
             <input
               value={q}
@@ -216,7 +216,7 @@ export default function GeorefExplorer() {
             </select>
           </div>
 
-          <div className="max-h-[560px] min-h-0 flex-1 overflow-y-auto">
+          <div className="max-h-[460px] min-h-0 flex-1 overflow-y-auto lg:max-h-none">
             {!data ? (
               <div className="p-6 text-sm text-muted">Loading the register…</div>
             ) : rows.length === 0 ? (
@@ -261,7 +261,7 @@ export default function GeorefExplorer() {
         </div>
 
         {/* map */}
-        <div className="relative min-h-[420px] lg:min-h-[620px]">
+        <div className="relative min-h-[440px] lg:h-full lg:min-h-0">
           <div ref={mapEl} className="absolute inset-0 bg-[#0b0d15]" />
           {current && (
             <div className="pointer-events-auto absolute right-4 top-4 z-[500] max-w-[320px] rounded-xl border border-white/12 bg-background/90 p-4 backdrop-blur-md">
