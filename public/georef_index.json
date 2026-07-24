@@ -1,0 +1,3244 @@
+{
+ "generated": "2026-07-19",
+ "evidenceClass": "automatic_georeferencing_acceptance_evidence",
+ "acceptanceRule": "A placement is accepted only when at least two independent evidence channels (road, water, rail, survey identifiers, main-road gate) agree on the same transform. Human-placed runs are excluded from this set.",
+ "published": "Downsampled review previews plus the acceptance record for each plan.",
+ "withheld": "Transforms and GCPs, full-resolution warped rasters, source DP/RP scans, and the statewide research board — so this evidence can be reviewed but not reused as a georeferenced dataset.",
+ "count": 138,
+ "districts": [
+  "ahmednagar",
+  "akola",
+  "aurangabad",
+  "beed",
+  "buldhana",
+  "chandrapur",
+  "hingoli",
+  "jalgaon",
+  "jalna",
+  "latur",
+  "nanded",
+  "nandurbar",
+  "nashik",
+  "osmanabad",
+  "parbhani",
+  "sangli",
+  "satara",
+  "sindhudurg",
+  "solapur",
+  "washim",
+  "yavatmal"
+ ],
+ "plans": [
+  {
+   "id": "v6_DPSHEVGAONRUS30MAPB5_080a3d",
+   "title": "DP SHEVGAON R US 30 MAP B5",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 2.4,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.340753406313127,
+     75.21117854356793
+    ],
+    [
+     19.370789540503587,
+     75.26342503903048
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSHEVGAONRUS30MAPB5_080a3d.webp"
+  },
+  {
+   "id": "v6_DPAMALNEROLAAUS30SHEET2page0_5ff129",
+   "title": "DP AMALNER OL AA US 30 SHEET 2 pag",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 2.9,
+   "channels": [
+    "main-road",
+    "rail",
+    "survey"
+   ],
+   "bounds": [
+    [
+     21.044056726715215,
+     75.06257835145075
+    ],
+    [
+     21.07456498224613,
+     75.10845886856313
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAMALNEROLAAUS30SHEET2page0_5ff129.webp"
+  },
+  {
+   "id": "v6_mohol31C1_17abb2",
+   "title": "mohol 31 C1",
+   "district": "solapur",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.806600588879697,
+     75.60475794272467
+    ],
+    [
+     17.83108106466105,
+     75.64398718278397
+    ]
+   ],
+   "preview": "/assets/georef/v6_mohol31C1_17abb2.webp"
+  },
+  {
+   "id": "v6_RPMURSHADPURGROWTHCENTERUS16_743115",
+   "title": "RP MURSHADPUR GROWTH CENTER US164",
+   "district": "beed",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.78706531631422,
+     75.14242431182458
+    ],
+    [
+     18.821575361505214,
+     75.17010353302433
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPMURSHADPURGROWTHCENTERUS16_743115.webp"
+  },
+  {
+   "id": "v6_HENDAJRP1_683fb3",
+   "title": "HENDAJ RP 1",
+   "district": "akola",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.2,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.71610422552371,
+     77.3910573358247
+    ],
+    [
+     20.738273407537456,
+     77.42102281070451
+    ]
+   ],
+   "preview": "/assets/georef/v6_HENDAJRP1_683fb3.webp"
+  },
+  {
+   "id": "v6_mohol31A2_9993f9",
+   "title": "mohol 31 A2",
+   "district": "solapur",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.5,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.76840019632079,
+     75.64130879629909
+    ],
+    [
+     17.786036492881163,
+     75.66472178010308
+    ]
+   ],
+   "preview": "/assets/georef/v6_mohol31A2_9993f9.webp"
+  },
+  {
+   "id": "v6_DPHIMAYATNAGARNPPARTBpage000_0b35c9",
+   "title": "DP HIMAYATNAGAR NP PART B",
+   "district": "nanded",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.5,
+   "channels": [
+    "rail",
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.406750247743275,
+     77.85392403303055
+    ],
+    [
+     19.4369292493887,
+     77.89824190704834
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPHIMAYATNAGARNPPARTBpage000_0b35c9.webp"
+  },
+  {
+   "id": "v6_DPKADEGAONNPUS30B2page0001_3af544",
+   "title": "DP KADEGAON NP US 30 B2",
+   "district": "sangli",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.7,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.281396730086833,
+     74.32254326869948
+    ],
+    [
+     17.305549556267827,
+     74.34515677408906
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKADEGAONNPUS30B2page0001_3af544.webp"
+  },
+  {
+   "id": "v6_BEMBALI151164pdf_0d8c13",
+   "title": "BEMBALI 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.7,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.12225942275201,
+     76.17074593703687
+    ],
+    [
+     18.180025684674607,
+     76.22503230546678
+    ]
+   ],
+   "preview": "/assets/georef/v6_BEMBALI151164pdf_0d8c13.webp"
+  },
+  {
+   "id": "v6_1Alur151164Sub_5cf60c",
+   "title": "1 Alur-15 1 16 4-Sub",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.7,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.6546060008406,
+     76.38591312295137
+    ],
+    [
+     17.742330052652928,
+     76.45190996730588
+    ]
+   ],
+   "preview": "/assets/georef/v6_1Alur151164Sub_5cf60c.webp"
+  },
+  {
+   "id": "v6_DPAKOLEUS301PLANB_891dee",
+   "title": "DP AKOLE US 30 1 PLAN B",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.8,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.519610478100972,
+     73.97523326460579
+    ],
+    [
+     19.5522970011598,
+     74.02745013060496
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAKOLEUS301PLANB_891dee.webp"
+  },
+  {
+   "id": "v6_ALURUS151164pdf_02dcf2",
+   "title": "ALUR US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.9,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.654703525405903,
+     76.38593100004893
+    ],
+    [
+     17.743373535538442,
+     76.4526729016457
+    ]
+   ],
+   "preview": "/assets/georef/v6_ALURUS151164pdf_02dcf2.webp"
+  },
+  {
+   "id": "v6_6Jalkot151164Sub_9fd0b4",
+   "title": "6 Jalkot-15 1 16 4-Sub",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 3.9,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.79290812875007,
+     76.31402014103122
+    ],
+    [
+     17.879962205074253,
+     76.37145601550979
+    ]
+   ],
+   "preview": "/assets/georef/v6_6Jalkot151164Sub_9fd0b4.webp"
+  },
+  {
+   "id": "v6_GUNJOTIUS151164pdf_a49623",
+   "title": "GUNJOTI US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.761885344024034,
+     76.5714003664303
+    ],
+    [
+     17.827312733844728,
+     76.63146864998346
+    ]
+   ],
+   "preview": "/assets/georef/v6_GUNJOTIUS151164pdf_a49623.webp"
+  },
+  {
+   "id": "v6_HINGOLIGROWTHCENTERJAWALABAZ_40de9e",
+   "title": "HINGOLI GROWTH CENTER JAWALA BAZAR",
+   "district": "hingoli",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.433143039478143,
+     76.95863385133399
+    ],
+    [
+     19.498235072059828,
+     77.02062225069436
+    ]
+   ],
+   "preview": "/assets/georef/v6_HINGOLIGROWTHCENTERJAWALABAZ_40de9e.webp"
+  },
+  {
+   "id": "v6_RPSHIRSALAGROWTHCENTERUS1641_13355b",
+   "title": "RP SHIRSALA GROWTH CENTER US164 15",
+   "district": "beed",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.2,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.95337008366091,
+     76.35426938942203
+    ],
+    [
+     19.006105029632547,
+     76.41190042343685
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPSHIRSALAGROWTHCENTERUS1641_13355b.webp"
+  },
+  {
+   "id": "v6_DPYAWAL2RAAUS311NO211012016p_24eec1",
+   "title": "DP YAWAL 2R AA US 31 1 NO 2 110120",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.2,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     21.179568617826096,
+     75.70284507423234
+    ],
+    [
+     21.200626936782168,
+     75.73133350981126
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPYAWAL2RAAUS311NO211012016p_24eec1.webp"
+  },
+  {
+   "id": "v6_RPANDARSULGRCENYEOLA1_09d396",
+   "title": "RP ANDARSUL GR CEN YEOLA 1",
+   "district": "nashik",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.4,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.007526578218982,
+     74.51802618096875
+    ],
+    [
+     20.05296897998348,
+     74.63150157446215
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPANDARSULGRCENYEOLA1_09d396.webp"
+  },
+  {
+   "id": "v6_mohol31B1_319321",
+   "title": "mohol 31 B1",
+   "district": "solapur",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.5,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.78418266970531,
+     75.60704398130318
+    ],
+    [
+     17.80874366397644,
+     75.64368603366385
+    ]
+   ],
+   "preview": "/assets/georef/v6_mohol31B1_319321.webp"
+  },
+  {
+   "id": "v6_RPTALWADHAGROWTHCENTERUS1641_2b6c58",
+   "title": "RP TALWADHA GROWTH CENTER US164 15",
+   "district": "beed",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.6,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.276613766522765,
+     75.80768705538202
+    ],
+    [
+     19.347445493893396,
+     75.90767224715663
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPTALWADHAGROWTHCENTERUS1641_2b6c58.webp"
+  },
+  {
+   "id": "v6_TURORIUS151164pdf_8f2dc9",
+   "title": "TURORI US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.6,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.807497948923814,
+     76.6757144842491
+    ],
+    [
+     17.840455714430366,
+     76.71917333181372
+    ]
+   ],
+   "preview": "/assets/georef/v6_TURORIUS151164pdf_8f2dc9.webp"
+  },
+  {
+   "id": "v6_MULAJUS151164pdf_5bb5f2",
+   "title": "MULAJ US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.6,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.82786479730746,
+     76.64076890191478
+    ],
+    [
+     17.887264399540218,
+     76.71604791130925
+    ]
+   ],
+   "preview": "/assets/georef/v6_MULAJUS151164pdf_5bb5f2.webp"
+  },
+  {
+   "id": "v6_DPRAHIMATPUR2NDRUS311PLANB13_dace65",
+   "title": "DP RAHIMATPUR 2NDR US 31 1 PLAN B",
+   "district": "satara",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.6,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.559434329890745,
+     74.14767070585951
+    ],
+    [
+     17.61920382827188,
+     74.22171178457178
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPRAHIMATPUR2NDRUS311PLANB13_dace65.webp"
+  },
+  {
+   "id": "v6_DHAMANGAONBADEGC151152061220_731c0d",
+   "title": "DHAMANGAONBADE GC 151 152 06122019",
+   "district": "buldhana",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.7,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.645633061316797,
+     75.99606515063832
+    ],
+    [
+     20.69796758497209,
+     76.06265155238513
+    ]
+   ],
+   "preview": "/assets/georef/v6_DHAMANGAONBADEGC151152061220_731c0d.webp"
+  },
+  {
+   "id": "v6_DPBHOOMAAUS311page0001_4c56ad",
+   "title": "DP BHOOM AA US31 1",
+   "district": "osmanabad",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.7,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.431005429786183,
+     75.62628025932851
+    ],
+    [
+     18.503853582256767,
+     75.70809595260896
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPBHOOMAAUS311page0001_4c56ad.webp"
+  },
+  {
+   "id": "v6_DPJATHUS30NO2page0001_c215e1",
+   "title": "DP JATH US 30 NO2",
+   "district": "sangli",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.7,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.055624026007,
+     75.19200327533999
+    ],
+    [
+     17.090906080264066,
+     75.22434916797056
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPJATHUS30NO2page0001_c215e1.webp"
+  },
+  {
+   "id": "v6_20Turori151164Sub_76c21d",
+   "title": "20 Turori-15 1 16 4-Sub",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 4.8,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.807171893795502,
+     76.67560750912966
+    ],
+    [
+     17.840645645431103,
+     76.7192689148223
+    ]
+   ],
+   "preview": "/assets/georef/v6_20Turori151164Sub_76c21d.webp"
+  },
+  {
+   "id": "v6_MURUMUS151164pdf_f1790d",
+   "title": "MURUM US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.749011286389727,
+     76.424419157524
+    ],
+    [
+     17.812435878976764,
+     76.50524723577874
+    ]
+   ],
+   "preview": "/assets/georef/v6_MURUMUS151164pdf_f1790d.webp"
+  },
+  {
+   "id": "v6_DPMALKAPURUS311SEC123PLAN060_1701f3",
+   "title": "DP MALKAPUR US 31 1 SEC 1 2 3 PLAN",
+   "district": "satara",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.231357475861643,
+     74.167707998082
+    ],
+    [
+     17.250715702646705,
+     74.18709389364412
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPMALKAPURUS311SEC123PLAN060_1701f3.webp"
+  },
+  {
+   "id": "v6_DPNEWASAOINNER_ac8db6",
+   "title": "DP NEWASA O INNER",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.1,
+   "channels": [
+    "road",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.5459529492666,
+     74.92256290684102
+    ],
+    [
+     19.555662056822953,
+     74.93254453431969
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPNEWASAOINNER_ac8db6.webp"
+  },
+  {
+   "id": "v6_DPPATHARDIRUS301PLANB1812201_271241",
+   "title": "DP PATHARDI R US 30 1 PLAN B 18122",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.13207736875173,
+     75.1536959275741
+    ],
+    [
+     19.210560458351303,
+     75.21260325097916
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPPATHARDIRUS301PLANB1812201_271241.webp"
+  },
+  {
+   "id": "v6_DPPARNERUS301PLANBSHEET6_235b17",
+   "title": "DP PARNER US 30 1 PLAN B -SHEET 6",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.2,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.99001783122178,
+     74.41771879795246
+    ],
+    [
+     19.020157625299177,
+     74.45469483158773
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPPARNERUS301PLANBSHEET6_235b17.webp"
+  },
+  {
+   "id": "v6_RPMANORIPTPROEDUCATIONALZONE_6cc0d5",
+   "title": "RP MANORI PT PRO EDUCATIONAL ZONE",
+   "district": "nashik",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.07260144556013,
+     73.7788820843699
+    ],
+    [
+     20.112441159252192,
+     73.80698664578652
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPMANORIPTPROEDUCATIONALZONE_6cc0d5.webp"
+  },
+  {
+   "id": "v6_DPKADEGAONNPUS30B1page0001_3a6079",
+   "title": "DP KADEGAON NP US 30 B1",
+   "district": "sangli",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.281309107602592,
+     74.29479862576342
+    ],
+    [
+     17.305398916489388,
+     74.32472093173878
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKADEGAONNPUS30B1page0001_3a6079.webp"
+  },
+  {
+   "id": "v6_BULDANAPP215115206122019page_edb145",
+   "title": "BULDANA PP 2 151 152 06122019 page",
+   "district": "buldhana",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.467311695379966,
+     76.17533082752281
+    ],
+    [
+     20.536575973180828,
+     76.22425134841664
+    ]
+   ],
+   "preview": "/assets/georef/v6_BULDANAPP215115206122019page_edb145.webp"
+  },
+  {
+   "id": "v6_HINGOLIGROWTHCENTERAKHADABAL_3ab1fb",
+   "title": "HINGOLI GROWTH CENTER AKHADA BALAP",
+   "district": "hingoli",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.3,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.508567079816725,
+     77.39226329736115
+    ],
+    [
+     19.547422045453107,
+     77.46752243264855
+    ]
+   ],
+   "preview": "/assets/georef/v6_HINGOLIGROWTHCENTERAKHADABAL_3ab1fb.webp"
+  },
+  {
+   "id": "v6_RPNEKNURGROWTHCENTERUS164151_3a5afd",
+   "title": "RP NEKNUR GROWTH CENTER US164 151",
+   "district": "beed",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.4,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.775778357620077,
+     75.74892578546513
+    ],
+    [
+     18.872734532173144,
+     75.80609134132892
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPNEKNURGROWTHCENTERUS164151_3a5afd.webp"
+  },
+  {
+   "id": "v6_DEULGHATGC15115206122019_cf4f7c",
+   "title": "DEULGHAT GC 151 152 06122019",
+   "district": "buldhana",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.6,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.49903651517132,
+     76.09009534253629
+    ],
+    [
+     20.551525594753002,
+     76.13362737380108
+    ]
+   ],
+   "preview": "/assets/georef/v6_DEULGHATGC15115206122019_cf4f7c.webp"
+  },
+  {
+   "id": "v6_RPNANDURBARSHAHDAPPUS151164p_39c7e1",
+   "title": "RP NANDURBAR SHAHDA PP US 15 1 16",
+   "district": "nandurbar",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.6,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     21.485928225418164,
+     74.43337249116766
+    ],
+    [
+     21.5744080353349,
+     74.52774763063049
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPNANDURBARSHAHDAPPUS151164p_39c7e1.webp"
+  },
+  {
+   "id": "v6_DPSRIGONDAUS301SHEET5_eb1843",
+   "title": "DP SRIGONDA US 30 1 SHEET 5",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.7,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.611003864930215,
+     74.67975309232617
+    ],
+    [
+     18.641884535014924,
+     74.73206374044364
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSRIGONDAUS301SHEET5_eb1843.webp"
+  },
+  {
+   "id": "v6_JEWALIUS151164pdf_710332",
+   "title": "JEWALI US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.7,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.859622956129463,
+     76.35009767973249
+    ],
+    [
+     17.910954758174714,
+     76.42474327033375
+    ]
+   ],
+   "preview": "/assets/georef/v6_JEWALIUS151164pdf_710332.webp"
+  },
+  {
+   "id": "v6_RENAPURSM31123022026pdf_0f5311",
+   "title": "RENAPUR SM 311 23 02 2026",
+   "district": "latur",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.7,
+   "channels": [
+    "road",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.481936483300696,
+     76.56097853508915
+    ],
+    [
+     18.56310726609014,
+     76.64836719591995
+    ]
+   ],
+   "preview": "/assets/georef/v6_RENAPURSM31123022026pdf_0f5311.webp"
+  },
+  {
+   "id": "v6_DPBHOOMIIRPLUUS301page0001_3c7e09",
+   "title": "DP BHOOM II R PLU US301",
+   "district": "osmanabad",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.8,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.452148399593387,
+     75.63486938464895
+    ],
+    [
+     18.48111022359226,
+     75.6680801523758
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPBHOOMIIRPLUUS301page0001_3c7e09.webp"
+  },
+  {
+   "id": "v6_RPAMBAJOGAINPPERIFERALUS1641_bed80a",
+   "title": "RP AMBAJOGAI NP PERIFERAL US164 15",
+   "district": "beed",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 5.9,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.681773914074586,
+     76.31336590279808
+    ],
+    [
+     18.768641904968284,
+     76.44435011857463
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPAMBAJOGAINPPERIFERALUS1641_bed80a.webp"
+  },
+  {
+   "id": "v6_KHAMGAONPP115115206122019pag_92e1dd",
+   "title": "KHAMGAON PP 1 151 152 06122019 pag",
+   "district": "buldhana",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.1,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.69277888630782,
+     76.50995018400545
+    ],
+    [
+     20.76122396461766,
+     76.597548745495
+    ]
+   ],
+   "preview": "/assets/georef/v6_KHAMGAONPP115115206122019pag_92e1dd.webp"
+  },
+  {
+   "id": "v6_DPYAWAL2RAAUS311NO111012016p_990078",
+   "title": "DP YAWAL 2R AA US 31 1 NO 1 110120",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.1,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     21.181093207386397,
+     75.67767357735512
+    ],
+    [
+     21.208666230713394,
+     75.70405071174035
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPYAWAL2RAAUS311NO111012016p_990078.webp"
+  },
+  {
+   "id": "v6_DPAMALNEROLAAUS30SHEET1page0_3a0cc8",
+   "title": "DP AMALNER OL AA US 30 SHEET 1 pag",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.1,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     21.043985101832497,
+     75.02802450655516
+    ],
+    [
+     21.074514675370985,
+     75.07376020402825
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAMALNEROLAAUS30SHEET1page0_3a0cc8.webp"
+  },
+  {
+   "id": "v6_DPJATHUS30NO5page0001_333372",
+   "title": "DP JATH US 30 NO5",
+   "district": "sangli",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.1,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.02157175828084,
+     75.1921030556121
+    ],
+    [
+     17.056540037205774,
+     75.22434869745105
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPJATHUS30NO5page0001_333372.webp"
+  },
+  {
+   "id": "v6_DPSAWANTWADIIIR28082019page0_85aa64",
+   "title": "DP SAWANTWADI IIR 28082019",
+   "district": "sindhudurg",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.2,
+   "channels": [
+    "road",
+    "water"
+   ],
+   "bounds": [
+    [
+     15.891708989392532,
+     73.80631955497287
+    ],
+    [
+     15.923419869982903,
+     73.83905648761576
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSAWANTWADIIIR28082019page0_85aa64.webp"
+  },
+  {
+   "id": "v6_DPNAVAPURRPLANBUS31125032013_08c39d",
+   "title": "DP NAVAPUR R PLAN B US 31 1 250320",
+   "district": "nandurbar",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.2,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     21.138978837869107,
+     73.77231832430272
+    ],
+    [
+     21.184088407918694,
+     73.81819847771253
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPNAVAPURRPLANBUS31125032013_08c39d.webp"
+  },
+  {
+   "id": "v6_8Kalamb151164Sub_b72919",
+   "title": "8 Kalamb-15 1 16 4-Sub",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.3,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.522928073704463,
+     75.98609636181965
+    ],
+    [
+     18.60845312228526,
+     76.05851113900601
+    ]
+   ],
+   "preview": "/assets/georef/v6_8Kalamb151164Sub_b72919.webp"
+  },
+  {
+   "id": "v6_KHAMSAWADIUS151164pdf_6bf82a",
+   "title": "KHAMSAWADI US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.4,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.419865922859053,
+     76.01534689581658
+    ],
+    [
+     18.484786449822046,
+     76.08154597853138
+    ]
+   ],
+   "preview": "/assets/georef/v6_KHAMSAWADIUS151164pdf_6bf82a.webp"
+  },
+  {
+   "id": "v6_DPAMALNEROLAAUS30SHEET4page0_384d2d",
+   "title": "DP AMALNER OL AA US 30 SHEET 4 pag",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.4,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     21.016307645830818,
+     75.0627335906425
+    ],
+    [
+     21.046742012605947,
+     75.10856705913261
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAMALNEROLAAUS30SHEET4page0_384d2d.webp"
+  },
+  {
+   "id": "v6_YENEGURDALIMBMAHAPARTB151164_151b55",
+   "title": "YENEGUR DALIMB MAHA PART B -15 1 1",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.6,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.829640488075416,
+     76.43644830211466
+    ],
+    [
+     17.909164424963414,
+     76.55322561416956
+    ]
+   ],
+   "preview": "/assets/georef/v6_YENEGURDALIMBMAHAPARTB151164_151b55.webp"
+  },
+  {
+   "id": "v6_DPARDHAPURUS30PLANpage0001_01c1d5",
+   "title": "DP ARDHAPUR US 30 PLAN",
+   "district": "nanded",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.6,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.258783197860314,
+     77.34144655521257
+    ],
+    [
+     19.312043067035162,
+     77.4231044283113
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPARDHAPURUS30PLANpage0001_01c1d5.webp"
+  },
+  {
+   "id": "v6_DPKAIJRSMPLANBpage0001_b3f922",
+   "title": "DP KAIJ R SM PLAN B",
+   "district": "beed",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.6,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.680108997173985,
+     76.03377997131358
+    ],
+    [
+     18.748654458709385,
+     76.1077083161749
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKAIJRSMPLANBpage0001_b3f922.webp"
+  },
+  {
+   "id": "v6_DPBEEDIIRAAPLAN_9113da",
+   "title": "DP BEED II R AA PLAN",
+   "district": "beed",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.7,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.96414130353005,
+     75.72145375805934
+    ],
+    [
+     19.010198778562014,
+     75.78654447081544
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPBEEDIIRAAPLAN_9113da.webp"
+  },
+  {
+   "id": "v6_RPBEEDNPPERIFERALUS164151PLA_a6b61c",
+   "title": "RP BEED NP PERIFERAL US164 151 PLA",
+   "district": "beed",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.7,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.9451743235291,
+     75.69172635944774
+    ],
+    [
+     19.040398967080936,
+     75.80584639077908
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPBEEDNPPERIFERALUS164151PLA_a6b61c.webp"
+  },
+  {
+   "id": "v6_DPASHTIRSMUS311PLANApage0001_c4de06",
+   "title": "DP ASHTI R SM US 311 PLAN A",
+   "district": "beed",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.8,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.788443727455263,
+     75.15711794100984
+    ],
+    [
+     18.825493208203813,
+     75.19606560945321
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPASHTIRSMUS311PLANApage0001_c4de06.webp"
+  },
+  {
+   "id": "v6_DPAMALNEROLAAUS30SHEET3page0_5a6e93",
+   "title": "DP AMALNER OL AA US 30 SHEET 3 pag",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 6.9,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     21.016434645645877,
+     75.02725936006904
+    ],
+    [
+     21.047044147347574,
+     75.07315003496299
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAMALNEROLAAUS30SHEET3page0_5a6e93.webp"
+  },
+  {
+   "id": "v6_BORAKHEDIPP15115206122019pag_9e60a8",
+   "title": "BORAKHEDI PP 15-1 152 06122019 pag",
+   "district": "buldhana",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.647093012170306,
+     76.18630635184527
+    ],
+    [
+     20.68880560987294,
+     76.20920705415405
+    ]
+   ],
+   "preview": "/assets/georef/v6_BORAKHEDIPP15115206122019pag_9e60a8.webp"
+  },
+  {
+   "id": "v6_DPPALAMOUTERUS311PLANpdf_7a6644",
+   "title": "DP PALAM OUTER-US-311PLAN",
+   "district": "parbhani",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7.2,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.9817362652728,
+     76.91109778809727
+    ],
+    [
+     19.04103840124215,
+     76.98832426088009
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPPALAMOUTERUS311PLANpdf_7a6644.webp"
+  },
+  {
+   "id": "v6_DPNAIGAONRUS301PLANpdf_d43250",
+   "title": "DP NAIGAON R US 301 PLAN",
+   "district": "nanded",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.833165637336023,
+     77.50599634653882
+    ],
+    [
+     18.869401383508162,
+     77.54314554422548
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPNAIGAONRUS301PLANpdf_d43250.webp"
+  },
+  {
+   "id": "v6_DPSHENDURNIUS301NO4page0001_cc4532",
+   "title": "DP SHENDURNI US 30 1 NO 4",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7.3,
+   "channels": [
+    "rail",
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.636924738127544,
+     75.58875143678351
+    ],
+    [
+     20.667259763362498,
+     75.63426545700743
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSHENDURNIUS301NO4page0001_cc4532.webp"
+  },
+  {
+   "id": "v6_RPNANDURBARPRAKASHAGCUS15116_a47abc",
+   "title": "RP NANDURBAR PRAKASHA GC US 15 1 1",
+   "district": "nandurbar",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7.4,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     21.481110714167087,
+     74.32118389631586
+    ],
+    [
+     21.551916261487644,
+     74.40938383044293
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPNANDURBARPRAKASHAGCUS15116_a47abc.webp"
+  },
+  {
+   "id": "v6_BULDANAPP1151152061220219pag_a24687",
+   "title": "BULDANA PP 1 151 152 061220219 pag",
+   "district": "buldhana",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7.4,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.4982385998227,
+     76.14331886595588
+    ],
+    [
+     20.565821457425898,
+     76.1883261488753
+    ]
+   ],
+   "preview": "/assets/georef/v6_BULDANAPP1151152061220219pag_a24687.webp"
+  },
+  {
+   "id": "v6_mohol31B2_92feb4",
+   "title": "mohol 31 B2",
+   "district": "solapur",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7.5,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.783887619185805,
+     75.6409470540004
+    ],
+    [
+     17.80858267531881,
+     75.67507752506992
+    ]
+   ],
+   "preview": "/assets/georef/v6_mohol31B2_92feb4.webp"
+  },
+  {
+   "id": "v6_DPOMERGAAASMSANCTUS311page00_1e8dff",
+   "title": "DP OMERGA- AA -SM SANCT US 311 pag",
+   "district": "osmanabad",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7.6,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.809279041154465,
+     76.58548685499836
+    ],
+    [
+     17.876197235424993,
+     76.65880572507089
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPOMERGAAASMSANCTUS311page00_1e8dff.webp"
+  },
+  {
+   "id": "v6_DPYAWAL2RAAUS311NO611012016p_42bc9a",
+   "title": "DP YAWAL 2R AA US 31 1 NO 6 110120",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 7.6,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     21.12890670496349,
+     75.68965335195227
+    ],
+    [
+     21.153599796075227,
+     75.72925294925105
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPYAWAL2RAAUS311NO611012016p_42bc9a.webp"
+  },
+  {
+   "id": "v6_MALKAPURPP15115206122019page_26ca89",
+   "title": "MALKAPUR PP 151 152 06122019 page-",
+   "district": "buldhana",
+   "planType": "RP",
+   "verdict": "CONFIRMED-PARITY",
+   "residual_m": 8,
+   "channels": [
+    "rail",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.85071611784795,
+     76.14475367324344
+    ],
+    [
+     20.918035366961494,
+     76.23341025770762
+    ]
+   ],
+   "preview": "/assets/georef/v6_MALKAPURPP15115206122019page_26ca89.webp"
+  },
+  {
+   "id": "v6_DPYAWAL2RAAUS311NO411012016p_ab99d2",
+   "title": "DP YAWAL 2R AA US 31 1 NO 4 110120",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 8.2,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     21.150772818657895,
+     75.69356417248515
+    ],
+    [
+     21.182761473618562,
+     75.73138209289898
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPYAWAL2RAAUS311NO411012016p_ab99d2.webp"
+  },
+  {
+   "id": "v6_DPTrimbakouter2RADD270520193_b68ed5",
+   "title": "DP Trimbak-outer-2R ADD 27052019 3",
+   "district": "nashik",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 8.3,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.921043711437807,
+     73.51716810429575
+    ],
+    [
+     19.959888184050232,
+     73.55608124176348
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPTrimbakouter2RADD270520193_b68ed5.webp"
+  },
+  {
+   "id": "v6_DPBADNAPURSANCTIONED311pdf_d38307",
+   "title": "DP BADNAPUR SANCTIONED 311",
+   "district": "jalna",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 8.5,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.856737703004974,
+     75.69300074238991
+    ],
+    [
+     19.888452869667276,
+     75.7524189814441
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPBADNAPURSANCTIONED311pdf_d38307.webp"
+  },
+  {
+   "id": "v6_DPVARANGAONOUS311PLANB310820_67b5c1",
+   "title": "DP VARANGAON O US 31 1 PLAN B 3108",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 8.5,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.99942935206318,
+     75.8695580936796
+    ],
+    [
+     21.03417341123461,
+     75.93250545072338
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPVARANGAONOUS311PLANB310820_67b5c1.webp"
+  },
+  {
+   "id": "v6_DPTRIMBAK2NDRAAUS311OUTER270_60479a",
+   "title": "DP TRIMBAK 2NDR AA US 31 1 OUTER 2",
+   "district": "nashik",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 8.7,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.92108492819508,
+     73.51033115775321
+    ],
+    [
+     19.95989076055292,
+     73.55606473697071
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPTRIMBAK2NDRAAUS311OUTER270_60479a.webp"
+  },
+  {
+   "id": "v6_DPSHENDURNIUS301NO5page0001_14af34",
+   "title": "DP SHENDURNI US 30 1 NO 5",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 8.8,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.60903709846837,
+     75.5532263546185
+    ],
+    [
+     20.639504637981382,
+     75.59873743714758
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSHENDURNIUS301NO5page0001_14af34.webp"
+  },
+  {
+   "id": "v6_DPPARBHANIRAAUS30PLANBpdf_d978b7",
+   "title": "DP PARBHANI R AA US 30 PLAN-B",
+   "district": "parbhani",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 8.8,
+   "channels": [
+    "rail",
+    "road"
+   ],
+   "bounds": [
+    [
+     19.25600542381944,
+     76.76030850267274
+    ],
+    [
+     19.275335941374575,
+     76.78750285384844
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPPARBHANIRAAUS30PLANBpdf_d978b7.webp"
+  },
+  {
+   "id": "v6_mohol31C2_c99098",
+   "title": "mohol 31 C2",
+   "district": "solapur",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 8.8,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.805770234560022,
+     75.64163867195401
+    ],
+    [
+     17.830665451010944,
+     75.6813447081888
+    ]
+   ],
+   "preview": "/assets/georef/v6_mohol31C2_c99098.webp"
+  },
+  {
+   "id": "v6_DPWASHISANCTIONEDUS311PLANpa_6744d8",
+   "title": "DP WASHI SANCTIONED US 311 PLAN pa",
+   "district": "osmanabad",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 9,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.506375833001112,
+     75.70790581633588
+    ],
+    [
+     18.59898995841071,
+     75.82066928045292
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPWASHISANCTIONEDUS311PLANpa_6744d8.webp"
+  },
+  {
+   "id": "v6_EPBADNAPURSANCTIONED31128042_40e52f",
+   "title": "EP BADNAPUR SANCTIONED 311 2804202",
+   "district": "jalna",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 9.1,
+   "channels": [
+    "main-road",
+    "rail",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.86918076335039,
+     75.69303469659478
+    ],
+    [
+     19.87656086343537,
+     75.71438436941439
+    ]
+   ],
+   "preview": "/assets/georef/v6_EPBADNAPURSANCTIONED31128042_40e52f.webp"
+  },
+  {
+   "id": "v6_DPKAWATHEMAHANKALNPUS30INDEX_0877c5",
+   "title": "DP KAWATHEMAHANKAL NP US 30 INDEX",
+   "district": "sangli",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 9.2,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     16.983532385785956,
+     74.87074385541183
+    ],
+    [
+     16.98376169009383,
+     74.87099297156406
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKAWATHEMAHANKALNPUS30INDEX_0877c5.webp"
+  },
+  {
+   "id": "v6_TOURISTCMPLEXSULIBHANJANUS15_9d97fd",
+   "title": "TOURIST CMPLEX SULIBHANJAN US 1511",
+   "district": "aurangabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 9.2,
+   "channels": [
+    "rail",
+    "road"
+   ],
+   "bounds": [
+    [
+     19.82947306448322,
+     75.27550122270594
+    ],
+    [
+     19.893200366000244,
+     75.35185472404092
+    ]
+   ],
+   "preview": "/assets/georef/v6_TOURISTCMPLEXSULIBHANJANUS15_9d97fd.webp"
+  },
+  {
+   "id": "v6_DPSRIGONDAUS301SHEET1_32a66d",
+   "title": "DP SRIGONDA US 30 1 SHEET 1",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 9.4,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.63880817380211,
+     74.64545172120387
+    ],
+    [
+     18.66929543823813,
+     74.69034856048133
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSRIGONDAUS301SHEET1_32a66d.webp"
+  },
+  {
+   "id": "v6_NILANGADPR30123022026pdf_b0794d",
+   "title": "NILANGA DP R 301 23 02 2026",
+   "district": "latur",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 9.5,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.088436284703754,
+     76.73100683998071
+    ],
+    [
+     18.136321998951722,
+     76.7796933818758
+    ]
+   ],
+   "preview": "/assets/georef/v6_NILANGADPR30123022026pdf_b0794d.webp"
+  },
+  {
+   "id": "v6_RPKADAGROWTHCENTERUS164151PL_9f66af",
+   "title": "RP KADA GROWTH CENTER US164 151 PL",
+   "district": "beed",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 9.7,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.8775219443351,
+     75.03881357983639
+    ],
+    [
+     18.92860462644747,
+     75.1110421131571
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPKADAGROWTHCENTERUS164151PL_9f66af.webp"
+  },
+  {
+   "id": "v6_DPPHULAMBRIUS304compressedpa_199541",
+   "title": "DP PHULAMBRI US 30 4 compressed pa",
+   "district": "aurangabad",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 9.7,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.11238356619631,
+     75.40573253070467
+    ],
+    [
+     20.11564406177606,
+     75.4084366441771
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPPHULAMBRIUS304compressedpa_199541.webp"
+  },
+  {
+   "id": "v6_HINGOLIPERPHERIALPLANpage000_abaeb4",
+   "title": "HINGOLI PERPHERIAL PLAN",
+   "district": "hingoli",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 10,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.68832540319199,
+     77.12405830643998
+    ],
+    [
+     19.760461304497404,
+     77.18243146392969
+    ]
+   ],
+   "preview": "/assets/georef/v6_HINGOLIPERPHERIALPLANpage000_abaeb4.webp"
+  },
+  {
+   "id": "v6_DUDHANI_e051ed",
+   "title": "DUDHANI",
+   "district": "solapur",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 10.1,
+   "channels": [
+    "rail",
+    "road"
+   ],
+   "bounds": [
+    [
+     17.35066638135131,
+     76.36262545660423
+    ],
+    [
+     17.366990498344144,
+     76.38855944785324
+    ]
+   ],
+   "preview": "/assets/georef/v6_DUDHANI_e051ed.webp"
+  },
+  {
+   "id": "v6_DPAHILYANAGARAASHEET1_1ee8c0",
+   "title": "DP AHILYANAGAR AA SHEET-1",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 10.2,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.100148102144818,
+     74.69023349638984
+    ],
+    [
+     19.155198839365504,
+     74.74986344979335
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAHILYANAGARAASHEET1_1ee8c0.webp"
+  },
+  {
+   "id": "v6_DPMAJALGAONIIRUS30PLANpage00_7f4d49",
+   "title": "DP MAJALGAON II R US 30 PLAN page-",
+   "district": "beed",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 10.3,
+   "channels": [
+    "road",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.14527916962022,
+     76.1982111172052
+    ],
+    [
+     19.168316054166016,
+     76.23215187568309
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPMAJALGAONIIRUS30PLANpage00_7f4d49.webp"
+  },
+  {
+   "id": "v6_EPHINGOLIIIRPLANApage00011_069268",
+   "title": "EP HINGOLI II R PLAN A -1",
+   "district": "hingoli",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 10.4,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.682357089584347,
+     77.12317074944794
+    ],
+    [
+     19.7498272860394,
+     77.17739037701672
+    ]
+   ],
+   "preview": "/assets/georef/v6_EPHINGOLIIIRPLANApage00011_069268.webp"
+  },
+  {
+   "id": "v6_DPAKOLEUS301PLANACTSLIMIT_49e841",
+   "title": "DP AKOLE US 30 1 PLAN A CTS LIMIT",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 10.8,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.5437595204736,
+     74.00781913087386
+    ],
+    [
+     19.546585790688837,
+     74.01188161451668
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAKOLEUS301PLANACTSLIMIT_49e841.webp"
+  },
+  {
+   "id": "v6_PARTURDPSANCTIONIIR12012016p_504941",
+   "title": "PARTUR DP SANCTION II R 12012016 p",
+   "district": "jalna",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 10.9,
+   "channels": [
+    "rail",
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.570047313898083,
+     76.1993617901156
+    ],
+    [
+     19.61597377443673,
+     76.23885732329
+    ]
+   ],
+   "preview": "/assets/georef/v6_PARTURDPSANCTIONIIR12012016p_504941.webp"
+  },
+  {
+   "id": "v6_RPMAHIRAVANIPARTLYREGIONALPA_7dab98",
+   "title": "RP MAHIRAVANI PARTLY REGIONALPARK",
+   "district": "nashik",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.939806201001147,
+     73.64082323475323
+    ],
+    [
+     19.991539306317563,
+     73.68372420006453
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPMAHIRAVANIPARTLYREGIONALPA_7dab98.webp"
+  },
+  {
+   "id": "v6_DPSHENDURNIUS301NO3page0001_3286f5",
+   "title": "DP SHENDURNI US 30 1 NO 3",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.5,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.637048617566204,
+     75.5529722623723
+    ],
+    [
+     20.66779247174225,
+     75.59892148838837
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSHENDURNIUS301NO3page0001_3286f5.webp"
+  },
+  {
+   "id": "v6_DPMAHABALESHWAR2NDRUS301SMOU_76fd4f",
+   "title": "DP MAHABALESHWAR 2NDR US 30 1 SM O",
+   "district": "satara",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.5,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.90263194011041,
+     73.62983316182641
+    ],
+    [
+     17.961715313150453,
+     73.71533257214217
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPMAHABALESHWAR2NDRUS301SMOU_76fd4f.webp"
+  },
+  {
+   "id": "v6_DPAHILYANAGAROLUS311OUTER040_defbfc",
+   "title": "DP AHILYANAGAR OL US 31 1 OUTER 04",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.6,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.05660868477168,
+     74.70631985619265
+    ],
+    [
+     19.136242248603118,
+     74.78412823298879
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAHILYANAGAROLUS311OUTER040_defbfc.webp"
+  },
+  {
+   "id": "v6_DPMAHURNPRUS311PLANpage0001_7959c8",
+   "title": "DP MAHUR NP R US 311 PLAN",
+   "district": "nanded",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.6,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.81555610352193,
+     77.89015929175612
+    ],
+    [
+     19.86368872837747,
+     77.97850047087358
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPMAHURNPRUS311PLANpage0001_7959c8.webp"
+  },
+  {
+   "id": "v6_DPPAROLA2NDRPARTLYSANUS311PL_9c589b",
+   "title": "DP PAROLA 2NDR PARTLY-SAN US-31 1",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.6,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.86070867949831,
+     75.09845470619324
+    ],
+    [
+     20.889294048478078,
+     75.12927532581814
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPPAROLA2NDRPARTLYSANUS311PL_9c589b.webp"
+  },
+  {
+   "id": "v6_GONDPIPARIURBANGROWTHCENTREp_7a56c6",
+   "title": "GONDPIPARI-URBAN-GROWTH-CENTRE pag",
+   "district": "chandrapur",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.7,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.704059670886693,
+     79.66726171912931
+    ],
+    [
+     19.727864798318283,
+     79.71225852480609
+    ]
+   ],
+   "preview": "/assets/georef/v6_GONDPIPARIURBANGROWTHCENTREp_7a56c6.webp"
+  },
+  {
+   "id": "v6_DPBASMATIIRUS30pdf_4040ca",
+   "title": "DP BASMAT II R US30",
+   "district": "hingoli",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.7,
+   "channels": [
+    "rail",
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.312040880072146,
+     77.13407116323603
+    ],
+    [
+     19.355560967028335,
+     77.19234729789858
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPBASMATIIRUS30pdf_4040ca.webp"
+  },
+  {
+   "id": "v6_DPASHTIRSMUS311PLANBpage0001_747259",
+   "title": "DP ASHTI R SM US 311 PLAN B",
+   "district": "beed",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.8,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.774619307150942,
+     75.14978286898373
+    ],
+    [
+     18.8386632670915,
+     75.2148956400866
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPASHTIRSMUS311PLANBpage0001_747259.webp"
+  },
+  {
+   "id": "v6_DPKALAMBIIRUS301PLANpage0001_8676d0",
+   "title": "DP KALAMB II R US301 PLAN",
+   "district": "osmanabad",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 11.8,
+   "channels": [
+    "main-road",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.568686784414467,
+     76.01154710300658
+    ],
+    [
+     18.58962320208925,
+     76.03193701740639
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKALAMBIIRUS301PLANpage0001_8676d0.webp"
+  },
+  {
+   "id": "v6_DPNEWASAOOUTER_028f0b",
+   "title": "DP NEWASA O OUTER",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.48295105267366,
+     74.88744371619507
+    ],
+    [
+     19.573022342336277,
+     74.97311795329493
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPNEWASAOOUTER_028f0b.webp"
+  },
+  {
+   "id": "v6_DPAHILYANAGAREXTLIMITUS311PL_7f8caa",
+   "title": "DP AHILYANAGAR EXT LIMIT US 31 1 P",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12.1,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.06418191196852,
+     74.7246912200243
+    ],
+    [
+     19.11102976034581,
+     74.77619242663576
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAHILYANAGAREXTLIMITUS311PL_7f8caa.webp"
+  },
+  {
+   "id": "v6_DPMALEGAON2R1509200631122024_09b713",
+   "title": "DP MALEGAON 2R 15092006 31122024 p",
+   "district": "nashik",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12.1,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.525157316853843,
+     74.4999204042582
+    ],
+    [
+     20.581119323146382,
+     74.5660545237893
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPMALEGAON2R1509200631122024_09b713.webp"
+  },
+  {
+   "id": "v6_DPKADEGAONNPUS30C2page0001_4ffec2",
+   "title": "DP KADEGAON NP US 30 C2",
+   "district": "sangli",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12.2,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.303634072001056,
+     74.32237765907259
+    ],
+    [
+     17.322981965303068,
+     74.35086639766097
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKADEGAONNPUS30C2page0001_4ffec2.webp"
+  },
+  {
+   "id": "v6_KALAMBUS151164pdf_5a13d8",
+   "title": "KALAMB US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12.2,
+   "channels": [
+    "main-road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.523259913993407,
+     75.98604229025426
+    ],
+    [
+     18.608470380153957,
+     76.05926476973198
+    ]
+   ],
+   "preview": "/assets/georef/v6_KALAMBUS151164pdf_5a13d8.webp"
+  },
+  {
+   "id": "v6_DPPATHARDIRUS301PLANA1812201_3e4d83",
+   "title": "DP PATHARDI R US 30 1 PLAN A 18122",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12.3,
+   "channels": [
+    "road",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.166827443811684,
+     75.16640795432643
+    ],
+    [
+     19.178787436333515,
+     75.18122031860463
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPPATHARDIRUS301PLANA1812201_3e4d83.webp"
+  },
+  {
+   "id": "v6_PARTUREPSANCTIONIIR25072017p_8d617d",
+   "title": "PARTUR EP SANCTION II R 25072017.p",
+   "district": "jalna",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12.3,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.594610143264415,
+     76.20030102254007
+    ],
+    [
+     19.605625919464554,
+     76.21274172555633
+    ]
+   ],
+   "preview": "/assets/georef/v6_PARTUREPSANCTIONIIR25072017p_8d617d.webp"
+  },
+  {
+   "id": "v6_TERUS151164pdf_53ac48",
+   "title": "TER US 15 1 16 4",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12.9,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.28916033674525,
+     76.11181653587843
+    ],
+    [
+     18.350967771537817,
+     76.18356983109017
+    ]
+   ],
+   "preview": "/assets/georef/v6_TERUS151164pdf_53ac48.webp"
+  },
+  {
+   "id": "v6_DPKAWATHEMAHANKALNPUS30B2pag_9a3bc1",
+   "title": "DP KAWATHEMAHANKAL NP US 30 B2 pag",
+   "district": "sangli",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 12.9,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     17.023584425975795,
+     74.85461426452748
+    ],
+    [
+     17.026105565344512,
+     74.8564535345076
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKAWATHEMAHANKALNPUS30B2pag_9a3bc1.webp"
+  },
+  {
+   "id": "v6_DPBILOLIRAAPLANpage0001_159673",
+   "title": "DP BILOLI R AA PLAN",
+   "district": "nanded",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 13,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.749458392768634,
+     77.6992073292117
+    ],
+    [
+     18.7967528715246,
+     77.74823588395758
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPBILOLIRAAPLANpage0001_159673.webp"
+  },
+  {
+   "id": "v6_DPSHEVGAONRUS30MAPB1_4338c5",
+   "title": "DP SHEVGAON R US 30 MAP B1",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 13.2,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.36734492354038,
+     75.17787848007879
+    ],
+    [
+     19.397801644358637,
+     75.2229261353124
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSHEVGAONRUS30MAPB1_4338c5.webp"
+  },
+  {
+   "id": "v6_DPKARANJA29101988page0001_2d420b",
+   "title": "DP KARANJA 29101988",
+   "district": "washim",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 13.7,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.458855804492035,
+     77.46743546606119
+    ],
+    [
+     20.50313715409474,
+     77.51776147039988
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKARANJA29101988page0001_2d420b.webp"
+  },
+  {
+   "id": "v6_DPAHILYANAGARAASHEET3_f9d00b",
+   "title": "DP AHILYANAGAR AA SHEET-3",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 14,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.064240157444722,
+     74.72466417586372
+    ],
+    [
+     19.11088944909014,
+     74.77605032838419
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPAHILYANAGARAASHEET3_f9d00b.webp"
+  },
+  {
+   "id": "v6_DPCHOPDA2NDRAAUS30PLAN210120_6b05c5",
+   "title": "DP CHOPDA 2NDR AA US 30 PLAN 21012",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 14.1,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     21.219060421338437,
+     75.25930428829359
+    ],
+    [
+     21.2958791280332,
+     75.3361168906882
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPCHOPDA2NDRAAUS30PLAN210120_6b05c5.webp"
+  },
+  {
+   "id": "v6_PATURRP1_e8b656",
+   "title": "PATUR RP 1",
+   "district": "akola",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 14.1,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.421604710332378,
+     76.90384748970608
+    ],
+    [
+     20.505207469285374,
+     76.97087491100652
+    ]
+   ],
+   "preview": "/assets/georef/v6_PATURRP1_e8b656.webp"
+  },
+  {
+   "id": "v6_DPDEOLALIPRAVARARUS311PLANOU_43e91b",
+   "title": "DP DEOLALI PRAVARA R US 31 1 PLAN",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 14.6,
+   "channels": [
+    "main-road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.438647988610718,
+     74.57984293040919
+    ],
+    [
+     19.512754171536454,
+     74.65118977553361
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPDEOLALIPRAVARARUS311PLANOU_43e91b.webp"
+  },
+  {
+   "id": "v6_DPSOYGAONPLANBpage0001_24df11",
+   "title": "DP SOYGAON PLAN B",
+   "district": "aurangabad",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 15.3,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.586628745319032,
+     75.60476097852013
+    ],
+    [
+     20.62251298197535,
+     75.64072087711135
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSOYGAONPLANBpage0001_24df11.webp"
+  },
+  {
+   "id": "v6_DPMANWATRUS30PLANpdf_0981a5",
+   "title": "DP MANWAT R US 30 PLAN",
+   "district": "parbhani",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 16.7,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     19.28306623106117,
+     76.47198914256381
+    ],
+    [
+     19.323941653498142,
+     76.53174902557814
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPMANWATRUS30PLANpdf_0981a5.webp"
+  },
+  {
+   "id": "v6_EPJALNAOUTTERIIRUS3118112017_7e7636",
+   "title": "EP JALNA OUTTER II-R US 31 1811201",
+   "district": "jalna",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 16.8,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.82243793678587,
+     75.90224360890424
+    ],
+    [
+     19.83998127495614,
+     75.93326342986785
+    ]
+   ],
+   "preview": "/assets/georef/v6_EPJALNAOUTTERIIRUS3118112017_7e7636.webp"
+  },
+  {
+   "id": "v6_EPJALKOTPUBLISHED31123022026_2fd5d8",
+   "title": "EP JALKOT PUBLISHED 311 23 02 2026",
+   "district": "latur",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 16.8,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.62212198907839,
+     77.15812616452794
+    ],
+    [
+     18.64764921073356,
+     77.18871571609631
+    ]
+   ],
+   "preview": "/assets/georef/v6_EPJALKOTPUBLISHED31123022026_2fd5d8.webp"
+  },
+  {
+   "id": "v6_DPSRIGONDAUS301SHEET7_fc2d18",
+   "title": "DP SRIGONDA US 30 1 SHEET 7",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 16.9,
+   "channels": [
+    "rail",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.583478880465442,
+     74.64546482234888
+    ],
+    [
+     18.614297623890764,
+     74.69065625695738
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSRIGONDAUS301SHEET7_fc2d18.webp"
+  },
+  {
+   "id": "v6_RPDEOLAGROWTHCENTRE_471625",
+   "title": "RP DEOLA GROWTH CENTRE",
+   "district": "nashik",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 18.3,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.439588282249975,
+     74.14501466703632
+    ],
+    [
+     20.482412509012324,
+     74.22276847297353
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPDEOLAGROWTHCENTRE_471625.webp"
+  },
+  {
+   "id": "v6_DPJALKOTSAN311SM23022026pdf_b55c5b",
+   "title": "DP JALKOT SAN 311SM 23 02 2026.pd",
+   "district": "latur",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 19.2,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     18.60201423718193,
+     77.15652625867713
+    ],
+    [
+     18.64843279962881,
+     77.21317764986681
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPJALKOTSAN311SM23022026pdf_b55c5b.webp"
+  },
+  {
+   "id": "v6_DPJAMKHEDSUBUS30PLANAPT4_98b6a7",
+   "title": "DP JAMKHED SUB US 30 PLAN A PT 4",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 19.3,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.722103239048874,
+     75.31734633224298
+    ],
+    [
+     18.762133226147878,
+     75.35755090080112
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPJAMKHEDSUBUS30PLANAPT4_98b6a7.webp"
+  },
+  {
+   "id": "v6_PUSADDSC_8a2baa",
+   "title": "PUSAD DSC",
+   "district": "yavatmal",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 20.2,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.871272351614902,
+     77.4966490865253
+    ],
+    [
+     19.94098959659404,
+     77.60291496407068
+    ]
+   ],
+   "preview": "/assets/georef/v6_PUSADDSC_8a2baa.webp"
+  },
+  {
+   "id": "v6_RPKALWANGROWTHCENTREPT2ENG_6e4c73",
+   "title": "RP KALWAN GROWTH CENTRE PT 2 ENG",
+   "district": "nashik",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 20.7,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     20.478295229502102,
+     74.0208643674596
+    ],
+    [
+     20.495369687253078,
+     74.03277595236518
+    ]
+   ],
+   "preview": "/assets/georef/v6_RPKALWANGROWTHCENTREPT2ENG_6e4c73.webp"
+  },
+  {
+   "id": "v6_DPJAMKHEDSUBUS30PLANAPT3_7e9789",
+   "title": "DP JAMKHED SUB US 30 PLAN A PT 3",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 21.3,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.721967660018382,
+     75.27696523383136
+    ],
+    [
+     18.762350958295233,
+     75.321282555185
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPJAMKHEDSUBUS30PLANAPT3_7e9789.webp"
+  },
+  {
+   "id": "v6_DPJAMNEROUS311OUTERPART1PLAN_95a471",
+   "title": "DP JAMNER O US 31 1 OUTER PART1 PL",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 23,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.80160622439606,
+     75.75481775739395
+    ],
+    [
+     20.84299143423181,
+     75.84224375700151
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPJAMNEROUS311OUTERPART1PLAN_95a471.webp"
+  },
+  {
+   "id": "v6_DPYAWAL2RAAUS311NO311012016p_f0caf0",
+   "title": "DP YAWAL 2R AA US 31 1 NO 3 110120",
+   "district": "jalgaon",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 23,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     21.15330837015497,
+     75.65725159253412
+    ],
+    [
+     21.18325700755011,
+     75.69617769837471
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPYAWAL2RAAUS311NO311012016p_f0caf0.webp"
+  },
+  {
+   "id": "v6_DPKANNADIIIROLRAAUS30page000_d18a65",
+   "title": "DP KANNAD IIIR OL R- AA US 30 page",
+   "district": "aurangabad",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 23.7,
+   "channels": [
+    "road",
+    "water"
+   ],
+   "bounds": [
+    [
+     20.25134527957543,
+     75.11702417137052
+    ],
+    [
+     20.28660756170351,
+     75.14470402133118
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPKANNADIIIROLRAAUS30page000_d18a65.webp"
+  },
+  {
+   "id": "v6_DPSRIGONDAUS301SHEET8_0155bf",
+   "title": "DP SRIGONDA US 30 1 SHEET 8",
+   "district": "ahmednagar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 24.8,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.583732897601084,
+     74.68038451143639
+    ],
+    [
+     18.613880401980836,
+     74.73225766901197
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPSRIGONDAUS301SHEET8_0155bf.webp"
+  },
+  {
+   "id": "v6_DPNANDURBARRPLANB14032007pag_a00f16",
+   "title": "DP NANDURBAR R PLAN B 14032007 pag",
+   "district": "nandurbar",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 25,
+   "channels": [
+    "road",
+    "survey"
+   ],
+   "bounds": [
+    [
+     21.330617034055322,
+     74.19562385424292
+    ],
+    [
+     21.410772836618488,
+     74.28319774147093
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPNANDURBARRPLANB14032007pag_a00f16.webp"
+  },
+  {
+   "id": "v6_DPDEGLOORIIRAAUS311PLANpage0_d41bb9",
+   "title": "DP DEGLOOR II R AA US 311 PLAN pag",
+   "district": "nanded",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 25.3,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     18.506584521037848,
+     77.55334368398118
+    ],
+    [
+     18.565966930344846,
+     77.62427221314745
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPDEGLOORIIRAAUS311PLANpage0_d41bb9.webp"
+  },
+  {
+   "id": "v6_YENEGURDALIMBMAHAPARTA151164_7fa7cd",
+   "title": "YENEGUR DALIMB MAHA PART A -15 1 1",
+   "district": "osmanabad",
+   "planType": "RP",
+   "verdict": "CONFIRMED",
+   "residual_m": 26.5,
+   "channels": [
+    "road",
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     17.832159529465255,
+     76.3997737455004
+    ],
+    [
+     17.88346369203662,
+     76.46814144197414
+    ]
+   ],
+   "preview": "/assets/georef/v6_YENEGURDALIMBMAHAPARTA151164_7fa7cd.webp"
+  },
+  {
+   "id": "v6_DPHINGOLIIIRPLANApage00011_4457e4",
+   "title": "DP HINGOLI II R PLAN A -1",
+   "district": "hingoli",
+   "planType": "DP",
+   "verdict": "CONFIRMED",
+   "residual_m": 28,
+   "channels": [
+    "survey",
+    "water"
+   ],
+   "bounds": [
+    [
+     19.679515546104806,
+     77.12087927983067
+    ],
+    [
+     19.750368482213727,
+     77.19550887920015
+    ]
+   ],
+   "preview": "/assets/georef/v6_DPHINGOLIIIRPLANApage00011_4457e4.webp"
+  }
+ ]
+}
