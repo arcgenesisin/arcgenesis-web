@@ -164,10 +164,6 @@ export default function PrivacyPage() {
               <strong>Cloudflare</strong> (network) and our own servers — to route
               traffic and operate the service.
             </li>
-            <li>
-              <strong>Anthropic</strong> — a fallback document-reading model, used
-              only if the primary (Google Gemini) is temporarily unavailable.
-            </li>
           </ul>
           <p>
             Each provider receives only what is needed for its role, and none is
