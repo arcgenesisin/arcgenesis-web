@@ -26,7 +26,7 @@ export default function PrivacyPage() {
     >
       <div className="max-w-3xl">
         <p className="text-sm text-muted">
-          Effective date: 17 July 2026 · Operated by <strong>ARC GENESIS</strong>{" "}
+          Effective date: 28 July 2026 · Operated by <strong>ARC GENESIS</strong>{" "}
           (sole proprietorship), Aurangabad, Maharashtra, India · Contact:{" "}
           <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
             contact@arcgenesis.ai
@@ -70,10 +70,12 @@ export default function PrivacyPage() {
           <p>
             To provide the service: file your documents into your own Google
             Drive, build your searchable index, answer your questions, link your
-            chat channels to one account, and operate subscriptions. We may use
-            AI models (see processors below) to read and classify the documents
-            you send. We do not sell your personal data, and we do not use your
-            documents to train models.
+            chat channels to one account, and operate subscriptions. We use
+            AI models (see the sharing section below) to read and classify the
+            documents you send. We do not sell your personal data. We do
+            <strong> not</strong> use Google Workspace data (Drive, Calendar), or
+            the documents you send us, to develop, improve, or train generalized
+            AI or machine-learning models.
           </p>
         </S>
 
@@ -105,12 +107,73 @@ export default function PrivacyPage() {
           </p>
         </S>
 
-        <S title="Service providers we rely on">
+        <S title="How we protect your data">
           <p>
-            Google (sign-in, Drive, Calendar), Meta (WhatsApp Business Platform),
-            Telegram (bot API), Anthropic (AI document reading and replies),
-            Vercel (website hosting), Neon (database), Cloudflare (DNS/network).
-            Each receives only what is needed to perform its role.
+            <strong>In transit:</strong> all traffic to and from ARC GENESIS is
+            encrypted with TLS/HTTPS.
+          </p>
+          <p>
+            <strong>At rest:</strong> your Google OAuth tokens are stored
+            encrypted with AES-256-GCM; your search index and document metadata
+            sit in an access-restricted managed Postgres database (Neon).
+          </p>
+          <p>
+            <strong>Least privilege:</strong> we request only{" "}
+            <code>drive.file</code> (files our app creates for you) and,
+            optionally, <code>calendar.events</code> (events we create) — we are
+            technically unable to read your other Drive files or calendar entries.
+          </p>
+          <p>
+            <strong>Access control:</strong> access is limited to the automated
+            systems that run the service; no staff browse your data, and our
+            administrative tools are restricted to our own machines and are not
+            reachable from the internet.
+          </p>
+          <p>
+            <strong>Index, not vault:</strong> your documents remain in your own
+            Google Drive; we keep only pointers and metadata, so there is no
+            second copy of your files held by us.
+          </p>
+        </S>
+
+        <S title="Who we share Google user data with">
+          <p>
+            We do <strong>not</strong> sell your Google user data, share it for
+            advertising, or disclose it to data brokers. We disclose it only to
+            the service providers below, and only to the extent needed to run the
+            feature you asked for:
+          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li>
+              <strong>Google</strong> (Drive, Calendar and the Gemini API) — to
+              store and retrieve the files our app creates in your Drive, create
+              the calendar events you ask for, and read and classify the specific
+              documents you send us.
+            </li>
+            <li>
+              <strong>The messaging platform you use</strong> — Meta (WhatsApp
+              Business Platform) or Telegram — used only to deliver a file back to
+              you when you request it.
+            </li>
+            <li>
+              <strong>Neon</strong> (managed database host) — stores your account
+              record, the search index and document metadata. Your actual files
+              stay in your own Google Drive, not here.
+            </li>
+            <li>
+              <strong>Cloudflare</strong> (network) and our own servers — to route
+              traffic and operate the service.
+            </li>
+            <li>
+              <strong>Anthropic</strong> — a fallback document-reading model, used
+              only if the primary (Google Gemini) is temporarily unavailable.
+            </li>
+          </ul>
+          <p>
+            Each provider receives only what is needed for its role, and none is
+            permitted to use your Google user data for its own purposes. We do not
+            use Google Workspace data (Drive, Calendar) to develop, improve, or
+            train generalized AI or machine-learning models.
           </p>
         </S>
 
