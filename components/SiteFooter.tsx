@@ -9,6 +9,7 @@ const cols = [
       { label: "Site Potential", href: "/engines/site-potential" },
       { label: "Valuation", href: "/engines/valuation" },
       { label: "Title Search", href: "/engines/property-search" },
+      { label: "Pricing", href: "/pricing" },
     ],
   },
   {
@@ -23,7 +24,7 @@ const cols = [
     heading: "Get started",
     links: [
       { label: "Request access", href: "/request-access" },
-      { label: "Contact", href: "mailto:contact@arcgenesis.ai" },
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
@@ -31,6 +32,7 @@ const cols = [
     links: [
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Terms of Service", href: "/terms" },
+      { label: "Refund & Cancellation", href: "/refund" },
       { label: "Data Deletion", href: "/data-deletion" },
     ],
   },

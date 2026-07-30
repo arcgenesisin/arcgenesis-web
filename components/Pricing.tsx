@@ -37,7 +37,7 @@ const tiers: Tier[] = [
   },
   {
     name: "Professional",
-    price: 2000,
+    price: 2500,
     cadence: "/ month",
     blurb: "For the practitioner with live files.",
     features: [
