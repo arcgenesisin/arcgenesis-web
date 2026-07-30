@@ -21,19 +21,20 @@ type Tier = {
   accent: string;
 };
 
+// Mirrors the billing catalogue the checkout actually charges (dashboard/auth.js PLANS) and /pricing.
 const tiers: Tier[] = [
   {
-    name: "Starter",
-    price: 500,
-    cadence: "/ month",
-    blurb: "Ask the regulation anything.",
+    name: "Single Project",
+    price: 1000,
+    cadence: "one-time",
+    blurb: "Pay only when you need a project.",
     features: [
-      "Unlimited conversation about rules & codes",
-      "1 full plot assessment free, per Google account",
+      "All three engines: potential · search · valuation",
+      "One project, no subscription",
       "Every mode, single run",
     ],
-    cta: "Start for ₹500",
-    accent: "99,102,241",
+    cta: "Buy a project",
+    accent: "45,212,191",
   },
   {
     name: "Professional",
@@ -41,10 +42,10 @@ const tiers: Tier[] = [
     cadence: "/ month",
     blurb: "For the practitioner with live files.",
     features: [
+      "All three engines",
       "10 projects a month",
-      "Site potential · valuation · title search",
+      "Arc AI project assistant included",
       "Downloadable reports",
-      "Priority processing",
     ],
     highlight: true,
     cta: "Get Professional",
@@ -56,13 +57,26 @@ const tiers: Tier[] = [
     cadence: "/ month",
     blurb: "For firms moving volume.",
     features: [
-      "100 projects a month",
+      "All three engines · 100 projects a month",
+      "Arc AI project assistant included",
+      "ARC GENESIS chatbot on WhatsApp & Telegram",
       "Everything in Professional",
-      "Team workspace",
-      "Bulk / batch runs",
     ],
     cta: "Get Studio",
     accent: "56,189,248",
+  },
+  {
+    name: "Assistant",
+    price: 500,
+    cadence: "/ month",
+    blurb: "Just the chatbot, over chat.",
+    features: [
+      "ARC GENESIS chatbot on WhatsApp & Telegram",
+      "Documents filed into your own Google Drive",
+      "Timed reminders on your Calendar",
+    ],
+    cta: "Get Assistant",
+    accent: "251,146,60",
   },
 ];
 
@@ -211,12 +225,12 @@ export default function Pricing() {
             Enter at any depth
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-center text-muted">
-            One product, priced by how much land you put through it. The first
-            plot assessment is free with a Google sign-in.
+            One product, priced by how much land you put through it. Pay per
+            project, or subscribe by the month.
           </p>
         </motion.div>
 
-        <div className="mt-16 grid gap-6 md:grid-cols-3">
+        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {tiers.map((t, i) => (
             <TierCard key={t.name} t={t} i={i} inView={inView} />
           ))}
