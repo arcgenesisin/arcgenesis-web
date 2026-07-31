@@ -46,8 +46,8 @@ export default function RefundPage() {
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              You are <strong>not charged again</strong> — the automatic renewal
-              (UPI Autopay / card mandate) stops.
+              You are <strong>not charged again</strong>. The automatic renewal
+              (UPI Autopay or card mandate) stops.
             </li>
             <li>
               You <strong>keep access until the end of the cycle you have

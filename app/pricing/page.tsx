@@ -17,7 +17,7 @@ const plans: Plan[] = [
     name: "Single Project",
     price: "₹1,000",
     cadence: "one-time, per project",
-    blurb: "One project, shared across all three engines. Pay only when you need it — no monthly commitment.",
+    blurb: "One project, shared across all three engines. Pay when you need it. Nothing monthly to commit to.",
     features: [
       "All three engines: Potential · Search · Valuation",
       "One project",
@@ -53,7 +53,7 @@ const plans: Plan[] = [
     name: "Assistant",
     price: "₹500",
     cadence: "/ month",
-    blurb: "Just the chatbot — your documents, over chat.",
+    blurb: "Just the chatbot. Your documents, over chat.",
     features: [
       "ARC GENESIS chatbot on WhatsApp & Telegram",
       "Send documents, filed into your own Google Drive",
@@ -120,7 +120,7 @@ export default function PricingPage() {
       <div className="mt-12 max-w-3xl space-y-3 text-[15px] leading-relaxed text-muted">
         <p>
           Monthly plans renew automatically each month by UPI Autopay or card
-          mandate, and you can cancel anytime — see our{" "}
+          mandate, and you can cancel anytime. See our{" "}
           <a className="underline hover:text-foreground" href="/refund">
             Refund &amp; Cancellation Policy
           </a>

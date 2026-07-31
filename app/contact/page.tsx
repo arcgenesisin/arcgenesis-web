@@ -23,7 +23,7 @@ export default function ContactPage() {
     <PageShell
       eyebrow="Contact"
       title="Talk to us"
-      intro="Questions about the product, your account, billing or a refund — here is how to reach ARC GENESIS."
+      intro="Questions about the product, your account, billing or a refund? Here is how to reach us."
     >
       <div className="max-w-2xl">
         <Row label="Business">ARC GENESIS (sole proprietorship)</Row>
@@ -40,7 +40,7 @@ export default function ContactPage() {
         </Row>
         <Row label="Support hours">Monday to Saturday, 10:00–18:00 IST</Row>
         <Row label="Reach us">
-          Email is the fastest way to reach us — write to{" "}
+          Email is the fastest way to reach us. Write to{" "}
           <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
             contact@arcgenesis.ai
           </a>{" "}

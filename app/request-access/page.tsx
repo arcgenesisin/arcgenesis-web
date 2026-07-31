@@ -36,7 +36,7 @@ export default function GetStartedPage() {
     <PageShell
       eyebrow="Get started"
       title="One account, every engine."
-      intro="Sign in to open your workspace. Development potential, property search and valuation — all from the same account."
+      intro="Sign in to open your workspace. Development potential, property search and valuation all run from one account."
       center
     >
       <div className="mx-auto max-w-md">
@@ -70,9 +70,9 @@ export default function GetStartedPage() {
 
         <p className="mt-8 text-center text-xs leading-relaxed text-muted">
           Signing in with Google shares only your name and email address. If you
-          later use the Assistant on WhatsApp or Telegram, we ask separately for
-          access to file documents into your own Google Drive — never before you
-          need it.
+          later use the Assistant on WhatsApp or Telegram, we ask you separately
+          for permission to file documents into your own Google Drive. Never
+          before you need it.
         </p>
       </div>
 
@@ -83,7 +83,7 @@ export default function GetStartedPage() {
         </h2>
         <ol className="mt-4 space-y-3 text-[15px] leading-relaxed text-muted">
           <Step n="01">
-            You sign in — with Google, or an email and password.
+            You sign in with Google, or with an email and password.
           </Step>
           <Step n="02">
             Your workspace opens straight away. Choose the plan that fits, on the{" "}
