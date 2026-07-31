@@ -37,8 +37,9 @@ export default function GetStartedPage() {
       eyebrow="Get started"
       title="One account, every engine."
       intro="Sign in to open your workspace. Development potential, property search and valuation — all from the same account."
+      center
     >
-      <div className="max-w-md">
+      <div className="mx-auto max-w-md">
         <a
           href={`${APP}/auth/google`}
           className="flex w-full items-center justify-center gap-3 rounded-full bg-white px-5 py-3.5 text-sm font-medium text-black transition-transform hover:scale-[1.02]"
@@ -67,7 +68,7 @@ export default function GetStartedPage() {
           </a>
         </p>
 
-        <p className="mt-8 text-xs leading-relaxed text-muted">
+        <p className="mt-8 text-center text-xs leading-relaxed text-muted">
           Signing in with Google shares only your name and email address. If you
           later use the Assistant on WhatsApp or Telegram, we ask separately for
           access to file documents into your own Google Drive — never before you
@@ -75,7 +76,8 @@ export default function GetStartedPage() {
         </p>
       </div>
 
-      <div className="mt-14 max-w-2xl border-t border-white/10 pt-8">
+      {/* the steps stay left-aligned inside a centred column — a centred numbered list is unreadable */}
+      <div className="mx-auto mt-14 max-w-xl border-t border-white/10 pt-8 text-left">
         <h2 className="text-sm font-semibold uppercase tracking-wide text-muted">
           How it works
         </h2>
