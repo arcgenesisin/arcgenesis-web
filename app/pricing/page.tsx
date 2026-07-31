@@ -32,7 +32,7 @@ const plans: Plan[] = [
     features: [
       "All three engines",
       "10 projects a month",
-      "Arc AI project assistant included",
+      "Engine Assistant included",
       "Downloadable reports",
     ],
     highlight: true,
@@ -45,17 +45,17 @@ const plans: Plan[] = [
     features: [
       "All three engines",
       "100 projects a month",
-      "Arc AI project assistant included",
-      "ARC GENESIS chatbot on WhatsApp & Telegram",
+      "Engine Assistant included",
+      "ARC AI on WhatsApp & Telegram",
     ],
   },
   {
-    name: "Assistant",
+    name: "ARC AI",
     price: "₹500",
     cadence: "/ month",
-    blurb: "Just the chatbot. Your documents, over chat.",
+    blurb: "Just ARC AI. Your documents, over chat.",
     features: [
-      "ARC GENESIS chatbot on WhatsApp & Telegram",
+      "ARC AI on WhatsApp & Telegram",
       "Send documents, filed into your own Google Drive",
       "Timed reminders on your Google Calendar",
     ],
