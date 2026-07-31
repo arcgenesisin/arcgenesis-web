@@ -152,7 +152,7 @@ export default function SitePotentialPage() {
             <div className="mt-2 grid grid-cols-2 gap-x-4 sm:grid-cols-4">
               {["Front", "Rear", "Left", "Right"].map((s) => (
                 <Field key={s} label={s}>
-                  <TextInput type="number" placeholder=", " />
+                  <TextInput type="number" placeholder="m" />
                 </Field>
               ))}
             </div>
@@ -173,19 +173,19 @@ export default function SitePotentialPage() {
             <SectionTitle gold>Development potential</SectionTitle>
             <div className="space-y-2.5 text-sm">
               {[
-                ["Permissible FSI", ", ·, "],
-                ["Buildable-up area", ", m²"],
-                ["Ground coverage", ", "],
-                ["Setbacks (F/R/S)", ", /, /, "],
-                ["Parking required", ", "],
-                ["Premium / charges", ", "],
-              ].map(([k, v]) => (
+                "Permissible FSI",
+                "Buildable-up area",
+                "Ground coverage",
+                "Setbacks (F/R/S)",
+                "Parking required",
+                "Premium / charges",
+              ].map((k) => (
                 <div
                   key={k}
-                  className="flex justify-between border-b border-white/5 py-2 text-muted"
+                  className="flex items-center justify-between border-b border-white/5 py-2 text-muted"
                 >
                   <span>{k}</span>
-                  <span className="text-foreground/60">{v}</span>
+                  <span className="inline-block h-3 w-20 rounded bg-white/10" aria-hidden />
                 </div>
               ))}
             </div>

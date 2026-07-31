@@ -168,22 +168,18 @@ export default function ValuationPage() {
             <Panel className="min-h-[380px]">
               <SectionTitle gold>Valuation summary</SectionTitle>
               <div className="space-y-2 text-sm">
-                {[
-                  ["Land value (market)", ", "],
-                  ["Building value (DRC)", ", "],
-                  ["Less depreciation", ", "],
-                ].map(([k, v]) => (
+                {["Land value (market)", "Building value (DRC)", "Less depreciation"].map((k) => (
                   <div
                     key={k}
-                    className="flex justify-between border-b border-white/5 py-2 text-muted"
+                    className="flex items-center justify-between border-b border-white/5 py-2 text-muted"
                   >
                     <span>{k}</span>
-                    <span className="text-foreground/60">{v}</span>
+                    <span className="inline-block h-3 w-20 rounded bg-white/10" aria-hidden />
                   </div>
                 ))}
-                <div className="flex justify-between rounded-lg bg-emerald-500/10 px-3 py-2.5 text-emerald-300">
+                <div className="flex items-center justify-between rounded-lg bg-emerald-500/10 px-3 py-2.5 text-emerald-300">
                   <span className="font-medium">MARKET VALUE</span>
-                  <span className="font-semibold">₹, </span>
+                  <span className="inline-block h-3.5 w-24 rounded bg-emerald-300/25" aria-hidden />
                 </div>
               </div>
               <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.02] p-4 text-center text-sm text-muted">

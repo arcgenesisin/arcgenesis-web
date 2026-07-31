@@ -34,73 +34,35 @@ export default function HumanTracePage() {
 
   if (!entered) {
     return (
-      <main
-        style={{
-          minHeight: "100vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          background: "#0b0e14",
-          color: "#e7eaf0",
-          fontFamily: "Segoe UI, Arial, sans-serif",
-        }}
-      >
+      <main className="flex min-h-screen items-center justify-center bg-background px-5 text-foreground">
         <form
           onSubmit={unlock}
-          style={{
-            width: 360,
-            background: "#151923",
-            border: "1px solid #2b3140",
-            borderRadius: 10,
-            padding: 24,
-          }}
+          className="w-full max-w-sm rounded-2xl border border-white/10 bg-white/[0.03] p-6 sm:p-7"
         >
-          <div style={{ fontWeight: 700, fontSize: 18, marginBottom: 4 }}>
-            ARC GENESIS · Human Trace
-          </div>
-          <div style={{ fontSize: 12, color: "#8993a5", marginBottom: 16 }}>
+          <div className="text-lg font-semibold">ARC GENESIS · Human Trace</div>
+          <p className="mt-1.5 text-sm leading-relaxed text-muted">
             Remote corridor tracer for the DP/RP georef loop. Enter the access
             token you were given.
-          </div>
+          </p>
           <input
             autoFocus
             type="password"
             value={token}
             onChange={(e) => setToken(e.target.value)}
             placeholder="Access token"
-            style={{
-              width: "100%",
-              boxSizing: "border-box",
-              background: "#0b0e14",
-              border: "1px solid #30384a",
-              color: "#e7eaf0",
-              borderRadius: 6,
-              padding: "10px 12px",
-              fontSize: 13,
-              marginBottom: 12,
-            }}
+            className="mt-5 w-full rounded-xl border border-white/12 bg-white/[0.03] px-4 py-3 text-[15px] text-foreground outline-none transition-colors placeholder:text-muted/60 focus:border-white/30"
           />
           <button
             type="submit"
-            style={{
-              width: "100%",
-              background: "#2563eb",
-              border: "1px solid #3b82f6",
-              color: "#fff",
-              borderRadius: 6,
-              padding: "10px 12px",
-              fontSize: 13,
-              fontWeight: 600,
-              cursor: "pointer",
-            }}
+            className="mt-3 w-full rounded-full bg-white px-5 py-3 text-sm font-semibold text-black transition-transform hover:scale-[1.02]"
           >
             Open tracer
           </button>
-          <div style={{ fontSize: 11, color: "#6b7589", marginTop: 12, lineHeight: 1.5 }}>
-            First load shows a one-time tunnel reminder page, enter the tunnel password
-            (the host&apos;s public IP) once, then trace normally. Your traces flow straight into
-            the live v6 georef board.
-          </div>
+          <p className="mt-4 text-xs leading-relaxed text-muted/80">
+            First load shows a one-time tunnel reminder page; enter the tunnel
+            password (the host&rsquo;s public IP) once, then trace normally. Your
+            traces flow straight into the live v6 georef board.
+          </p>
         </form>
       </main>
     );

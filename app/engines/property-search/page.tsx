@@ -86,17 +86,17 @@ export default function PropertySearchPage() {
             <SectionTitle n="2">Identified property</SectionTitle>
             <div className="grid gap-x-4 sm:grid-cols-2">
               <Field label={land === "urban" ? "CTS / Survey No." : "Survey / Gut No."}>
-                <TextInput placeholder=", " />
+                <TextInput placeholder="" />
               </Field>
               <Field label={land === "urban" ? "Ward" : "Village"}>
-                <TextInput placeholder=", " />
+                <TextInput placeholder="" />
               </Field>
               <Field label="District">
-                <TextInput placeholder=", " />
+                <TextInput placeholder="" />
               </Field>
               {land === "rural" && (
                 <Field label="Khata No. (8A)">
-                  <TextInput placeholder=", " />
+                  <TextInput placeholder="" />
                 </Field>
               )}
               <Field label="Area">
@@ -115,7 +115,9 @@ export default function PropertySearchPage() {
             <SectionTitle n="3">Fetch plan</SectionTitle>
             <div className="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.02] p-4">
               <div>
-                <div className="text-2xl font-semibold">, </div>
+                <div className="flex h-8 items-center">
+                  <span className="inline-block h-4 w-10 rounded bg-white/10" aria-hidden />
+                </div>
                 <div className="text-[11px] text-muted">
                   estimated captcha solves for this plot
                 </div>

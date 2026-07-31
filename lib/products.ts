@@ -16,7 +16,7 @@ export const products: Product[] = [
     name: "ARC AI",
     tagline: "Your memory, across every platform.",
     description:
-      "Docs, links, chats, calendar — ARC AI remembers everything you send it, on WhatsApp, the web, wherever you are. Ask for anything you've ever shared; it's already filed.",
+      "Docs, links, chats and your calendar, all remembered. ARC AI files everything you send it on WhatsApp, on the web, wherever you are, so anything you have ever shared is one question away.",
     points: [
       "Every document you send, remembered and filed",
       "Works across WhatsApp, web and more",
@@ -31,7 +31,7 @@ export const products: Product[] = [
     name: "Site Potential Engine",
     tagline: "How much can this land actually build?",
     description:
-      "Draw a plot on the DP overlay, tell us the development you intend, and get its permissible FSI, buildable-up area, road/zone context and applicable charges — read straight from the plan and the regulation.",
+      "Draw a plot on the DP overlay, tell us the development you intend, and read back its permissible FSI, buildable-up area, road and zone context and applicable charges, straight from the plan and the regulation.",
     points: [
       "Zone + road width read from the DP plan",
       "Permissible FSI / BUA under UDCPR",
@@ -61,7 +61,7 @@ export const products: Product[] = [
     name: "Property Search Engine",
     tagline: "Know the title before you commit.",
     description:
-      "Urban CTS and rural 7/12 spines, cadastral parcel lookup, red-flag detection and a search plan — a title and developability due-diligence pass on any parcel in the state.",
+      "Urban CTS and rural 7/12 spines, cadastral parcel lookup, red-flag detection and a search plan: a full title and developability check on any parcel in the state.",
     points: [
       "Urban CTS + rural 7/12 lookup",
       "Cadastral parcel match + verify",

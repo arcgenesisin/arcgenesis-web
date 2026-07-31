@@ -184,10 +184,10 @@ export default function SignupCta() {
     <section className="relative mx-4 mt-32 mb-10 sm:mx-auto sm:max-w-6xl">
       {/* the rising building floats ABOVE the card, no clipping, it climbs out
           of the bounding box while the card itself stays a clean frame */}
-      <div className="pointer-events-none absolute inset-x-0 -top-[230px] z-10 h-[500px]">
+      <div className="pointer-events-none absolute inset-x-0 -top-[150px] z-10 h-[360px] sm:-top-[230px] sm:h-[500px]">
         <LoopCanvas />
       </div>
-      <div className="relative rounded-[32px] border border-white/10 bg-[#04060f] pt-[250px] sm:pt-[270px]">
+      <div className="relative rounded-[32px] border border-white/10 bg-[#04060f] pt-[180px] sm:pt-[270px]">
       <div ref={ref} className="relative px-6 pb-16 text-center sm:px-8">
         <motion.h2
           initial={{ opacity: 0, y: 24 }}

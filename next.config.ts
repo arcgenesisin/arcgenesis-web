@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
     return [
       { source: "/login", destination: "https://app.arcgenesis.ai/login", permanent: false },
       { source: "/account", destination: "https://app.arcgenesis.ai/home.html", permanent: false },
+      // Access requests are handled by the app's own owner-approved signup, so the
+      // marketing site hands off there rather than running a second signup form.
+      { source: "/request-access", destination: "https://app.arcgenesis.ai/signup", permanent: false },
     ];
   },
   async rewrites() {

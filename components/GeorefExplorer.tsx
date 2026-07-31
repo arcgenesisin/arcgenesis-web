@@ -145,12 +145,12 @@ export default function GeorefExplorer() {
   }, [opacity]);
 
   const stats = useMemo(() => {
-    if (!data) return { count: 0, districts: 0, best: "—", sub5: 0 };
+    if (!data) return { count: 0, districts: 0, best: "n/a", sub5: 0 };
     const res = data.plans.map((p) => p.residual_m).filter((v): v is number => v != null);
     return {
       count: data.count,
       districts: data.districts.length,
-      best: res.length ? `${Math.min(...res)} m` : "—",
+      best: res.length ? `${Math.min(...res)} m` : "n/a",
       sub5: res.filter((v) => v <= 5).length,
     };
   }, [data]);

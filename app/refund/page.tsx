@@ -107,7 +107,7 @@ export default function RefundPage() {
             Approved refunds are returned to the{" "}
             <strong>original payment method</strong> through Razorpay. Once
             approved, the amount typically reaches your account within{" "}
-            <strong>5–7 business days</strong>, depending on your bank or UPI
+            <strong>5 to 7 business days</strong>, depending on your bank or UPI
             provider.
           </p>
         </S>

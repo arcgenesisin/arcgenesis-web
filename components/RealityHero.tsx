@@ -73,9 +73,9 @@ export default function RealityHero() {
           <span className="mb-6 text-xs font-medium uppercase tracking-[0.3em] text-muted">
             ARC GENESIS
           </span>
-          <h1 className="text-4xl font-semibold leading-[1.06] tracking-tight sm:text-6xl">
-            One conversation to construct
-            <br />
+          <h1 className="text-balance text-4xl font-semibold leading-[1.08] tracking-tight sm:text-6xl sm:leading-[1.06]">
+            One conversation to construct{" "}
+            <br className="hidden sm:block" />
             every reality of Land Development.
           </h1>
           <p className="mt-5 max-w-xl text-base text-muted sm:text-lg">

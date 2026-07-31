@@ -38,7 +38,7 @@ export default function ContactPage() {
           <br />
           Chhatrapati Sambhajinagar (Aurangabad), Maharashtra {PIN}, India
         </Row>
-        <Row label="Support hours">Monday to Saturday, 10:00–18:00 IST</Row>
+        <Row label="Support hours">Monday to Saturday, 10:00 to 18:00 IST</Row>
         <Row label="Reach us">
           Email is the fastest way to reach us. Write to{" "}
           <a className="underline hover:text-foreground" href="mailto:contact@arcgenesis.ai">
