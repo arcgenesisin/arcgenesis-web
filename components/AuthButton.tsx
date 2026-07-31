@@ -71,7 +71,7 @@ export default function AuthButton({
           : "hidden rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-transform hover:scale-[1.03] md:inline-flex"
       }
     >
-      Request access
+      Get started
     </Link>
   );
 }

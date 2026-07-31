@@ -42,7 +42,7 @@ export default function EngineShell({
             href="/request-access"
             className="ml-auto shrink-0 rounded-full bg-white px-3 py-1.5 text-sm font-medium text-black transition-transform hover:scale-[1.03] sm:px-4"
           >
-            Request access
+            Get started
           </Link>
         </div>
       </div>

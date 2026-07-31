@@ -195,7 +195,7 @@ export default function SignupCta() {
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className="text-3xl font-semibold tracking-tight sm:text-5xl"
         >
-          Request pilot access.
+          Start with ARC GENESIS.
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 18 }}
@@ -216,7 +216,7 @@ export default function SignupCta() {
             href="/request-access"
             className="inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-semibold text-black transition-transform hover:scale-[1.04]"
           >
-            <span aria-hidden>↗</span> Request pilot access
+            <span aria-hidden>↗</span> Get started
           </Link>
           <Link
             href="/about"

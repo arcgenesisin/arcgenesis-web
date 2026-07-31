@@ -164,7 +164,7 @@ export default function RealityHero() {
             href="/request-access"
             className="inline-flex items-center gap-2 rounded-full bg-white px-7 py-3 text-sm font-medium text-black transition-transform hover:scale-[1.03]"
           >
-            Request access <span aria-hidden>→</span>
+            Get started <span aria-hidden>→</span>
           </Link>
           <a
             href="#show"

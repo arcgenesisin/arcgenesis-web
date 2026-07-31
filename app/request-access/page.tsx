@@ -2,7 +2,7 @@ import PageShell from "@/components/PageShell";
 
 export const metadata = { title: "Get started, ARC GENESIS" };
 
-// THE ONE FRONT DOOR. Every "Request access" button on the site points here, so this page is what
+// THE ONE FRONT DOOR. Every "Get started" button on the site points here, so this page is what
 // turns a visitor into an account. The actual authentication lives on app.arcgenesis.ai (that is
 // where the session cookie belongs) — this page is the branded handoff, so there is exactly ONE
 // auth implementation, not two.

@@ -23,7 +23,7 @@ const cols = [
   {
     heading: "Get started",
     links: [
-      { label: "Request access", href: "/request-access" },
+      { label: "Sign in", href: "/request-access" },
       { label: "Contact", href: "/contact" },
     ],
   },
