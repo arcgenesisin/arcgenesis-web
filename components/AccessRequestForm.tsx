@@ -27,7 +27,7 @@ export default function AccessRequestForm() {
       return;
     }
     if (password !== confirm) {
-      setError("The two passwords don't match — type them again.");
+      setError("The two passwords don't match. Please type them again.");
       setState("error");
       return;
     }
@@ -64,8 +64,8 @@ export default function AccessRequestForm() {
         <div className="text-lg font-semibold">Request received.</div>
         <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-muted">
           We approve every account personally. The moment you are in, you will
-          get an email{sentTo ? ` at ${sentTo}` : ""} with your sign-in link —
-          you will sign in with the email and password you just chose.
+          get an email{sentTo ? ` at ${sentTo}` : ""} with your sign-in link.
+          You will sign in with the email and password you just chose.
         </p>
         <a
           href="https://app.arcgenesis.ai/login"
@@ -169,7 +169,7 @@ export default function AccessRequestForm() {
       </div>
       <p className="text-xs text-muted/80">
         This becomes your sign-in for app.arcgenesis.ai once we approve you. It is
-        stored encrypted — nobody, including us, can read it back.
+        stored encrypted. Nobody, including us, can read it back.
       </p>
 
       <div>

@@ -120,7 +120,7 @@ export default function PrivacyPage() {
           <p>
             <strong>Least privilege:</strong> we request only{" "}
             <code>drive.file</code> (files our app creates for you) and,
-            optionally, <code>calendar.events</code> (events we create) — we are
+            optionally, <code>calendar.events</code> (events we create). We are
             technically unable to read your other Drive files or calendar entries.
           </p>
           <p>
@@ -145,24 +145,24 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <strong>Google</strong> (Drive, Calendar and the Gemini API) — to
-              store and retrieve the files our app creates in your Drive, create
-              the calendar events you ask for, and read and classify the specific
-              documents you send us.
+              <strong>Google</strong> (Drive, Calendar and the Gemini API). We
+              use these to store and retrieve the files our app creates in your
+              Drive, create the calendar events you ask for, and read and
+              classify the specific documents you send us.
             </li>
             <li>
-              <strong>The messaging platform you use</strong> — Meta (WhatsApp
-              Business Platform) or Telegram — used only to deliver a file back to
-              you when you request it.
+              <strong>The messaging platform you use</strong>, either Meta
+              (WhatsApp Business Platform) or Telegram. This is used only to
+              deliver a file back to you when you request it.
             </li>
             <li>
-              <strong>Neon</strong> (managed database host) — stores your account
-              record, the search index and document metadata. Your actual files
-              stay in your own Google Drive, not here.
+              <strong>Neon</strong> (managed database host). This stores your
+              account record, the search index and document metadata. Your actual
+              files stay in your own Google Drive, not here.
             </li>
             <li>
-              <strong>Cloudflare</strong> (network) and our own servers — to route
-              traffic and operate the service.
+              <strong>Cloudflare</strong> (network) and our own servers, which
+              route traffic and operate the service.
             </li>
           </ul>
           <p>
