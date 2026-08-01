@@ -228,6 +228,10 @@ export default function Pricing() {
             One product, priced by how much land you put through it. Pay per
             project, or subscribe by the month.
           </p>
+          {/* The acquisition door. It was already wired and advertised nowhere. */}
+          <p className="mx-auto mt-6 w-fit rounded-full border border-emerald-400/30 bg-emerald-400/[0.07] px-5 py-2 text-center text-sm font-medium text-emerald-300">
+            Your first project is free. No card, no trial clock.
+          </p>
         </motion.div>
 
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">

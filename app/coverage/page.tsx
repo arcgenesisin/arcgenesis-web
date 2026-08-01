@@ -1,5 +1,5 @@
 import PageShell from "@/components/PageShell";
-import { COVERAGE_AS_OF, GROUPS, HEADLINE, REGULATION_LAYERS } from "@/lib/coverage";
+import { COVERAGE_AS_OF, GROUPS, HEADLINE, REGULATION_ENCODED, REGULATION_LAYERS } from "@/lib/coverage";
 
 export const metadata = {
   title: "Coverage, ARC GENESIS",
@@ -48,12 +48,29 @@ export default function CoveragePage() {
           </section>
         ))}
 
+        {/* what the engine actually reasons over */}
+        <section>
+          <h2 className="text-2xl font-semibold tracking-tight">The regulation we encode</h2>
+          <div className="mt-5 flex flex-wrap gap-2">
+            {REGULATION_ENCODED.live.map((r) => (
+              <span
+                key={r}
+                className="rounded-full border border-emerald-400/30 bg-emerald-400/[0.07] px-4 py-1.5 text-sm font-medium text-emerald-300"
+              >
+                {r}
+              </span>
+            ))}
+          </div>
+          <p className="mt-4 max-w-2xl leading-relaxed text-muted">{REGULATION_ENCODED.note}</p>
+        </section>
+
         {/* the checklist */}
         <section>
-          <h2 className="text-2xl font-semibold tracking-tight">What a plot is tested against</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">What sits around a plot</h2>
           <p className="mt-3 max-w-2xl leading-relaxed text-muted">
-            When the engine reads a plot, these are the proximities it checks. Each one can move a
-            setback, cap a height or take land out of the buildable area entirely.
+            Each of these can move a setback, cap a height or take land out of the buildable area
+            entirely. We hold all of it as mapped data for Maharashtra, and it is being brought into
+            the engine layer by layer.
           </p>
           <ul className="mt-6 grid gap-2 sm:grid-cols-2">
             {REGULATION_LAYERS.map((l) => (

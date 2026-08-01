@@ -109,8 +109,12 @@ export default function PricingPage() {
     <PageShell
       eyebrow="Pricing"
       title="Simple, honest pricing"
-      intro="One product, priced by how much land you put through it. Prices are in Indian Rupees."
+      intro="Your first project is free, with no card and no trial clock. After that, one product priced by how much land you put through it. Prices are in Indian Rupees."
     >
+      <div className="mb-8 rounded-2xl border border-emerald-400/25 bg-emerald-400/[0.06] px-6 py-4 text-[15px] text-emerald-200">
+        <strong className="font-semibold">Start free.</strong> Your first project runs end to end at
+        no cost, across every engine your plan reaches. You only pay when you begin a second one.
+      </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
         {plans.map((p) => (
           <PlanCard key={p.name} p={p} />

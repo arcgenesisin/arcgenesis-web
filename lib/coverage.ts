@@ -84,6 +84,15 @@ export const GROUPS: Group[] = [
   },
 ];
 
+// The regulation actually encoded in the engine today. Deliberately narrow: we
+// hold data far beyond this, but a regime is only listed once the engine reasons
+// over it. Confirmed with the engine side 2026-08-01: UDCPR only.
+export const REGULATION_ENCODED = {
+  live: ["UDCPR 2020"],
+  note:
+    "One regulation, encoded properly and audited, rather than a long list read loosely. The other Maharashtra regimes, MHADA, PMRDA, CIDCO, NAINA and MSRDC, are being encoded to the same standard and are not claimed until they are.",
+};
+
 // The proximity rules the engine actually tests a plot against. Named because a
 // buyer should be able to see the checklist, not take our word for its length.
 export const REGULATION_LAYERS: string[] = [
