@@ -203,8 +203,8 @@ export default function SignupCta() {
           transition={{ duration: 0.7, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
           className="mx-auto mt-4 max-w-xl text-lg text-muted"
         >
-          Our models are fully audited for Maharashtra. We are expanding across
-          India now.
+          Your first project is free, no card needed. Our models are fully
+          audited for Maharashtra, and we are expanding across India now.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 14 }}
