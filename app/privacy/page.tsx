@@ -160,19 +160,19 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <strong>Google</strong> (Drive, Calendar and the Gemini API). We
-              use these to store and retrieve the files our app creates in your
-              Drive, create the calendar events you ask for, and, through the
-              Gemini API, run the chat assistant that answers your questions
-              about your documents.
+              <strong>Google</strong> (Drive and Calendar). We use these to store
+              and retrieve the files our app creates in your Drive, and to create
+              the calendar events you ask for. Google is not used to read or
+              interpret your documents.
             </li>
             <li>
-              <strong>Sarvam AI</strong> (document reader). The specific
-              documents you send us, including any file we retrieve from your
-              Google Drive at your request, are sent to Sarvam AI&rsquo;s
+              <strong>Sarvam AI</strong> (document reading and the assistant). The
+              specific documents you send us, including any file we retrieve from
+              your Google Drive at your request, are sent to Sarvam AI&rsquo;s
               document-processing API so their text can be read and classified.
-              Sarvam processes them only to return that result to us and may not
-              use your data for its own purposes.
+              Sarvam also runs the assistant that answers your questions about
+              those documents. Sarvam processes this only to return the result to
+              us and may not use your data for its own purposes.
             </li>
             <li>
               <strong>The messaging platform you use</strong>, either Meta
