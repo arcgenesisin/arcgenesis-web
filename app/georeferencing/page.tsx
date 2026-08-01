@@ -29,8 +29,11 @@ export default function GeoreferencingPage() {
               then checks the placement against independent evidence before it will accept it.
             </p>
             <p className="mt-4 max-w-2xl text-lg text-muted">
-              Below is a sample of 138 Maharashtra plans it located this way. Pick any one and slide
-              between the placed sheet and live satellite imagery to judge the fit yourself.
+              We have placed and accepted 315 Development and Regional Plan sheets across
+              Maharashtra. Below is a sample of 138 of them, restricted to sheets the pipeline
+              located with no human help at all, so you are judging the machine rather than us. Pick
+              any one and slide between the placed sheet and live satellite imagery to see the fit
+              for yourself.
             </p>
           </Reveal>
         </section>

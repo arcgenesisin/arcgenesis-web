@@ -8,6 +8,7 @@ import {
   TitleScene,
 } from "@/components/scenes";
 import SignupCta from "@/components/SignupCta";
+import ProofBand from "@/components/ProofBand";
 import SiteFooter from "@/components/SiteFooter";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
         <ValuationScene />
         <TitleScene />
         <AssistantScene />
+        <ProofBand />
         <SignupCta />
       </main>
       <SiteFooter />
