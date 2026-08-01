@@ -81,11 +81,26 @@ export default function PrivacyPage() {
 
         <S title="Where your data lives">
           <p>
-            <strong>Your documents live in your own Google Drive</strong>, in
+            <strong>Documents you upload live in your own Google Drive</strong>, in
             folders our app creates. We keep the search index, document metadata,
             your account record and conversation history in our database
             (managed Postgres hosted on Neon). Google OAuth tokens are stored
             encrypted (AES-256-GCM) and all traffic uses TLS.
+          </p>
+          <p>
+            Three things are held by us rather than in your Drive, and we would
+            rather name them than leave them unsaid. <strong>Reports we generate</strong>{" "}
+            stay with us so that your project history and search still work if you
+            disconnect Drive; you can save a copy to your own Drive at any time.{" "}
+            <strong>A firm logo</strong> you upload for branded reports is kept so we
+            can place it on the documents you asked us to produce. <strong>A profile
+            picture</strong> is not stored at all: we use the photo from your Google
+            sign-in, or your initials.
+          </p>
+          <p>
+            If you send a document before your Drive is connected, we may hold that
+            file briefly while you complete the connection, and it moves to your Drive
+            as soon as it is ready.
           </p>
         </S>
 
